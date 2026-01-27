@@ -54,7 +54,7 @@ python data/scripts/extract_demographics.py  # Re-extract data
 ## GitHub Raw URLs
 
 Data loaded from:
-- https://raw.githubusercontent.com/longmaisg/LuxembourgHoods/main/data/external/communes.json
-- https://raw.githubusercontent.com/longmaisg/LuxembourgHoods/main/data/external/paths.json
-- https://raw.githubusercontent.com/longmaisg/LuxembourgHoods/main/data/external/labels.json
-- https://raw.githubusercontent.com/longmaisg/LuxembourgHoods/main/data/external/dimensions.json
+- https://raw.githubusercontent.com/longmaisg/LuxembourgHoods/master/data/external/communes.json
+- https://raw.githubusercontent.com/longmaisg/LuxembourgHoods/master/data/external/paths.json
+- https://raw.githubusercontent.com/longmaisg/LuxembourgHoods/master/data/external/labels.json
+- https://raw.githubusercontent.com/longmaisg/LuxembourgHoods/master/data/external/dimensions.json

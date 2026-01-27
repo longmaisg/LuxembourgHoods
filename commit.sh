@@ -24,7 +24,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
 HASH_SHORT=$(git rev-parse --short HEAD)
 
 # Push
-git push origin main 2>/dev/null || git push origin master 2>/dev/null || git push
+git push origin master
 
 # Log to CHANGELOG
 echo "- [$HASH_SHORT] $(date '+%Y-%m-%d %H:%M') $MSG" >> CHANGELOG.md

@@ -13,7 +13,7 @@
 //<![CDATA[
 
 // Data loaded from GitHub
-const DATA_URL = "https://raw.githubusercontent.com/longmaisg/LuxembourgHoods/main/data/external";
+const DATA_URL = "https://raw.githubusercontent.com/longmaisg/LuxembourgHoods/master/data/external";
 async function loadData() {
   const [c,p,l,d] = await Promise.all([
     fetch(DATA_URL+"/communes.json").then(r=>r.json()),
