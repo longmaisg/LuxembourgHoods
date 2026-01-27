@@ -1114,7 +1114,7 @@ async function initApp() {
 
   // Screenshot capture
   document.getElementById("map-capture").onclick = () => {
-    const mapCard = document.querySelector(".map-card");
+    const mapCard = document.querySelector(".map-container");
     if (typeof html2canvas === "undefined") { alert("Screenshot library loading, try again"); return; }
     html2canvas(mapCard, { backgroundColor: "#fff", scale: 2 }).then(canvas => {
       const a = document.createElement("a");
