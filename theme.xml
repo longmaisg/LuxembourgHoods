@@ -680,8 +680,9 @@ a:hover { text-decoration: underline; }
 </main>
 
 <footer class='footer'>
-  <p>LuxembourgHoods — Data from <a href='https://statistiques.public.lu/'>STATEC</a> &amp; <a href='https://www.immotop.lu/'>Immotop</a></p>
+  <p><strong>LuxembourgHoods</strong> — Data from <a href='https://statistiques.public.lu/'>STATEC</a> &amp; <a href='https://www.immotop.lu/'>Immotop</a></p>
   <p>Map boundaries from <a href='https://data.public.lu/'>data.public.lu</a> (CC0)</p>
+  <p style='font-size:11px;margin-top:0.5rem'>Not affiliated with any government agency. For informational purposes only.</p>
 </footer>
 
 <script>

@@ -16,3 +16,4 @@ Git log with anchors for tracking changes.
 - [5969c17] 2026-01-27 20:36 Fix screenshot button clickability - add z-index + error handling
 - [a93db70] 2026-01-27 20:38 Fix screenshot - use correct selector .map-container
 - [f29bede] 2026-01-27 20:41 Hide zoom buttons in screenshot
+- [ceaf079] 2026-01-27 20:43 Add Show/Hide toggle for Top 10 chart
