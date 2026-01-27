@@ -1115,12 +1115,15 @@ async function initApp() {
   // Screenshot capture
   document.getElementById("map-capture").onclick = () => {
     const mapCard = document.querySelector(".map-container");
+    const controls = document.querySelector(".map-zoom-controls");
+    controls.style.display = "none";
     if (typeof html2canvas === "undefined") { alert("Screenshot library loading, try again"); return; }
     html2canvas(mapCard, { backgroundColor: "#fff", scale: 2 }).then(canvas => {
       const a = document.createElement("a");
       a.download = "luxembourg-" + DIMS[selectedDimension].label.replace(/[^a-zA-Z0-9]/g, "_") + "-" + new Date().toISOString().slice(0,10) + ".png";
       a.href = canvas.toDataURL("image/png");
       a.click();
+      controls.style.display = "";
     });
   };
 
