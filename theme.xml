@@ -155,7 +155,7 @@ a:hover { text-decoration: underline; }
 
 .map-svg-container {
   padding: 1rem;
-  background: #f5f5f0;
+  background: linear-gradient(135deg, #e8f4f8 0%, #d1e8f0 100%);
   display: flex;
   justify-content: center;
 }
@@ -588,9 +588,9 @@ a:hover { text-decoration: underline; }
                   <button class='zoom-btn' id='zoom-reset' title='Reset' style='font-size:12px'>⟲</button>
                   <button class='zoom-btn' id='map-capture' title='Save as image' style='font-size:12px'>📷</button>
                 </div>
-                <svg id='lux-map' viewBox='0 0 500 720' preserveAspectRatio='xMidYMid meet' width='480' height='690'>
+                <svg id='lux-map' viewBox='10 130 480 440' preserveAspectRatio='xMidYMid meet' width='480' height='440'>
                   <!-- Background rect for click-outside-to-reset -->
-                  <rect id='map-bg' x='0' y='0' width='500' height='720' fill='transparent'/>
+                  <rect id='map-bg' x='10' y='130' width='480' height='440' fill='transparent'/>
                   <!-- All commune paths (100 communes form complete map) -->
                   <g id='commune-paths'></g>
                   <!-- Labels for major communes only -->
