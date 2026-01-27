@@ -498,6 +498,7 @@ a:hover { text-decoration: underline; }
 
 /* Zoom controls */
 .map-zoom-controls {
+  z-index: 100;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -1114,6 +1115,7 @@ async function initApp() {
   // Screenshot capture
   document.getElementById("map-capture").onclick = () => {
     const mapCard = document.querySelector(".map-card");
+    if (typeof html2canvas === "undefined") { alert("Screenshot library loading, try again"); return; }
     html2canvas(mapCard, { backgroundColor: "#fff", scale: 2 }).then(canvas => {
       const a = document.createElement("a");
       a.download = "luxembourg-" + DIMS[selectedDimension].label.replace(/[^a-zA-Z0-9]/g, "_") + "-" + new Date().toISOString().slice(0,10) + ".png";
