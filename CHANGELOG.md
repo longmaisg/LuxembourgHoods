@@ -8,3 +8,4 @@ Git log with anchors for tracking changes.
 - [5cb1d4b] 2026-01-27 19:38 Fix GitHub URLs to use master branch
 - [d9d489e] 2026-01-27 19:44 Fix async data loading - wait for GitHub fetch before init
 - [5966f22] 2026-01-27 19:53 Fix labels.json format + slim CLAUDE.md (73 words)
+- [b453f3c] 2026-01-27 19:57 Show name + value in map tooltip on hover
