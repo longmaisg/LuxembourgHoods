@@ -683,7 +683,10 @@ a:hover { text-decoration: underline; }
 
 <script>
 //<![CDATA[
-(function() {
+async function initApp() {
+  // Wait for data to load from GitHub
+  await loadData();
+  
   if (!document.getElementById('lux-map')) return;
 
   const DATA = window.COMMUNE_DATA;
@@ -1173,7 +1176,14 @@ a:hover { text-decoration: underline; }
 
   buildDropdown();
   updateAll();
-})();
+}
+
+// Start app when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}
 //]]>
 </script>
 
