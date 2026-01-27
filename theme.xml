@@ -708,7 +708,8 @@ async function initApp() {
   function showTooltip(e, communeId) {
     const commune = DATA[communeId];
     const name = commune ? commune.name : communeId.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-    tooltip.textContent = name;
+    const value = commune?.data[selectedDimension]?.value;
+    tooltip.textContent = name + (value != null ? ": " + fmt(value, selectedDimension) : "");
     tooltip.classList.add('visible');
     moveTooltip(e);
   }
