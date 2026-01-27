@@ -11,3 +11,4 @@ Git log with anchors for tracking changes.
 - [b453f3c] 2026-01-27 19:57 Show name + value in map tooltip on hover
 - [3fafe41] 2026-01-27 20:13 Add screenshot button to save map as PNG
 - [126f66d] 2026-01-27 20:14 Screenshot filename includes layer + date
+- [4489fdc] 2026-01-27 20:16 Screenshot uses full layer label in filename
