@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.0.0' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta charset='UTF-8'/>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<title><data:blog.pageTitle/></title>
+<meta content='Luxembourg commune data visualization - population, housing prices, demographics with full source citations.' name='description'/>
+
+<link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap' rel='stylesheet'/>
+
+<script>
+//<![CDATA[
+
+// Data loaded from GitHub
+const DATA_URL = "https://raw.githubusercontent.com/longmaisg/LuxembourgHoods/main/data/external";
+async function loadData() {
+  const [c,p,l,d] = await Promise.all([
+    fetch(DATA_URL+"/communes.json").then(r=>r.json()),
+    fetch(DATA_URL+"/paths.json").then(r=>r.json()),
+    fetch(DATA_URL+"/labels.json").then(r=>r.json()),
+    fetch(DATA_URL+"/dimensions.json").then(r=>r.json())
+  ]);
+  window.COMMUNE_DATA=c; window.COMMUNE_PATHS=p;
+  window.COMMUNE_LABELS=l; window.DIMENSIONS=d;
+}
+
+// ============================================
+// COMMUNE DATA - Generated from official sources
+// Source: Observatoire de l'Habitat / STATEC
+// Period: Oct 2024 - Sep 2025
+// Generated: 2026-01-26
+// ============================================
+window.COMMUNE_DATA = {};
+
+// ============================================
+// SVG PATHS - All 100 communes from data.public.lu GeoJSON
+// ViewBox: 0 0 500 700
+// ============================================
+window.COMMUNE_PATHS = {};
+
+window.COMMUNE_LABELS = {};
+
+
+// Dimension definitions
+window.DIMENSIONS = {};
+//]]>
+</script>
+
+<b:skin><![CDATA[
+:root {
+  --primary: #1e40af;
+  --primary-dark: #1e3a8a;
+  --white: #ffffff;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --radius: 8px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--gray-800);
+  background: var(--gray-50);
+}
+
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.header {
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  padding: 1rem 1.5rem;
+}
+
+.header-inner { max-width: 1200px; margin: 0 auto; }
+
+.logo { font-size: 1.5rem; font-weight: 700; color: var(--gray-900); }
+.logo span { color: var(--primary); }
+.tagline { font-size: 0.85rem; color: var(--gray-500); }
+
+.main-container { max-width: 1200px; margin: 0 auto; padding: 1.5rem; }
+
+.controls-panel {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.controls-row { display: flex; gap: 2rem; flex-wrap: wrap; }
+
+.control-group { flex: 1; min-width: 200px; }
+
+.control-group label {
+  display: block;
+  font-weight: 600;
+  color: var(--gray-700);
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.control-group select {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+.viz-container {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 900px) { .viz-container { grid-template-columns: 1fr; } }
+
+.map-container {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.map-header {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--gray-200);
+  background: var(--gray-50);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--gray-700);
+}
+
+.map-svg-container {
+  padding: 1rem;
+  background: #f5f5f0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Tooltip for commune names */
+.map-tooltip {
+  position: absolute;
+  background: rgba(30,30,30,0.9);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  pointer-events: none;
+  z-index: 100;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.15s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.map-tooltip.visible { opacity: 1; }
+
+#lux-map { max-width: 100%; height: auto; }
+
+.commune-path {
+  stroke: #fff;
+  stroke-width: 1.5;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.commune-path:hover {
+  stroke-width: 2;
+  filter: brightness(0.92);
+}
+
+.commune-path.highlighted {
+  stroke: var(--primary-dark);
+  stroke-width: 3;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.commune-path.dimmed { opacity: 0.25; }
+
+/* Label styling - positioned below shape, always readable */
+.commune-label-bg {
+  fill: rgba(255,255,255,0.9);
+  rx: 3;
+}
+
+.commune-label-name {
+  font-size: 10px;
+  font-weight: 600;
+  fill: var(--gray-800);
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+.commune-label-value {
+  font-size: 9px;
+  font-weight: 700;
+  fill: var(--primary);
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+.map-legend {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--gray-200);
+  background: var(--gray-50);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.75rem;
+}
+
+.legend-label { color: var(--gray-600); font-weight: 500; }
+
+.legend-scale {
+  display: flex;
+  height: 10px;
+  flex: 1;
+  max-width: 200px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.legend-scale span { flex: 1; }
+
+.legend-values {
+  display: flex;
+  gap: 0.5rem;
+  color: var(--gray-500);
+}
+
+.chart-container {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.chart-header {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--gray-200);
+  background: var(--gray-50);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--gray-700);
+}
+
+.chart-body { padding: 1rem; }
+
+.bar-chart { display: flex; flex-direction: column; gap: 0.6rem; }
+
+.bar-item {
+  cursor: pointer;
+  padding: 0.5rem 0.6rem;
+  border-radius: 6px;
+  transition: all 0.15s;
+  border: 2px solid transparent;
+}
+
+.bar-item:hover { background: var(--gray-50); }
+.bar-item.highlighted { background: #eff6ff; border-color: var(--primary); }
+
+.bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.bar-name { font-weight: 600; color: var(--gray-800); }
+.bar-value { font-weight: 700; color: var(--primary); }
+
+.bar-track {
+  height: 18px;
+  background: var(--gray-100);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+
+.detail-panel {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.detail-header {
+  background: var(--primary);
+  color: white;
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-header h2 { font-size: 1.3rem; margin: 0; }
+.detail-region { opacity: 0.85; font-size: 0.8rem; }
+
+.detail-close {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.detail-close:hover { background: rgba(255,255,255,0.3); }
+
+.detail-body { padding: 1.25rem; }
+
+.detail-placeholder {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--gray-500);
+  font-size: 0.9rem;
+}
+
+.detail-placeholder svg {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 0.5rem;
+  fill: var(--gray-300);
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.6rem;
+}
+
+.fact-card {
+  background: var(--gray-50);
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+
+.fact-label {
+  font-size: 0.65rem;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.fact-value {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+.fact-source {
+  font-size: 0.6rem;
+  color: var(--gray-400);
+  margin-top: 0.3rem;
+}
+
+.fact-source a { color: var(--gray-400); }
+
+.data-table-container {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.table-header {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--gray-200);
+  background: var(--gray-50);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--gray-700);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-input {
+  padding: 0.4rem 1.8rem 0.4rem 0.6rem;
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  width: 160px;
+}
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(30,64,175,0.1);
+}
+.search-clear {
+  position: absolute;
+  right: 4px;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: var(--gray-400);
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+  display: none;
+}
+.search-clear:hover { color: var(--gray-600); }
+.search-wrapper.has-value .search-clear { display: block;
+}
+
+.data-table { width: 100%; border-collapse: collapse; }
+
+.data-table th, .data-table td {
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.data-table th {
+  background: var(--gray-50);
+  font-weight: 600;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: var(--gray-600);
+}
+
+.data-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+.data-table th.sortable:hover { background: var(--gray-100); }
+.sort-icon { opacity: 0.5; margin-left: 4px; font-size: 0.6rem; }
+
+.data-table tr:last-child td { border-bottom: none; }
+.data-table tbody tr { cursor: pointer; }
+.data-table tbody tr:hover td { background: var(--gray-50); }
+.data-table tbody tr.highlighted td { background: #eff6ff; }
+.data-table tbody tr.no-data td { color: var(--gray-400); }
+.no-data-text { font-style: italic; font-weight: normal; color: var(--gray-400); }
+
+.data-value { font-weight: 600; }
+.data-source { font-size: 0.6rem; color: var(--gray-400); }
+
+.color-indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.footer {
+  background: var(--gray-900);
+  color: var(--gray-400);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.footer a { color: var(--gray-300); }
+
+/* Zoom controls */
+.map-zoom-controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 10;
+}
+
+.zoom-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--gray-300);
+  background: var(--white);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--gray-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zoom-btn:hover { background: var(--gray-100); }
+
+.map-svg-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+#lux-map {
+  cursor: grab;
+  user-select: none;
+}
+
+#lux-map.dragging { cursor: grabbing; }
+
+/* Major commune labels only */
+.commune-label-group { pointer-events: none; }
+
+@media (max-width: 768px) {
+  .controls-row { flex-direction: column; gap: 1rem; }
+  .facts-grid { grid-template-columns: 1fr 1fr; }
+}
+]]></b:skin>
+
+</head>
+<body>
+
+<header class='header'>
+  <div class='header-inner'>
+    <a class='logo' href='/'>Luxembourg<span>Hoods</span></a>
+    <div class='tagline'>Commune data with sources</div>
+  </div>
+</header>
+
+<main class='main-container'>
+  <b:section class='main-section' id='main' showaddelement='yes'>
+    <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='2' visible='true'>
+      <b:includable id='main'>
+
+        <b:if cond='data:blog.pageType == "index"'>
+
+          <div class='controls-panel'>
+            <div class='controls-row'>
+              <div class='control-group'>
+                <label>Data Layer</label>
+                <select id='dimension-select'></select>
+              </div>
+              <div class='control-group'>
+                <label>Show on Map</label>
+                <select id='commune-filter'>
+                  <option value='all'>All Communes</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class='viz-container'>
+            <div class='map-container'>
+              <div class='map-header' id='map-title'>Price per m² by Commune</div>
+              <div class='map-svg-container map-svg-wrapper'>
+                <div class='map-zoom-controls'>
+                  <button class='zoom-btn' id='zoom-in' title='Zoom in'>+</button>
+                  <button class='zoom-btn' id='zoom-out' title='Zoom out'>−</button>
+                  <button class='zoom-btn' id='zoom-reset' title='Reset' style='font-size:12px'>⟲</button>
+                </div>
+                <svg id='lux-map' viewBox='0 0 500 720' preserveAspectRatio='xMidYMid meet' width='480' height='690'>
+                  <!-- Background rect for click-outside-to-reset -->
+                  <rect id='map-bg' x='0' y='0' width='500' height='720' fill='transparent'/>
+                  <!-- All commune paths (100 communes form complete map) -->
+                  <g id='commune-paths'></g>
+                  <!-- Labels for major communes only -->
+                  <g id='commune-labels'></g>
+                </svg>
+                <div class='map-tooltip' id='map-tooltip'></div>
+              </div>
+              <div class='map-legend'>
+                <span class='legend-label' id='legend-title'>Price/m²</span>
+                <div class='legend-scale'>
+                  <span style='background:#dbeafe'></span>
+                  <span style='background:#93c5fd'></span>
+                  <span style='background:#3b82f6'></span>
+                  <span style='background:#1d4ed8'></span>
+                  <span style='background:#1e3a8a'></span>
+                </div>
+                <div class='legend-values'>
+                  <span id='legend-min'>-</span>
+                  <span>to</span>
+                  <span id='legend-max'>-</span>
+                </div>
+              </div>
+            </div>
+
+            <div class='chart-container'>
+              <div class='chart-header' id='chart-title'>Comparison</div>
+              <div class='chart-body'>
+                <div class='bar-chart' id='bar-chart'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='detail-panel' id='detail-panel'>
+            <div class='detail-placeholder' id='detail-placeholder'>
+              <svg viewBox='0 0 24 24'><path d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z'/></svg>
+              <p>Click a commune to see all details</p>
+            </div>
+            <div id='detail-content' style='display:none'>
+              <div class='detail-header'>
+                <div>
+                  <h2 id='detail-name'>Commune</h2>
+                  <div class='detail-region' id='detail-region'>Region</div>
+                </div>
+                <button class='detail-close' id='detail-close'>×</button>
+              </div>
+              <div class='detail-body'>
+                <div class='facts-grid' id='facts-grid'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='data-table-container'>
+            <div class='table-header'>
+              <span id='table-title'>All Data</span>
+              <div class='search-wrapper'>
+                <input type='text' id='commune-search' placeholder='Search commune...' class='search-input'/>
+                <button type='button' id='search-clear' class='search-clear' title='Clear search'>&#215;</button>
+              </div>
+            </div>
+            <table class='data-table'>
+              <thead>
+                <tr>
+                  <th class='sortable' data-sort='name'>Commune<span class='sort-icon'></span></th>
+                  <th class='sortable' data-sort='region'>Region<span class='sort-icon'></span></th>
+                  <th class='sortable' data-sort='value' id='data-col-header'>Price/m²<span class='sort-icon'></span></th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody id='data-table-body'></tbody>
+            </table>
+          </div>
+
+        </b:if>
+
+        <b:if cond='data:blog.pageType == "item"'>
+          <b:loop values='data:posts' var='post'>
+            <article class='detail-panel'>
+              <div class='detail-header'><h2><data:post.title/></h2></div>
+              <div class='detail-body'><data:post.body/></div>
+            </article>
+          </b:loop>
+        </b:if>
+
+      </b:includable>
+    </b:widget>
+  </b:section>
+</main>
+
+<footer class='footer'>
+  <p>LuxembourgHoods — Data from <a href='https://statistiques.public.lu/'>STATEC</a> &amp; <a href='https://www.immotop.lu/'>Immotop</a></p>
+  <p>Map boundaries from <a href='https://data.public.lu/'>data.public.lu</a> (CC0)</p>
+</footer>
+
+<script>
+//<![CDATA[
+(function() {
+  if (!document.getElementById('lux-map')) return;
+
+  const DATA = window.COMMUNE_DATA;
+  const PATHS = window.COMMUNE_PATHS;
+  const LABELS = window.COMMUNE_LABELS;
+  const DIMS = window.DIMENSIONS;
+
+  const COLORS = ['#dbeafe', '#93c5fd', '#3b82f6', '#1d4ed8', '#1e3a8a'];
+
+  let selectedDimension = 'price_m2';
+  let filterCommune = 'all';
+  let highlightedCommune = null;
+  let tableSortKey = 'value';  // 'name', 'region', 'value'
+  let tableSortDir = 'desc';   // 'asc' or 'desc'
+  let searchTerm = '';         // commune name search
+
+  // Tooltip functions
+  const tooltip = document.getElementById('map-tooltip');
+  function showTooltip(e, communeId) {
+    const commune = DATA[communeId];
+    const name = commune ? commune.name : communeId.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    tooltip.textContent = name;
+    tooltip.classList.add('visible');
+    moveTooltip(e);
+  }
+  function moveTooltip(e) {
+    const container = document.querySelector('.map-svg-wrapper');
+    const rect = container.getBoundingClientRect();
+    tooltip.style.left = (e.clientX - rect.left + 12) + 'px';
+    tooltip.style.top = (e.clientY - rect.top - 10) + 'px';
+  }
+  function hideTooltip() {
+    tooltip.classList.remove('visible');
+  }
+
+  function getColor(value, min, max) {
+    if (value == null) return '#e5e7eb';
+    if (max === min) return COLORS[2];
+    const ratio = Math.max(0, Math.min(1, (value - min) / (max - min)));
+    return COLORS[Math.min(Math.floor(ratio * COLORS.length), COLORS.length - 1)];
+  }
+
+  function getVisible() {
+    return filterCommune === 'all' ? Object.keys(DATA) : [filterCommune];
+  }
+
+  function getMinMax() {
+    const vals = getVisible().map(id => DATA[id]?.data[selectedDimension]?.value).filter(v => v != null);
+    return vals.length ? { min: Math.min(...vals), max: Math.max(...vals) } : { min: 0, max: 100 };
+  }
+
+  function fmt(v, dim) {
+    if (v == null) return '—';
+    const d = DIMS[dim];
+    if (d.format === 'currency') return '€' + v.toLocaleString();
+    if (d.format === 'percent') return v.toFixed(1) + '%';
+    if (d.format === 'decimal') return v.toLocaleString(undefined, {maximumFractionDigits: 1});
+    if (d.format === 'number') return v.toLocaleString();
+    return v.toLocaleString() + (d.unit || '');
+  }
+
+  function fmtShort(v, dim) {
+    if (v == null) return '—';
+    const d = DIMS[dim];
+    if (d.format === 'currency') return '€' + (v >= 1000 ? Math.round(v/1000) + 'k' : v);
+    if (d.format === 'percent') return v.toFixed(0) + '%';
+    if (d.format === 'decimal') return v >= 1000 ? (v/1000).toFixed(1) + 'k' : v.toFixed(1);
+    if (d.format === 'number') return v >= 1000 ? Math.round(v/1000) + 'k' : v;
+    return v >= 1000 ? Math.round(v/1000) + 'k' : v;
+  }
+
+  function buildDropdown() {
+    // Commune filter dropdown
+    const sel = document.getElementById('commune-filter');
+    Object.entries(DATA).forEach(([id, c]) => {
+      const opt = document.createElement('option');
+      opt.value = id;
+      opt.textContent = c.name;
+      sel.appendChild(opt);
+    });
+    sel.onchange = function() {
+      filterCommune = this.value;
+      updateAll();
+    };
+
+    // Dimension dropdown - dynamically from DIMS
+    const dimSel = document.getElementById('dimension-select');
+    Object.entries(DIMS).forEach(([key, dim]) => {
+      const opt = document.createElement('option');
+      opt.value = key;
+      opt.textContent = dim.label;
+      dimSel.appendChild(opt);
+    });
+  }
+
+  // Major communes to show labels for orientation
+  const MAJOR_COMMUNES = ['luxembourg', 'esch_sur_alzette', 'differdange', 'dudelange', 'ettelbruck', 'diekirch', 'wiltz', 'echternach', 'clervaux'];
+
+  function drawMap() {
+    const pathsG = document.getElementById('commune-paths');
+    const labelsG = document.getElementById('commune-labels');
+    const { min, max } = getMinMax();
+
+    pathsG.innerHTML = '';
+    labelsG.innerHTML = '';
+
+    // Draw ALL commune paths
+    Object.entries(PATHS).forEach(([id, pathD]) => {
+      if (!pathD || pathD.length < 10) return;
+
+      const commune = DATA[id];
+      const value = commune?.data[selectedDimension]?.value;
+      const hasData = value != null;
+      const isFiltered = filterCommune !== 'all' && filterCommune !== id;
+      const color = hasData ? getColor(value, min, max) : '#e5e7eb';
+
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.setAttribute('d', pathD);
+      path.setAttribute('fill', color);
+      path.setAttribute('data-id', id);
+      path.setAttribute('class', 'commune-path' +
+        (highlightedCommune === id ? ' highlighted' : '') +
+        (isFiltered ? ' dimmed' : ''));
+
+      // Click any commune to select/highlight
+      path.onclick = () => {
+        highlightedCommune = id;
+        updateHighlight();
+      };
+
+      // Hover to show tooltip with commune name
+      path.onmouseenter = (e) => showTooltip(e, id);
+      path.onmousemove = (e) => moveTooltip(e);
+      path.onmouseleave = () => hideTooltip();
+
+      pathsG.appendChild(path);
+    });
+
+    // Only show labels for major communes
+    MAJOR_COMMUNES.forEach(id => {
+      const lbl = LABELS[id];
+      if (!lbl) return;
+
+      const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+      g.setAttribute('class', 'commune-label-group');
+
+      const bg = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+      bg.setAttribute('x', lbl.x - 32);
+      bg.setAttribute('y', lbl.y - 6);
+      bg.setAttribute('width', 64);
+      bg.setAttribute('height', 14);
+      bg.setAttribute('class', 'commune-label-bg');
+      bg.setAttribute('rx', 3);
+      g.appendChild(bg);
+
+      const nameEl = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      nameEl.setAttribute('x', lbl.x);
+      nameEl.setAttribute('y', lbl.y + 4);
+      nameEl.setAttribute('class', 'commune-label-name');
+      nameEl.textContent = lbl.name.length > 12 ? lbl.name.slice(0,11) + '…' : lbl.name;
+      g.appendChild(nameEl);
+
+      labelsG.appendChild(g);
+    });
+
+    document.getElementById('map-title').textContent = DIMS[selectedDimension].label + ' by Commune';
+  }
+
+  function updateLegend() {
+    const { min, max } = getMinMax();
+    document.getElementById('map-title').textContent = DIMS[selectedDimension].label + ' by Commune';
+    document.getElementById('legend-title').textContent = DIMS[selectedDimension].label;
+    document.getElementById('legend-min').textContent = fmtShort(min, selectedDimension);
+    document.getElementById('legend-max').textContent = fmtShort(max, selectedDimension);
+  }
+
+  function updateChart() {
+    const container = document.getElementById('bar-chart');
+    const { min, max } = getMinMax();
+    const visible = getVisible();
+
+    // Filter to only communes WITH data for this dimension, then sort
+    const withData = visible
+      .map(id => ({ id, ...DATA[id] }))
+      .filter(c => c.data[selectedDimension]?.value != null);
+
+    const sorted = withData.sort((a, b) =>
+      (b.data[selectedDimension]?.value || 0) - (a.data[selectedDimension]?.value || 0));
+
+    // Show only top 10 communes with data
+    const top10 = sorted.slice(0, 10);
+
+    const totalWithData = withData.length;
+    document.getElementById('chart-title').textContent = DIMS[selectedDimension].label + ` (Top 10 of ${totalWithData})`;
+    container.innerHTML = '';
+
+    top10.forEach(c => {
+      const value = c.data[selectedDimension]?.value;
+      const color = getColor(value, min, max);
+      const pct = (value != null && max > min) ? ((value - min) / (max - min)) * 100 : 0;
+
+      const item = document.createElement('div');
+      item.className = 'bar-item' + (highlightedCommune === c.id ? ' highlighted' : '');
+      item.innerHTML = `
+        <div class="bar-label">
+          <span class="bar-name">${c.name}</span>
+          <span class="bar-value">${fmt(value, selectedDimension)}</span>
+        </div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:${Math.max(8, pct)}%;background:${color}"></div>
+        </div>`;
+      item.onclick = () => {
+        highlightedCommune = c.id;
+        updateHighlight();
+      };
+      container.appendChild(item);
+    });
+  }
+
+  function updateTable() {
+    const tbody = document.getElementById('data-table-body');
+    const { min, max } = getMinMax();
+    const visible = getVisible();
+
+    const colHeader = document.getElementById('data-col-header');
+    colHeader.firstChild.textContent = DIMS[selectedDimension].label;
+    tbody.innerHTML = '';
+
+    // Filter by search term and sort data
+    let dataList = visible.map(id => ({ id, ...DATA[id] }));
+    if (searchTerm) {
+      const term = searchTerm.toLowerCase();
+      dataList = dataList.filter(c => c.name.toLowerCase().includes(term));
+    }
+
+    // Count communes with data
+    const withDataCount = dataList.filter(c => c.data[selectedDimension]?.value != null).length;
+    document.getElementById('table-title').textContent =
+      `All Data: ${withDataCount} of ${dataList.length} communes`;
+    dataList.sort((a, b) => {
+      let valA, valB;
+      if (tableSortKey === 'name') {
+        valA = a.name.toLowerCase();
+        valB = b.name.toLowerCase();
+      } else if (tableSortKey === 'region') {
+        valA = a.region.toLowerCase();
+        valB = b.region.toLowerCase();
+      } else {
+        // For value sort, put "no data" items at the bottom
+        valA = a.data[selectedDimension]?.value;
+        valB = b.data[selectedDimension]?.value;
+        if (valA == null && valB == null) return 0;
+        if (valA == null) return 1;  // a goes to bottom
+        if (valB == null) return -1; // b goes to bottom
+      }
+      if (valA < valB) return tableSortDir === 'asc' ? -1 : 1;
+      if (valA > valB) return tableSortDir === 'asc' ? 1 : -1;
+      return 0;
+    });
+
+    // Update sort icons
+    document.querySelectorAll('.data-table th.sortable').forEach(th => {
+      const icon = th.querySelector('.sort-icon');
+      if (th.dataset.sort === tableSortKey) {
+        icon.textContent = tableSortDir === 'asc' ? ' \u25B2' : ' \u25BC';
+        icon.style.opacity = '1';
+      } else {
+        icon.textContent = ' \u25B2\u25BC';
+        icon.style.opacity = '0.4';
+      }
+    });
+
+    dataList.forEach(c => {
+      const dp = c.data[selectedDimension];
+      const hasData = dp?.value != null;
+      const color = hasData ? getColor(dp.value, min, max) : '#e5e7eb';
+
+      const row = document.createElement('tr');
+      row.className = (highlightedCommune === c.id ? 'highlighted' : '') + (hasData ? '' : ' no-data');
+      row.innerHTML = `
+        <td>
+          <span class="color-indicator" style="background:${color}"></span>
+          <strong>${c.name}</strong>
+          ${c.includes ? '<br><small style="margin-left:20px;color:#6b7280">incl. ' + c.includes.join(', ') + '</small>' : ''}
+        </td>
+        <td>${c.region}</td>
+        <td class="data-value">${hasData ? fmt(dp.value, selectedDimension) : '<span class="no-data-text">No data</span>'}</td>
+        <td class="data-source">
+          ${dp?.source ? '<a href="' + (dp.source_url || '#') + '" target="_blank">' + dp.source + '</a>' : '—'}
+          ${dp?.year ? ' (' + dp.year + ')' : ''}
+        </td>`;
+      row.onclick = () => {
+        highlightedCommune = c.id;
+        updateHighlight();
+      };
+      tbody.appendChild(row);
+    });
+  }
+
+  function updateDetail() {
+    const placeholder = document.getElementById('detail-placeholder');
+    const content = document.getElementById('detail-content');
+
+    if (!highlightedCommune) {
+      placeholder.style.display = 'block';
+      content.style.display = 'none';
+      return;
+    }
+
+    placeholder.style.display = 'none';
+    content.style.display = 'block';
+
+    const c = DATA[highlightedCommune];
+    const lbl = LABELS[highlightedCommune];
+    const communeName = c?.name || lbl?.name || highlightedCommune;
+
+    document.getElementById('detail-name').textContent = communeName +
+      (c?.includes ? ' (incl. ' + c.includes.join(', ') + ')' : '');
+    document.getElementById('detail-region').textContent = c?.region ? c.region + ' Region' : 'Luxembourg';
+
+    const grid = document.getElementById('facts-grid');
+    grid.innerHTML = '';
+
+    if (!c) {
+      // No data for this commune
+      const card = document.createElement('div');
+      card.className = 'fact-card';
+      card.style.gridColumn = '1 / -1';
+      card.innerHTML = '<div class="fact-label">Data</div><div class="fact-value" style="color:#6b7280">Coming soon</div><div class="fact-source">No data available yet for this commune</div>';
+      grid.appendChild(card);
+      return;
+    }
+
+    Object.entries(DIMS).forEach(([key, dim]) => {
+      const dp = c.data[key];
+      const card = document.createElement('div');
+      card.className = 'fact-card';
+      card.innerHTML = `
+        <div class="fact-label">${dim.label}</div>
+        <div class="fact-value">${fmt(dp?.value, key)}</div>
+        <div class="fact-source">
+          ${dp?.source ? '<a href="' + (dp.source_url || '#') + '" target="_blank">' + dp.source + '</a>' : ''}
+          ${dp?.year ? ' (' + dp.year + ')' : ''}
+        </div>`;
+      grid.appendChild(card);
+    });
+
+    // Scroll to detail
+    document.getElementById('detail-panel').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function updateHighlight() {
+    document.querySelectorAll('.commune-path').forEach(p => {
+      p.classList.toggle('highlighted', p.getAttribute('data-id') === highlightedCommune);
+    });
+
+    const visible = getVisible();
+    const sorted = visible.map(id => ({ id, ...DATA[id] }))
+      .sort((a, b) => (b.data[selectedDimension]?.value || 0) - (a.data[selectedDimension]?.value || 0));
+
+    document.querySelectorAll('.bar-item').forEach((item, i) => {
+      item.classList.toggle('highlighted', sorted[i]?.id === highlightedCommune);
+    });
+
+    document.querySelectorAll('#data-table-body tr').forEach((row, i) => {
+      row.classList.toggle('highlighted', visible[i] === highlightedCommune);
+    });
+
+    updateDetail();
+  }
+
+  function updateAll() {
+    drawMap();
+    updateLegend();
+    updateChart();
+    updateTable();
+    updateDetail();
+  }
+
+  document.getElementById('dimension-select').onchange = function() {
+    selectedDimension = this.value;
+    updateAll();
+  };
+
+  document.getElementById('detail-close').onclick = function() {
+    highlightedCommune = null;
+    updateHighlight();
+  };
+
+  // Zoom and pan functionality
+  let zoomLevel = 1;
+  let panX = 0, panY = 0;
+  let isDragging = false;
+  let dragStartX = 0, dragStartY = 0;
+  let panStartX = 0, panStartY = 0;
+
+  const map = document.getElementById('lux-map');
+  const mapContainer = document.querySelector('.map-svg-wrapper');
+
+  function applyTransform() {
+    map.style.transform = `translate(${panX}px, ${panY}px) scale(${zoomLevel})`;
+    map.style.transformOrigin = 'center center';
+  }
+
+  document.getElementById('zoom-in').onclick = () => {
+    zoomLevel = Math.min(3, zoomLevel + 0.25);
+    applyTransform();
+  };
+
+  document.getElementById('zoom-out').onclick = () => {
+    zoomLevel = Math.max(0.5, zoomLevel - 0.25);
+    applyTransform();
+  };
+
+  document.getElementById('zoom-reset').onclick = () => {
+    zoomLevel = 1;
+    panX = 0;
+    panY = 0;
+    applyTransform();
+  };
+
+  // Click outside communes (on background) to reset selection
+  document.getElementById('map-bg').onclick = () => {
+    highlightedCommune = null;
+    filterCommune = 'all';
+    document.getElementById('filter-dropdown').value = 'all';
+    updateAll();
+  };
+
+  // Drag to pan
+  mapContainer.onmousedown = (e) => {
+    isDragging = true;
+    dragStartX = e.clientX;
+    dragStartY = e.clientY;
+    panStartX = panX;
+    panStartY = panY;
+    map.classList.add('dragging');
+    e.preventDefault();
+  };
+
+  document.onmousemove = (e) => {
+    if (isDragging) {
+      panX = panStartX + (e.clientX - dragStartX);
+      panY = panStartY + (e.clientY - dragStartY);
+      applyTransform();
+    }
+  };
+
+  document.onmouseup = () => {
+    if (isDragging) {
+      isDragging = false;
+      map.classList.remove('dragging');
+    }
+  };
+
+  // Table sorting click handlers
+  document.querySelectorAll('.data-table th.sortable').forEach(th => {
+    th.onclick = () => {
+      const key = th.dataset.sort;
+      if (tableSortKey === key) {
+        tableSortDir = tableSortDir === 'asc' ? 'desc' : 'asc';
+      } else {
+        tableSortKey = key;
+        tableSortDir = key === 'value' ? 'desc' : 'asc';
+      }
+      updateTable();
+    };
+  });
+
+  // Search input handler
+  const searchInput = document.getElementById('commune-search');
+  const searchWrapper = searchInput.parentElement;
+
+  searchInput.oninput = function() {
+    searchTerm = this.value;
+    searchWrapper.classList.toggle('has-value', searchTerm.length > 0);
+    updateTable();
+  };
+
+  // Clear search button
+  document.getElementById('search-clear').onclick = function() {
+    searchInput.value = '';
+    searchTerm = '';
+    searchWrapper.classList.remove('has-value');
+    updateTable();
+  };
+
+  buildDropdown();
+  updateAll();
+})();
+//]]>
+</script>
+
+</body>
+</html>

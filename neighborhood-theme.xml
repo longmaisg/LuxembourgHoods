@@ -1,0 +1,1369 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.0.0' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta charset='UTF-8'/>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<title><data:blog.pageTitle/></title>
+<meta content='Luxembourg commune data visualization - population, housing prices, demographics with full source citations.' name='description'/>
+
+<link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap' rel='stylesheet'/>
+
+<script>
+//<![CDATA[
+// ============================================
+// COMMUNE DATA - Generated from official sources
+// Source: Observatoire de l'Habitat / STATEC
+// Period: Oct 2024 - Sep 2025
+// Generated: 2026-01-26
+// ============================================
+window.COMMUNE_DATA = {"wiltz": {"id": "wiltz", "name": "Wiltz", "region": "North", "data": {"price_m2": {"value": 5158, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 8535, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 39.5, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 56.3, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 216.1, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "mamer": {"id": "mamer", "name": "Mamer", "region": "Center", "data": {"price_m2": {"value": 8537, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "price_m2_new": {"value": 9619, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 11582, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 27.82, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 59.0, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 416.3, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "niederanven": {"id": "niederanven", "name": "Niederanven", "region": "Center", "data": {"price_m2": {"value": 10071, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 7158, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 41.5, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 52.8, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 172.5, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "bettembourg": {"id": "bettembourg", "name": "Bettembourg", "region": "South", "data": {"price_m2": {"value": 7313, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 11652, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 21.59, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 49.1, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 539.7, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "junglinster": {"id": "junglinster", "name": "Junglinster", "region": "Center", "data": {"price_m2": {"value": 8187, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "price_m2_new": {"value": 9628, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 9144, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 55.71, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 46.5, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 164.1, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "kehlen": {"id": "kehlen", "name": "Kehlen", "region": "Center", "data": {"price_m2": {"value": 8609, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "price_m2_new": {"value": 7933, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 7449, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 28.54, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 47.3, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 261.0, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "erpeldange_sur_sure": {"id": "erpeldange_sur_sure", "name": "Erpeldange-sur-Sûre", "region": "North", "data": {"price_m2": {"value": 6321, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "price_m2_new": {"value": 8850, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 2662, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 17.93, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 34.9, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 148.5, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "esch_sur_alzette": {"id": "esch_sur_alzette", "name": "Esch-sur-Alzette", "region": "South", "data": {"price_m2": {"value": 6371, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "price_m2_new": {"value": 8769, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 38269, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 14.4, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 61.8, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 2657.6, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "lintgen": {"id": "lintgen", "name": "Lintgen", "region": "Center", "data": {"price_m2": {"value": 8013, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 3481, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 15.42, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 50.2, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 225.7, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "diekirch": {"id": "diekirch", "name": "Diekirch", "region": "North", "data": {"price_m2": {"value": 6727, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 7402, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 12.46, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 49.5, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 594.1, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "remich": {"id": "remich", "name": "Remich", "region": "East", "data": {"price_m2": {"value": 6784, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 4155, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 5.11, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 53.2, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 813.1, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "clervaux": {"id": "clervaux", "name": "Clervaux", "region": "North", "data": {"price_m2": {"value": 5557, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 6327, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 85.61, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 43.5, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 73.9, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "bertrange": {"id": "bertrange", "name": "Bertrange", "region": "Center", "data": {"price_m2": {"value": 10076, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "price_m2_new": {"value": 11367, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 9489, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 17.26, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 61.7, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 549.8, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "mersch": {"id": "mersch", "name": "Mersch", "region": "Center", "data": {"price_m2": {"value": 7361, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "price_m2_new": {"value": 10291, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 10887, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 49.51, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 47.5, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 219.9, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "weiler_la_tour": {"id": "weiler_la_tour", "name": "Weiler-la-Tour", "region": "Center", "data": {"price_m2": {"value": 7744, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 2523, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 17.11, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 38.8, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 147.5, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "schengen": {"id": "schengen", "name": "Schengen", "region": "East", "data": {"price_m2": {"value": 6615, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 5265, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 31.21, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 37.0, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 168.7, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "walferdange": {"id": "walferdange", "name": "Walferdange", "region": "Center", "data": {"price_m2": {"value": 8588, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 9258, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 7.05, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 59.6, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 1313.2, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "petange": {"id": "petange", "name": "Petange", "region": "South", "data": {"price_m2": {"value": 6652, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 21290, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 11.97, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 55.5, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 1778.6, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "hobscheid": {"id": "hobscheid", "name": "Habscht", "region": "Center", "data": {"price_m2": {"value": 6914, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 5337, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 32.58, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 44.3, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 163.8, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "reckange_sur_mess": {"id": "reckange_sur_mess", "name": "Reckange-sur-Mess", "region": "Center", "data": {"price_m2": {"value": 8666, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 2956, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 20.54, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 31.3, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 143.9, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "schifflange": {"id": "schifflange", "name": "Schifflange", "region": "South", "data": {"price_m2": {"value": 7361, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 11678, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 7.76, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 49.7, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 1504.9, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "parc_hosingen": {"id": "parc_hosingen", "name": "Parc Hosingen", "region": "North", "data": {"price_m2": {"value": 5860, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 4407, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 70.53, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 35.6, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 62.5, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "mondorf_les_bains": {"id": "mondorf_les_bains", "name": "Mondorf-les-Bains", "region": "Center", "data": {"price_m2": {"value": 7057, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 5525, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 13.59, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 49.5, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 406.5, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "dalheim": {"id": "dalheim", "name": "Dalheim", "region": "Center", "data": {"price_m2": {"value": 6444, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 2376, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 19.17, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 38.3, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 123.9, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "steinsel": {"id": "steinsel", "name": "Steinsel", "region": "Center", "data": {"price_m2": {"value": 8837, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "price_m2_new": {"value": 9445, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 6185, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 21.9, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 49.6, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 282.4, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "grevenmacher": {"id": "grevenmacher", "name": "Grevenmacher", "region": "East", "data": {"price_m2": {"value": 6190, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 5295, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 16.34, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 49.9, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 324.1, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "luxembourg": {"id": "luxembourg", "name": "Luxembourg-Ville", "region": "Center", "data": {"price_m2": {"value": 10180, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "price_m2_new": {"value": 12145, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 137663, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 51.74, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 73.9, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 2660.7, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "mertert": {"id": "mertert", "name": "Mertert", "region": "East", "data": {"price_m2": {"value": 7223, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "price_m2_new": {"value": 8695, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 5685, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 15.06, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 48.8, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 377.5, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "differdange": {"id": "differdange", "name": "Differdange", "region": "South", "data": {"price_m2": {"value": 6819, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 31420, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 22.22, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 59.6, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 1414.0, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "weiswampach": {"id": "weiswampach", "name": "Weiswampach", "region": "North", "data": {"price_m2": {"value": 5872, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 2699, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 35.18, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 52.8, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 76.7, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "frisange": {"id": "frisange", "name": "Frisange", "region": "Center", "data": {"price_m2": {"value": 7366, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 5040, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 18.36, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 43.2, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 274.5, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "ettelbruck": {"id": "ettelbruck", "name": "Ettelbruck", "region": "North", "data": {"price_m2": {"value": 6461, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 10210, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 15.2, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 55.0, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 671.7, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "bissen": {"id": "bissen", "name": "Bissen", "region": "Center", "data": {"price_m2": {"value": 6875, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 3563, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 20.83, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 44.5, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 171.1, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "ell": {"id": "ell", "name": "Ell", "region": "West", "data": {"price_m2": {"value": 7076, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 1668, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 21.69, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 36.8, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 76.9, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "contern": {"id": "contern", "name": "Contern", "region": "Center", "data": {"price_m2": {"value": 8650, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "price_m2_new": {"value": 9781, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 5006, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 20.8, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 49.1, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 240.7, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "colmar_berg": {"id": "colmar_berg", "name": "Colmar-Berg", "region": "Center", "data": {"price_m2": {"value": 6796, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 2471, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 12.34, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 48.6, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 200.2, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "echternach": {"id": "echternach", "name": "Echternach", "region": "East", "data": {"price_m2": {"value": 6293, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 6031, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 20.42, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 54.2, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 295.3, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "strassen": {"id": "strassen", "name": "Strassen", "region": "Center", "data": {"price_m2": {"value": 9961, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "price_m2_new": {"value": 11381, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 10831, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 10.6, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 66.3, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 1021.8, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "mondercange": {"id": "mondercange", "name": "Mondercange", "region": "South", "data": {"price_m2": {"value": 7016, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 7312, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 21.4, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 38.2, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 341.7, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "grosbous": {"id": "grosbous", "name": "Groussbus-Wal", "region": "West", "data": {"price_m2": {"value": 6778, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 2394, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 40.44, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 30.7, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 59.2, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "lorentzweiler": {"id": "lorentzweiler", "name": "Lorentzweiler", "region": "Center", "data": {"price_m2": {"value": 8002, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 4760, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 17.66, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 51.2, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 269.5, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "kayl": {"id": "kayl", "name": "Kayl", "region": "South", "data": {"price_m2": {"value": 7101, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 9989, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 14.87, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 44.5, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 671.8, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "kaerjeng": {"id": "kaerjeng", "name": "Käerjeng", "region": "South", "data": {"price_m2": {"value": 7107, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "price_m2_new": {"value": 8061, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 11345, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 33.69, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 39.6, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 336.7, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "larochette": {"id": "larochette", "name": "Larochette", "region": "North", "data": {"price_m2": {"value": 5494, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 2243, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 15.43, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 59.5, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 145.4, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "helperknapp": {"id": "helperknapp", "name": "Helperknapp", "region": "Center", "data": {"price_m2": {"value": 7062, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 5327, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 37.72, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 37.0, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 141.2, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "schuttrange": {"id": "schuttrange", "name": "Schuttrange", "region": "Center", "data": {"price_m2": {"value": 8302, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 4496, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 16.17, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 53.5, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 278.0, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "schieren": {"id": "schieren", "name": "Schieren", "region": "North", "data": {"price_m2": {"value": 7313, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 2172, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 10.41, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 43.5, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 208.6, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "rumelange": {"id": "rumelange", "name": "Rumelange", "region": "South", "data": {"price_m2": {"value": 5654, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 5767, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 6.84, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 51.9, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 843.1, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "dippach": {"id": "dippach", "name": "Dippach", "region": "Center", "data": {"price_m2": {"value": 7690, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 4721, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 17.26, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 44.2, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 273.5, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "sandweiler": {"id": "sandweiler", "name": "Sandweiler", "region": "Center", "data": {"price_m2": {"value": 7678, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 3873, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 7.75, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 55.7, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 499.7, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "sanem": {"id": "sanem", "name": "Sanem", "region": "South", "data": {"price_m2": {"value": 7523, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "price_m2_new": {"value": 8811, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 19609, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 24.49, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 45.5, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 800.7, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "hesperange": {"id": "hesperange", "name": "Hesperange", "region": "Center", "data": {"price_m2": {"value": 8421, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "price_m2_new": {"value": 12632, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 17260, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 27.39, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 61.6, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 630.2, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "kopstal": {"id": "kopstal", "name": "Kopstal", "region": "Center", "data": {"price_m2": {"value": 9328, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 4740, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 8.03, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 60.0, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 590.3, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "wormeldange": {"id": "wormeldange", "name": "Wormeldange", "region": "East", "data": {"price_m2": {"value": 6200, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 3249, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 16.7, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 46.7, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 194.6, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "dudelange": {"id": "dudelange", "name": "Dudelange", "region": "South", "data": {"price_m2": {"value": 6335, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "price_m2_new": {"value": 8616, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 22377, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 21.41, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 46.9, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 1045.2, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "roeser": {"id": "roeser", "name": "Roeser", "region": "Center", "data": {"price_m2": {"value": 8009, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 7183, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 24.06, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 49.1, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 298.5, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "steinfort": {"id": "steinfort", "name": "Steinfort", "region": "Center", "data": {"price_m2": {"value": 7984, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 6155, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 12.18, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 47.0, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 505.3, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "leudelange": {"id": "leudelange", "name": "Leudelange", "region": "Center", "data": {"price_m2": {"value": 7652, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 2766, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 13.67, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 50.6, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 202.3, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}, "redange": {"id": "redange", "name": "Redange", "region": "West", "data": {"price_m2": {"value": 6783, "year": 2025, "source": "Observatoire de l'Habitat / STATEC", "source_url": "https://data.public.lu/en/datasets/prix-de-vente-des-appartements-par-commune/"}, "population": {"value": 3150, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/population-par-commune-population-per-municipality"}, "area_km2": {"value": 32.31, "year": 2024, "source": "Administration du cadastre et de la topographie", "source_url": "https://data.public.lu/en/datasets/limites-administratives-du-grand-duche-de-luxembourg/"}, "foreign_pct": {"value": 35.7, "year": 2025, "source": "RNPP / CTIE", "source_url": "https://data.public.lu/en/datasets/registre-national-des-personnes-physiques-rnpp-nombre-de-ressortissants-par-nationalite-et-par-commune-number-of-citizens-per-nationality-and-municipality/"}, "density": {"value": 97.5, "year": 2025, "source": "Calculated from RNPP population and cadastre area", "source_url": "https://data.public.lu/"}}}};
+
+// ============================================
+// SVG PATHS - All 100 communes from data.public.lu GeoJSON
+// ViewBox: 0 0 500 700
+// ============================================
+window.COMMUNE_PATHS = {
+  "mertzig": "M158.0,331.6 L157.6,332.6 L156.3,332.5 L155.6,333.9 L159.3,336.8 L159.6,339.2 L160.5,339.6 L159.6,340.5 L161.8,341.5 L162.8,344.1 L163.6,343.9 L164.0,345.0 L160.9,347.4 L162.8,349.0 L173.3,348.0 L176.3,345.6 L179.1,345.5 L183.6,343.2 L190.2,344.2 L188.4,341.4 L192.5,340.6 L192.1,343.8 L194.4,344.7 L196.9,343.5 L194.3,338.4 L192.7,338.4 L190.9,336.3 L189.4,337.3 L187.9,336.8 L188.5,336.2 L187.2,335.1 L186.0,335.4 L182.2,333.3 L177.5,332.8 L177.4,331.2 L168.6,329.0 L166.3,327.7 L165.2,325.7 L162.0,326.3 L165.5,332.4 L158.0,331.6 Z",
+  "waldbillig": "M354.2,363.8 L353.1,360.9 L355.3,358.1 L355.7,356.2 L360.0,352.5 L360.8,346.1 L358.2,347.1 L351.2,345.0 L344.6,346.1 L343.4,344.7 L337.0,344.7 L329.3,346.6 L328.2,349.5 L325.4,350.1 L325.9,351.1 L324.7,351.7 L325.4,352.3 L319.1,352.9 L322.4,357.2 L320.0,358.9 L314.6,360.9 L314.2,362.9 L318.2,365.6 L318.7,367.1 L309.8,368.8 L310.2,369.8 L313.2,369.3 L314.0,370.4 L316.3,369.9 L318.2,372.3 L319.8,371.1 L321.4,372.1 L324.9,371.1 L325.4,372.2 L324.1,372.5 L326.0,375.9 L325.1,376.2 L325.1,377.0 L332.1,376.1 L334.6,378.0 L332.0,379.6 L334.3,380.5 L337.2,378.0 L337.6,374.2 L341.4,373.3 L341.9,371.6 L344.6,370.5 L346.8,366.4 L352.0,364.7 L354.8,364.6 L353.6,363.9 L354.2,363.8 Z",
+  "larochette": "M302.6,366.8 L309.2,363.6 L307.4,362.0 L307.4,361.1 L302.7,361.7 L299.0,365.0 L293.3,362.3 L293.3,361.1 L291.7,360.0 L287.4,359.0 L287.4,357.9 L286.7,357.8 L287.0,359.0 L284.1,358.5 L282.0,359.1 L280.7,362.6 L278.9,364.7 L278.8,365.6 L280.1,366.3 L279.3,367.5 L276.6,366.3 L272.5,367.9 L271.9,369.6 L271.2,368.5 L270.1,368.5 L268.7,369.9 L267.9,369.2 L266.1,369.8 L264.3,373.2 L265.3,374.4 L269.4,373.6 L271.7,377.2 L273.2,377.7 L272.4,378.2 L274.4,379.7 L274.5,381.1 L276.9,380.9 L278.6,382.5 L279.4,382.6 L280.4,381.2 L284.2,381.1 L290.9,381.6 L294.3,383.7 L297.9,383.6 L300.7,382.8 L305.7,378.1 L304.3,376.2 L301.8,375.4 L302.1,373.5 L300.4,372.5 L302.4,370.0 L302.6,366.8 Z",
+  "kopstal": "M216.5,442.3 L218.6,445.2 L218.2,447.5 L231.4,447.8 L229.7,445.2 L233.2,441.8 L232.1,439.8 L227.2,435.2 L229.8,434.7 L224.2,431.9 L218.6,430.9 L211.0,427.7 L208.6,428.0 L212.7,430.0 L210.2,430.4 L209.7,432.1 L205.9,433.0 L203.3,436.1 L203.1,436.8 L204.3,437.4 L203.8,437.7 L205.5,438.7 L203.9,439.5 L212.2,441.2 L213.0,440.8 L216.5,442.3 Z",
+  "bourscheid": "M248.4,300.6 L248.9,299.5 L243.7,299.4 L240.5,297.7 L241.9,296.5 L241.4,295.8 L237.9,296.4 L235.7,295.0 L237.8,295.4 L238.6,294.1 L239.9,294.2 L238.5,291.5 L241.6,290.5 L240.6,289.9 L237.2,290.1 L235.4,288.8 L228.4,286.9 L228.5,285.2 L227.3,283.1 L227.8,282.4 L225.0,282.4 L223.5,281.2 L223.2,281.8 L221.3,281.4 L216.7,282.2 L214.0,281.0 L213.6,282.3 L213.7,281.3 L210.8,280.8 L209.5,277.0 L210.6,275.4 L209.1,273.6 L210.7,272.5 L209.2,270.5 L210.3,269.5 L208.2,269.1 L202.2,270.7 L204.5,271.6 L202.0,273.2 L198.0,273.2 L194.2,275.4 L195.0,278.5 L197.3,278.8 L196.6,280.9 L198.5,281.8 L198.1,283.2 L200.2,284.3 L201.5,287.2 L195.7,286.0 L195.0,286.6 L195.5,289.9 L193.1,289.7 L188.7,291.9 L185.9,291.8 L184.8,292.5 L185.2,293.9 L183.6,295.5 L185.3,296.0 L182.4,299.4 L184.6,301.0 L181.3,302.3 L181.1,304.2 L182.1,304.6 L179.4,304.9 L181.5,305.7 L180.1,306.0 L180.9,310.6 L179.5,311.9 L180.0,312.6 L182.4,312.0 L185.5,309.3 L185.8,306.0 L186.9,307.5 L192.3,308.6 L197.3,312.5 L199.5,310.8 L201.1,311.0 L201.8,312.0 L205.4,313.5 L205.0,314.7 L206.3,317.4 L209.3,319.5 L208.5,320.8 L212.3,320.8 L214.1,319.8 L218.2,319.8 L218.9,319.2 L218.8,317.5 L216.5,315.5 L217.8,313.3 L216.6,312.9 L217.0,311.4 L214.8,310.4 L216.6,309.4 L216.4,308.2 L219.1,307.1 L215.9,304.2 L216.6,303.8 L214.4,302.5 L214.4,301.8 L216.1,302.0 L217.2,300.0 L218.7,299.2 L221.5,299.3 L224.2,303.1 L229.2,306.1 L229.0,307.0 L227.4,307.6 L228.5,308.4 L231.4,308.2 L235.1,302.7 L239.5,302.7 L240.3,303.6 L242.6,303.8 L242.2,304.4 L244.7,304.1 L248.4,300.6 Z",
+  "mersch": "M258.2,388.5 L254.9,385.6 L261.0,383.1 L256.3,383.4 L258.0,382.7 L257.9,380.4 L260.3,378.9 L259.7,378.4 L261.0,378.6 L260.0,377.5 L262.3,376.8 L260.4,374.8 L259.3,375.1 L259.1,372.7 L256.8,370.0 L254.2,370.2 L254.1,367.3 L252.6,367.4 L250.1,364.3 L244.2,365.9 L242.5,365.6 L242.4,363.9 L235.3,365.1 L235.1,363.9 L229.4,366.6 L229.5,367.6 L228.5,367.9 L229.2,368.8 L228.5,368.6 L229.1,369.9 L230.4,370.0 L228.7,371.3 L219.4,374.1 L218.5,374.9 L218.4,377.4 L208.4,375.5 L203.2,376.9 L198.1,380.5 L197.3,379.8 L196.3,382.1 L197.9,383.1 L198.6,386.5 L196.1,388.7 L197.2,389.4 L195.1,389.9 L194.5,391.6 L197.5,397.4 L200.6,399.4 L204.3,400.4 L205.8,401.8 L206.8,404.6 L211.5,402.2 L215.6,406.3 L213.6,406.6 L212.9,407.1 L213.3,407.5 L217.5,407.0 L221.4,408.0 L220.2,408.5 L214.5,417.4 L215.0,417.6 L214.4,418.7 L216.4,420.0 L219.9,419.3 L223.1,417.5 L225.2,417.5 L225.2,420.5 L226.4,420.7 L227.0,416.8 L233.6,413.5 L234.4,411.8 L233.2,409.6 L234.2,407.5 L233.9,406.5 L230.5,404.3 L231.3,403.6 L232.2,399.4 L234.5,398.5 L232.0,395.9 L232.1,394.8 L233.9,393.1 L238.1,394.6 L237.9,395.9 L239.3,396.2 L241.3,399.0 L240.8,400.4 L241.4,401.6 L244.0,401.3 L244.2,400.7 L248.3,400.0 L251.0,396.8 L260.2,393.9 L263.3,391.6 L263.1,389.6 L264.2,388.3 L263.1,388.0 L264.8,387.1 L264.8,385.8 L259.4,387.2 L259.9,388.0 L258.2,388.5 Z",
+  "goesdorf": "M181.5,277.6 L179.8,277.1 L179.3,275.6 L181.0,275.1 L180.7,276.3 L183.2,275.2 L181.3,274.6 L182.0,273.4 L173.1,273.4 L174.2,273.1 L171.9,272.8 L173.0,271.3 L168.6,270.3 L166.4,271.2 L165.5,270.1 L162.7,271.1 L165.6,269.3 L165.2,267.8 L161.0,268.7 L160.1,266.7 L156.1,266.1 L156.3,263.7 L150.0,266.3 L148.8,265.8 L148.9,264.5 L146.8,264.0 L145.4,265.6 L146.0,267.8 L144.1,269.5 L147.0,273.1 L146.0,275.2 L147.5,276.5 L146.2,277.6 L141.2,278.5 L134.8,276.9 L133.9,277.4 L134.6,278.1 L133.7,278.3 L132.2,276.8 L131.4,277.4 L129.2,277.1 L129.2,278.0 L126.1,278.3 L126.7,280.2 L124.6,281.0 L124.5,281.8 L134.6,282.7 L134.8,283.2 L132.9,283.6 L133.5,284.3 L133.0,284.6 L138.5,284.3 L139.5,286.3 L139.5,288.7 L142.4,290.8 L143.9,295.2 L147.0,298.2 L149.7,297.1 L152.5,298.3 L155.0,296.1 L158.8,296.2 L158.6,294.9 L159.3,294.4 L161.6,295.3 L161.4,298.6 L164.5,298.3 L166.0,296.9 L165.1,293.3 L174.3,293.3 L174.9,291.7 L173.5,290.9 L174.4,288.2 L178.5,285.8 L180.8,286.1 L189.4,290.4 L192.3,288.7 L194.2,288.6 L195.5,289.9 L195.0,286.6 L195.7,286.0 L201.5,287.2 L200.2,284.3 L198.1,283.2 L198.5,281.8 L196.6,280.9 L197.3,278.8 L194.1,277.7 L193.6,279.3 L192.3,279.6 L187.4,278.1 L186.7,276.9 L181.5,277.6 Z",
+  "esch_sur_sure": "M114.9,307.8 L119.1,312.0 L118.9,312.9 L120.0,312.7 L120.6,314.3 L123.1,316.0 L122.6,316.4 L123.3,317.6 L124.9,317.8 L124.1,317.8 L124.5,320.1 L126.3,319.9 L127.1,320.6 L127.0,321.7 L123.4,321.2 L120.8,322.7 L120.9,323.7 L123.1,324.9 L126.3,323.0 L129.6,324.7 L132.7,320.7 L136.2,318.2 L142.4,318.1 L147.0,319.3 L148.5,320.5 L151.4,320.9 L152.2,320.3 L153.9,323.5 L155.3,324.1 L158.5,323.6 L160.1,326.4 L159.7,327.0 L162.3,328.5 L163.2,328.0 L162.0,326.3 L165.2,325.7 L164.5,322.5 L167.2,323.4 L171.6,321.2 L169.2,318.5 L170.9,317.1 L168.5,316.5 L169.7,314.7 L169.1,314.3 L171.2,313.4 L172.7,314.9 L174.7,313.6 L173.7,313.2 L180.0,312.8 L179.5,311.9 L180.9,310.6 L180.1,306.0 L181.5,305.7 L179.4,304.9 L182.1,304.6 L181.1,304.2 L181.3,302.3 L184.6,301.0 L182.4,299.4 L185.3,296.0 L183.6,295.5 L185.0,294.4 L185.4,293.2 L184.8,292.5 L185.9,291.8 L188.7,291.9 L194.6,289.4 L194.5,288.8 L192.3,288.7 L189.4,290.4 L180.8,286.1 L178.5,285.8 L174.4,288.2 L173.5,290.9 L174.9,291.7 L174.8,293.0 L165.1,293.3 L166.1,296.0 L165.7,297.6 L162.1,298.7 L161.1,297.9 L161.6,295.3 L160.8,294.7 L158.8,294.6 L158.8,296.2 L158.0,296.4 L155.0,296.1 L152.5,298.3 L149.7,297.1 L147.0,298.2 L143.9,294.8 L138.1,295.5 L137.5,292.6 L134.5,291.8 L133.6,292.6 L133.6,294.0 L132.7,294.1 L131.6,293.6 L130.9,291.3 L129.0,293.0 L130.2,294.3 L128.9,294.9 L127.1,293.9 L125.4,294.6 L126.0,298.8 L125.1,298.9 L123.1,297.3 L121.7,294.5 L117.8,296.7 L115.5,293.6 L114.1,292.9 L111.9,294.4 L108.6,294.6 L102.9,299.6 L95.9,299.7 L94.0,302.4 L91.8,302.3 L93.2,300.2 L89.7,296.7 L87.8,296.7 L87.3,297.4 L89.5,299.4 L89.0,301.1 L85.9,300.1 L83.4,301.0 L86.6,303.6 L84.4,305.3 L87.0,305.6 L90.0,307.6 L93.2,308.4 L95.8,307.9 L93.7,309.6 L95.8,312.1 L99.1,312.2 L98.0,312.5 L99.0,314.3 L98.7,315.2 L99.7,315.2 L100.7,313.7 L103.6,316.3 L102.0,317.4 L102.6,321.0 L103.9,321.9 L108.4,320.1 L108.0,319.1 L108.6,318.3 L110.7,318.4 L113.7,316.3 L112.9,315.4 L111.3,315.5 L112.4,313.6 L110.6,312.9 L111.7,310.2 L112.6,310.2 L113.8,309.2 L113.3,308.7 L114.9,307.8 Z",
+  "feulen": "M201.5,337.8 L202.3,336.9 L204.0,337.0 L205.2,338.1 L205.1,339.0 L207.9,337.6 L205.1,335.3 L207.8,333.5 L206.0,333.0 L209.8,330.8 L210.0,329.4 L212.2,329.6 L212.8,328.2 L210.2,326.0 L210.9,325.1 L210.0,324.8 L210.0,323.4 L210.8,323.2 L210.4,321.4 L208.5,320.8 L209.3,319.5 L206.3,317.4 L205.0,314.7 L205.4,313.5 L201.8,312.0 L201.1,311.0 L199.5,310.8 L197.3,312.5 L192.3,308.6 L186.9,307.5 L185.8,306.0 L185.5,309.3 L182.4,312.0 L178.7,313.1 L173.7,313.2 L174.7,313.6 L172.7,314.9 L171.2,313.4 L169.1,314.3 L169.7,314.7 L168.5,316.5 L170.9,317.1 L169.2,318.5 L171.6,321.2 L167.2,323.4 L164.5,322.5 L165.6,326.8 L166.7,328.0 L170.1,329.6 L177.4,331.2 L177.5,332.8 L182.2,333.3 L186.0,335.4 L187.2,335.1 L188.5,336.2 L187.9,336.8 L189.4,337.3 L190.9,336.3 L192.7,338.4 L194.3,338.4 L194.8,340.0 L199.0,339.5 L201.2,338.7 L201.5,337.8 Z",
+  "useldange": "M149.4,366.4 L147.2,366.4 L147.1,367.6 L143.9,367.5 L138.2,370.8 L133.1,371.3 L137.5,373.9 L134.6,372.6 L132.2,375.6 L126.9,378.8 L130.3,379.0 L131.7,377.8 L133.2,380.3 L131.6,380.8 L133.9,381.7 L132.9,382.5 L133.5,383.0 L132.1,383.3 L134.8,385.0 L134.6,386.9 L136.0,389.1 L138.9,388.6 L139.6,390.4 L140.3,390.1 L141.5,391.5 L139.7,392.2 L141.6,394.4 L137.3,396.0 L138.0,397.3 L136.6,397.8 L137.7,398.9 L143.7,397.0 L142.4,395.7 L143.2,395.6 L142.2,394.2 L142.9,393.9 L143.8,394.7 L145.1,394.0 L146.7,395.9 L148.2,395.8 L148.6,394.9 L146.6,393.2 L149.6,392.5 L148.5,391.1 L152.4,389.9 L151.8,388.7 L153.9,386.9 L157.5,385.5 L158.4,385.8 L157.6,386.3 L160.2,386.5 L160.1,385.7 L165.9,386.7 L166.9,385.5 L165.9,385.1 L168.8,383.8 L170.7,382.1 L170.3,381.7 L172.8,380.9 L170.6,376.0 L174.7,374.3 L172.2,373.3 L173.4,372.3 L171.6,369.3 L173.7,367.0 L176.0,366.3 L175.0,365.3 L173.3,366.1 L171.0,363.5 L165.8,360.0 L164.3,360.5 L162.2,359.6 L161.2,357.9 L160.5,358.3 L157.6,357.0 L159.5,353.8 L153.3,353.4 L152.2,354.1 L154.4,356.2 L152.9,356.4 L153.4,358.6 L150.9,362.2 L151.1,364.4 L150.4,364.5 L151.2,365.9 L149.4,366.4 Z",
+  "diekirch": "M274.5,319.5 L276.6,319.2 L274.9,317.2 L277.4,316.9 L277.0,316.1 L275.6,316.2 L275.0,314.4 L272.9,314.0 L268.1,311.2 L264.4,311.2 L257.8,306.2 L255.5,306.8 L252.6,306.0 L257.6,304.8 L256.5,303.2 L254.5,303.3 L251.3,301.8 L249.0,303.3 L248.6,304.4 L246.7,304.8 L246.2,306.3 L243.1,307.3 L241.0,313.4 L241.6,314.8 L246.4,314.1 L249.0,315.1 L247.8,317.2 L249.5,318.3 L248.2,322.0 L250.7,321.9 L252.3,322.7 L253.5,322.2 L256.4,325.0 L258.5,326.1 L259.1,325.7 L257.6,328.5 L261.6,331.5 L261.4,333.5 L260.2,334.8 L256.3,335.9 L255.7,337.9 L261.2,338.6 L261.0,336.7 L267.5,334.3 L263.0,333.8 L263.1,329.7 L264.9,328.2 L264.0,326.5 L268.3,324.4 L268.0,322.8 L274.9,321.5 L274.5,319.5 Z",
+  "kehlen": "M184.6,442.7 L186.7,442.3 L188.7,445.4 L190.8,443.3 L192.5,442.8 L198.7,443.1 L201.4,444.1 L209.3,443.9 L211.0,443.0 L212.2,441.2 L204.5,440.0 L203.9,439.5 L205.5,438.7 L203.8,437.7 L204.3,437.4 L203.1,436.8 L203.3,436.1 L205.9,433.0 L209.7,432.1 L210.2,430.4 L212.7,430.0 L208.6,428.0 L211.0,427.7 L219.8,431.0 L223.2,429.0 L226.3,422.7 L225.2,420.5 L225.2,417.5 L223.1,417.5 L219.9,419.3 L216.4,420.0 L214.4,418.7 L215.0,417.6 L213.0,415.1 L209.2,414.6 L206.7,415.1 L207.5,415.9 L206.3,416.1 L207.0,418.1 L205.2,418.7 L204.3,418.1 L201.4,420.2 L197.8,420.3 L194.3,421.7 L193.7,421.3 L194.8,420.6 L193.4,419.3 L192.1,419.7 L192.1,418.8 L190.0,419.2 L186.7,418.4 L185.9,419.1 L185.9,421.1 L183.8,422.7 L178.3,423.3 L178.4,421.9 L175.2,422.3 L171.3,423.3 L170.2,425.0 L168.6,422.7 L169.6,421.4 L167.8,420.2 L161.8,423.3 L166.8,425.1 L165.0,425.9 L166.0,428.0 L169.6,427.4 L170.1,428.8 L168.4,429.0 L168.2,430.5 L165.9,431.9 L169.8,435.9 L168.0,436.9 L168.5,437.8 L166.9,438.1 L167.3,439.0 L165.0,441.3 L165.9,443.1 L159.8,446.4 L160.5,447.0 L161.9,447.5 L165.4,446.4 L167.3,447.3 L167.3,448.2 L171.4,449.1 L172.7,445.1 L176.6,444.1 L179.6,444.3 L184.6,442.7 Z",
+  "saeul": "M166.5,392.9 L165.4,391.8 L167.7,390.8 L164.8,388.6 L166.7,387.9 L166.2,386.5 L160.1,385.7 L160.2,386.5 L157.6,386.3 L158.4,385.8 L157.5,385.5 L153.9,386.9 L151.8,388.7 L152.4,389.9 L148.5,391.1 L149.6,392.5 L146.6,393.2 L148.6,394.9 L148.2,395.8 L146.7,395.9 L145.1,394.0 L143.8,394.7 L142.2,394.2 L143.2,395.6 L142.4,395.7 L142.7,396.7 L143.7,397.0 L139.3,398.5 L140.3,399.8 L142.3,399.8 L140.7,400.5 L141.5,401.5 L140.9,401.6 L141.1,402.9 L140.1,403.0 L140.8,403.6 L139.8,404.4 L140.3,404.9 L139.0,405.8 L133.7,406.7 L134.4,407.6 L128.7,409.4 L127.3,410.7 L130.8,411.5 L131.4,412.3 L131.1,414.6 L132.0,415.6 L136.5,414.5 L141.8,411.7 L144.0,411.7 L146.4,409.5 L155.6,404.5 L160.4,404.7 L166.8,403.0 L167.3,405.7 L175.0,404.1 L174.0,402.8 L175.9,402.1 L175.1,400.5 L175.7,398.7 L173.5,397.0 L176.7,396.1 L176.9,395.4 L174.0,394.8 L171.6,392.1 L170.1,393.0 L169.2,392.2 L166.5,392.9 Z",
+  "esch_sur_alzette": "M157.7,538.7 L154.4,540.3 L158.4,543.1 L158.0,545.7 L156.9,546.6 L155.3,546.6 L156.9,547.2 L156.7,550.0 L157.6,550.6 L157.8,552.4 L160.9,555.0 L162.1,554.8 L162.8,553.5 L165.6,554.0 L167.1,552.7 L167.0,551.5 L171.3,549.1 L169.9,548.0 L173.0,546.6 L173.5,544.4 L175.9,541.9 L175.1,540.4 L173.5,540.8 L172.8,542.1 L171.0,541.1 L171.4,539.6 L174.6,539.8 L171.7,538.4 L174.7,537.4 L174.7,536.6 L170.8,536.2 L172.2,535.4 L169.0,534.3 L172.1,532.1 L170.7,529.6 L171.9,529.5 L173.6,526.8 L171.6,523.8 L174.0,522.8 L172.7,521.6 L169.2,523.6 L164.1,524.2 L162.4,525.7 L153.7,524.0 L153.6,525.0 L148.3,525.4 L147.0,526.3 L143.7,525.7 L142.1,526.6 L142.0,527.4 L144.1,527.5 L142.7,529.5 L141.2,529.3 L140.0,531.4 L141.2,532.1 L141.8,534.1 L146.9,536.4 L152.4,536.4 L153.3,537.4 L156.8,537.4 L157.7,538.7 Z",
+  "betzdorf": "M369.4,431.0 L370.0,431.8 L380.3,429.2 L378.1,432.9 L378.9,435.4 L380.9,436.0 L387.2,435.8 L390.0,433.8 L388.9,433.4 L391.5,430.3 L389.0,428.3 L390.9,423.7 L389.1,422.4 L382.6,425.3 L380.1,423.0 L378.6,423.5 L377.6,422.7 L378.9,422.1 L377.4,420.7 L376.6,416.2 L373.9,414.3 L364.9,414.9 L363.5,415.9 L363.3,417.4 L358.2,417.4 L357.5,417.8 L358.0,420.2 L354.5,420.5 L353.4,420.0 L350.8,414.7 L346.1,414.4 L345.8,415.9 L348.2,420.1 L345.2,422.6 L345.4,423.6 L346.2,423.6 L345.5,424.4 L346.3,424.6 L345.7,425.8 L344.2,425.5 L344.0,426.1 L344.8,426.2 L343.9,426.8 L334.7,428.6 L333.7,429.5 L334.1,434.5 L333.3,434.6 L334.7,437.2 L338.6,437.1 L338.1,440.2 L335.0,440.6 L336.0,441.4 L335.9,443.8 L340.2,445.8 L340.4,446.7 L339.8,446.8 L340.7,447.2 L340.1,447.7 L340.8,451.1 L342.2,452.3 L343.8,452.4 L343.9,453.5 L347.3,452.8 L348.3,453.4 L351.3,450.8 L357.2,448.2 L358.9,446.5 L360.4,446.5 L360.3,440.4 L354.4,437.0 L360.0,433.7 L369.4,431.0 Z",
+  "steinsel": "M248.2,434.8 L253.8,435.2 L253.7,435.8 L256.2,436.6 L256.3,435.8 L264.7,434.4 L265.2,439.6 L268.3,438.8 L268.0,439.7 L265.3,442.8 L266.1,443.9 L264.8,447.1 L258.9,450.4 L266.9,450.1 L268.6,448.2 L268.1,447.0 L268.7,445.6 L272.7,442.9 L273.3,440.7 L277.1,439.0 L278.0,437.5 L282.2,436.6 L287.0,434.2 L290.6,429.4 L295.3,427.6 L296.8,426.0 L297.0,424.4 L295.5,423.0 L286.4,423.7 L287.8,425.5 L285.0,426.7 L281.5,425.7 L276.8,426.2 L276.9,424.5 L274.0,424.4 L273.1,425.1 L267.7,425.5 L265.7,427.0 L258.5,427.5 L255.4,426.5 L250.5,426.6 L251.3,425.2 L249.6,424.3 L251.0,422.6 L246.6,422.0 L245.7,421.2 L242.8,422.5 L241.1,421.3 L233.7,422.8 L226.9,425.5 L225.0,425.2 L223.8,428.4 L220.7,430.2 L220.4,431.3 L224.2,431.9 L229.8,434.7 L227.2,435.2 L232.1,439.8 L233.2,441.8 L238.4,440.2 L238.3,440.9 L239.4,440.7 L239.4,440.1 L242.1,439.6 L241.8,438.8 L244.3,439.2 L243.6,438.5 L245.7,437.8 L245.5,435.8 L248.2,434.8 Z",
+  "junglinster": "M297.1,425.4 L302.1,425.1 L302.6,426.3 L303.9,425.2 L308.4,425.2 L310.3,426.3 L316.8,424.9 L317.2,425.6 L319.4,425.5 L321.9,424.6 L325.5,425.7 L327.6,427.7 L328.3,430.5 L329.1,429.5 L330.5,431.1 L334.7,428.6 L343.9,426.8 L344.8,426.2 L344.0,426.1 L344.2,425.5 L345.7,425.8 L346.3,424.6 L345.5,424.4 L346.2,423.6 L345.4,423.6 L345.2,422.6 L348.2,420.1 L345.8,415.9 L346.1,414.4 L353.6,414.9 L360.6,411.9 L358.3,409.7 L359.9,408.8 L358.0,406.0 L354.8,403.5 L357.2,403.0 L356.9,402.5 L359.0,400.7 L358.5,398.7 L365.4,397.6 L363.1,397.5 L363.0,396.5 L361.9,396.4 L355.9,396.2 L352.0,397.0 L350.6,396.0 L348.4,396.0 L348.8,394.8 L346.4,395.7 L345.5,394.3 L338.0,393.1 L331.9,391.1 L317.6,390.6 L306.3,389.2 L304.5,387.9 L303.2,392.2 L299.5,397.7 L296.5,400.0 L291.9,401.4 L292.2,402.0 L291.2,402.9 L289.7,403.2 L290.4,404.5 L286.2,405.3 L279.8,408.3 L280.9,409.2 L280.4,412.1 L281.2,413.1 L279.2,415.8 L279.9,417.4 L276.5,418.9 L278.7,420.7 L277.5,422.1 L269.5,424.3 L273.1,425.1 L274.0,424.4 L276.9,424.5 L276.8,426.2 L281.5,425.7 L285.0,426.7 L287.8,425.5 L286.4,423.7 L295.5,423.0 L297.1,425.4 Z",
+  "roeser": "M240.3,519.5 L240.6,520.6 L245.1,523.7 L247.0,527.1 L245.5,528.8 L247.0,535.9 L249.7,538.2 L254.9,537.2 L254.0,535.2 L252.1,535.7 L251.0,532.8 L248.9,531.5 L248.2,529.3 L249.3,529.1 L249.2,528.3 L248.1,527.1 L250.0,526.7 L249.8,526.1 L251.6,525.2 L254.5,525.4 L254.6,524.6 L257.2,523.9 L256.7,523.0 L259.0,522.2 L260.6,522.8 L262.9,522.1 L261.4,520.9 L264.8,518.7 L268.6,519.0 L268.7,517.2 L266.3,516.5 L265.9,515.7 L265.6,516.7 L263.9,517.2 L262.8,516.4 L267.0,515.0 L267.0,514.2 L269.0,513.4 L271.7,512.9 L271.7,512.1 L275.0,511.6 L273.1,510.2 L273.5,509.2 L272.1,506.0 L273.6,505.3 L273.0,503.6 L268.1,502.8 L268.9,501.9 L265.0,501.4 L265.7,500.4 L264.8,500.1 L263.6,501.6 L262.2,501.7 L246.5,499.4 L246.8,498.9 L243.0,497.8 L240.4,497.9 L235.5,496.5 L236.0,493.9 L227.2,495.9 L226.0,497.9 L224.1,499.1 L223.1,500.9 L223.7,501.7 L221.8,502.3 L223.2,502.9 L224.1,505.4 L225.2,505.2 L230.2,508.3 L229.1,508.5 L229.7,509.2 L229.0,510.1 L231.9,514.2 L232.6,514.0 L234.1,517.1 L238.5,516.3 L240.3,519.5 Z",
+  "bettendorf": "M300.2,330.3 L310.0,330.3 L313.5,326.9 L315.2,327.2 L316.4,325.6 L315.8,325.1 L317.7,324.7 L317.7,323.8 L318.7,323.4 L316.5,323.1 L314.9,319.3 L318.2,316.6 L318.3,314.0 L316.5,311.9 L317.4,310.6 L308.5,307.4 L307.6,305.7 L305.2,305.2 L298.6,305.0 L293.4,308.1 L290.0,307.8 L287.7,310.0 L284.5,308.5 L281.7,312.7 L283.0,315.8 L281.9,317.1 L282.7,317.9 L279.8,316.6 L274.9,317.2 L276.6,319.2 L274.5,319.5 L274.9,321.5 L268.0,322.8 L268.3,324.4 L264.0,326.5 L264.9,328.2 L263.1,329.7 L263.0,333.8 L269.7,334.4 L277.6,332.0 L281.2,332.2 L289.8,327.3 L294.8,328.0 L300.2,330.3 Z",
+  "fischbach": "M279.8,399.5 L279.7,400.8 L276.0,402.0 L274.7,403.7 L276.4,406.0 L275.5,406.3 L276.5,407.0 L278.1,407.7 L279.5,407.3 L279.8,408.3 L286.2,405.3 L290.4,404.5 L289.7,403.2 L291.2,402.9 L292.2,402.0 L291.9,401.4 L296.5,400.0 L301.0,396.3 L303.2,392.2 L304.9,386.2 L302.0,385.4 L301.7,384.6 L304.7,384.3 L304.2,382.6 L301.3,382.2 L297.9,383.6 L294.3,383.7 L290.9,381.6 L284.2,381.1 L280.4,381.2 L279.4,382.6 L278.6,382.5 L276.9,380.9 L274.5,381.1 L274.4,379.7 L272.4,378.2 L273.2,377.7 L271.7,377.2 L269.4,373.6 L261.0,375.6 L262.3,376.8 L260.0,377.5 L261.0,378.6 L259.7,378.4 L260.3,378.9 L257.9,380.4 L258.0,382.7 L256.3,383.4 L261.0,383.1 L254.9,385.6 L258.2,388.5 L259.9,388.0 L259.4,387.2 L264.8,385.8 L264.8,387.1 L263.1,388.0 L264.2,388.3 L263.1,389.6 L263.4,391.0 L268.2,391.8 L272.4,391.3 L273.0,394.2 L278.4,397.6 L279.8,399.5 Z",
+  "rambrouch": "M103.8,330.6 L97.1,330.6 L96.4,329.9 L100.3,328.7 L99.8,326.6 L98.1,326.5 L98.8,324.7 L101.3,323.6 L99.9,322.8 L100.6,322.9 L100.8,322.0 L99.5,320.8 L100.6,320.1 L100.4,318.8 L102.3,318.5 L102.4,316.7 L103.6,316.3 L100.7,313.7 L99.7,315.2 L98.7,315.2 L99.0,314.3 L98.0,312.5 L99.1,312.2 L97.5,312.4 L96.9,311.7 L97.3,312.4 L96.7,312.3 L95.0,311.5 L93.7,309.6 L95.8,307.9 L93.2,308.4 L90.0,307.6 L88.8,308.1 L89.0,309.8 L88.2,310.0 L88.7,310.5 L86.9,311.2 L81.2,309.8 L79.7,310.7 L80.9,312.2 L80.6,313.1 L82.2,313.3 L83.9,314.9 L83.3,316.2 L80.3,315.8 L78.5,318.1 L71.2,320.5 L63.5,319.2 L61.7,319.5 L60.0,322.1 L58.6,322.0 L58.9,320.5 L60.9,318.4 L59.0,317.9 L57.5,318.6 L57.2,317.6 L54.7,317.2 L55.6,314.1 L54.0,312.2 L52.4,313.2 L52.8,315.1 L50.8,316.2 L44.9,314.4 L45.0,315.5 L47.8,317.0 L44.2,317.2 L42.5,319.9 L40.1,317.0 L36.7,318.8 L32.0,316.5 L30.5,317.3 L29.8,319.0 L32.3,321.2 L30.9,323.1 L34.5,326.2 L30.9,326.1 L25.8,327.9 L26.6,328.9 L31.1,328.9 L33.0,330.3 L33.0,332.1 L30.8,332.9 L29.1,331.5 L27.2,332.1 L27.4,334.4 L28.6,335.3 L28.3,336.1 L22.9,336.4 L22.1,339.4 L24.7,340.7 L27.3,344.7 L24.4,346.7 L26.1,349.7 L29.0,350.3 L28.2,351.9 L28.5,355.2 L30.3,360.8 L30.1,362.7 L31.2,363.8 L37.1,362.4 L40.0,362.2 L40.8,362.8 L43.9,362.0 L46.4,363.3 L48.6,361.1 L50.6,360.8 L53.3,364.3 L55.7,363.0 L56.6,363.9 L59.2,363.4 L59.3,361.5 L60.8,359.4 L60.0,357.9 L61.9,357.1 L60.3,356.5 L62.4,355.5 L62.1,353.6 L64.2,351.8 L62.6,350.6 L62.7,349.9 L64.8,349.9 L68.5,347.6 L70.0,348.0 L68.6,349.3 L70.8,348.5 L73.6,350.1 L72.6,350.5 L76.3,349.8 L76.2,350.7 L77.7,351.0 L78.0,352.9 L82.1,352.9 L83.6,353.7 L87.4,356.5 L86.7,358.9 L88.8,359.9 L92.5,359.7 L96.2,362.5 L98.4,362.1 L99.6,360.0 L107.7,360.3 L108.1,359.1 L111.8,357.4 L113.0,354.8 L113.2,355.4 L118.5,353.6 L116.0,352.6 L117.6,352.1 L116.3,351.6 L117.2,350.7 L116.7,350.0 L119.4,347.6 L114.3,346.6 L111.5,343.0 L107.5,341.2 L105.4,341.2 L104.3,339.8 L104.6,336.5 L103.3,335.5 L98.3,335.2 L96.9,334.2 L102.6,333.3 L107.0,331.2 L103.8,330.6 Z",
+  "schieren": "M225.6,345.7 L228.6,347.9 L227.6,349.4 L228.7,350.2 L233.7,350.4 L235.4,351.4 L236.1,352.9 L244.6,349.7 L257.6,343.2 L258.0,340.5 L249.8,334.7 L239.0,333.8 L238.5,334.0 L239.3,337.0 L238.5,336.6 L235.9,337.5 L231.2,336.6 L230.6,337.5 L226.9,337.2 L226.8,341.9 L223.2,341.4 L222.2,342.4 L214.8,341.5 L216.3,341.8 L215.0,344.1 L221.9,345.8 L225.6,345.7 Z",
+  "niederanven": "M334.0,432.1 L333.7,429.5 L330.5,431.1 L329.1,429.5 L328.3,430.5 L327.6,427.7 L325.5,425.7 L321.9,424.6 L319.4,425.5 L317.2,425.6 L316.8,424.9 L310.3,426.3 L308.4,425.2 L303.9,425.2 L302.6,426.3 L302.1,425.1 L297.1,425.4 L295.3,427.6 L290.6,429.4 L287.0,434.2 L282.2,436.6 L278.0,437.5 L277.1,439.0 L273.3,440.7 L272.7,442.9 L268.7,445.6 L268.1,447.0 L268.6,448.6 L267.3,450.4 L267.9,451.0 L258.9,452.9 L255.5,455.4 L262.6,452.6 L268.4,452.1 L278.5,453.4 L278.2,454.3 L280.5,455.8 L278.3,457.1 L278.0,458.6 L276.0,460.5 L277.3,461.1 L286.4,458.4 L285.5,458.0 L288.2,458.1 L291.8,455.8 L293.5,456.3 L291.9,457.4 L293.0,457.8 L293.5,459.3 L297.8,460.3 L297.7,459.6 L298.8,459.4 L299.6,461.0 L306.2,460.7 L310.4,459.5 L313.1,458.5 L312.9,456.7 L315.3,456.2 L315.8,454.2 L317.2,454.1 L318.7,452.6 L330.1,448.7 L334.8,449.4 L340.4,447.2 L339.8,446.8 L340.4,446.7 L340.2,445.8 L335.9,443.8 L336.0,441.4 L335.0,440.6 L338.1,440.2 L338.6,437.1 L334.7,437.2 L333.3,434.6 L334.1,434.5 L334.0,432.1 Z",
+  "kiischpelt": "M171.9,270.8 L173.3,271.6 L171.9,272.8 L174.2,273.1 L173.1,273.4 L182.0,273.4 L181.3,274.6 L183.2,275.2 L180.7,276.3 L181.0,275.1 L179.3,275.6 L179.3,276.6 L180.5,277.5 L186.7,276.9 L188.6,278.6 L193.6,279.3 L193.6,277.8 L194.7,277.8 L194.2,275.4 L196.6,272.7 L195.4,271.6 L197.4,270.2 L194.1,267.4 L197.7,265.3 L197.2,264.3 L190.9,263.4 L189.3,264.0 L188.0,262.8 L188.8,261.8 L187.2,262.8 L186.4,261.7 L189.9,260.0 L187.7,258.6 L193.8,253.7 L193.4,252.2 L196.2,251.8 L197.5,252.6 L199.8,250.8 L203.7,250.2 L202.7,247.5 L207.2,245.1 L206.7,244.6 L208.1,243.1 L207.8,241.3 L198.7,244.8 L197.8,240.9 L196.1,240.0 L192.1,243.1 L188.3,243.6 L188.1,242.9 L185.6,243.8 L183.8,242.1 L183.0,242.6 L182.3,241.2 L178.5,241.6 L177.7,240.8 L180.1,239.7 L177.1,238.2 L176.2,237.0 L176.6,236.5 L172.4,236.5 L166.8,234.6 L164.2,236.0 L164.3,235.0 L166.2,234.4 L164.2,233.2 L163.8,231.6 L159.3,232.8 L160.6,234.4 L161.4,237.7 L153.3,243.7 L154.4,245.3 L156.1,245.9 L154.4,246.8 L152.6,249.7 L154.3,251.4 L156.8,250.8 L157.3,251.9 L155.5,252.8 L155.0,257.9 L152.0,260.6 L152.9,261.7 L156.3,261.8 L153.6,263.5 L154.9,264.5 L156.3,263.7 L156.1,266.1 L160.1,266.7 L161.0,268.7 L165.2,267.8 L165.6,269.3 L162.7,271.1 L165.5,270.1 L166.4,271.2 L168.6,270.3 L171.9,270.8 Z",
+  "winseler": "M98.3,272.2 L101.0,273.1 L102.5,272.2 L102.3,271.3 L106.4,269.1 L107.9,267.2 L111.4,265.8 L112.2,266.3 L114.1,265.0 L113.6,263.7 L115.6,263.0 L115.3,261.7 L119.0,260.0 L124.0,259.3 L122.3,258.2 L125.5,257.5 L125.7,256.3 L127.9,256.5 L126.4,255.4 L126.8,253.4 L125.9,251.8 L124.0,251.7 L122.1,250.2 L122.9,248.9 L125.1,248.9 L124.6,247.5 L121.7,247.9 L119.8,245.7 L118.9,246.0 L118.6,247.2 L117.3,246.5 L114.8,247.0 L113.7,244.4 L113.0,244.6 L114.4,246.9 L112.2,247.6 L109.9,247.0 L109.6,248.1 L98.2,243.0 L97.2,244.3 L98.6,246.2 L98.6,248.2 L97.0,249.4 L95.9,248.6 L91.5,250.7 L92.3,250.1 L91.1,250.4 L91.9,249.4 L90.8,248.5 L86.9,249.9 L86.9,248.9 L80.4,249.3 L79.8,249.8 L80.0,252.4 L77.9,255.4 L74.8,257.1 L68.9,258.3 L68.5,259.3 L64.8,259.0 L63.2,260.1 L63.3,263.9 L61.6,265.0 L61.3,266.1 L62.4,267.3 L63.5,267.0 L64.7,267.9 L64.7,269.4 L63.3,269.9 L64.7,271.2 L66.2,270.8 L67.0,271.8 L74.9,269.9 L79.5,271.3 L80.0,272.9 L77.7,274.1 L75.8,276.4 L77.1,277.7 L80.7,278.1 L81.3,279.3 L83.2,280.3 L96.6,278.1 L95.7,274.5 L96.9,273.7 L96.0,273.8 L95.5,272.9 L98.3,272.2 Z",
+  "dalheim": "M329.1,499.8 L329.5,499.1 L328.5,498.2 L329.3,496.9 L328.4,496.4 L328.5,495.1 L320.9,492.7 L312.7,493.3 L311.4,492.1 L306.7,491.9 L306.4,492.5 L308.2,494.8 L306.9,496.2 L307.7,497.4 L306.5,498.8 L309.1,501.1 L308.8,501.6 L306.1,501.7 L303.9,499.5 L299.7,500.6 L300.5,502.3 L303.9,505.0 L303.2,505.2 L304.5,506.6 L306.1,506.6 L304.9,507.4 L305.6,507.9 L305.0,508.7 L306.0,509.1 L305.2,510.7 L306.4,510.6 L308.1,512.9 L309.8,513.2 L311.6,514.8 L309.0,516.2 L311.4,518.1 L308.9,522.8 L310.8,522.6 L312.3,523.7 L315.7,518.5 L319.3,518.9 L320.1,520.1 L321.4,519.6 L326.1,515.3 L326.3,513.2 L329.5,513.4 L330.8,515.1 L329.7,516.3 L331.9,515.5 L337.7,518.5 L341.8,515.4 L341.8,514.5 L343.9,514.5 L343.7,512.9 L345.3,512.6 L347.5,512.5 L347.2,513.5 L348.9,514.7 L352.8,514.1 L353.4,515.2 L356.2,516.3 L358.0,514.8 L360.9,514.5 L359.7,513.2 L355.7,511.7 L355.0,510.9 L357.3,510.3 L356.2,509.6 L350.9,509.6 L351.7,509.1 L351.0,508.7 L347.7,510.1 L345.4,509.6 L344.5,507.3 L341.7,504.5 L339.7,504.3 L339.5,505.2 L337.5,505.1 L330.9,507.3 L328.8,505.7 L327.7,505.9 L329.5,503.6 L329.7,502.5 L328.2,500.4 L329.1,499.8 Z",
+  "sandweiler": "M283.7,462.5 L282.5,462.8 L282.7,463.6 L287.3,464.8 L290.7,467.0 L288.8,469.0 L283.8,471.7 L287.4,472.2 L291.6,470.9 L293.8,472.5 L293.3,474.5 L294.3,474.8 L297.0,473.0 L300.8,472.6 L302.2,473.4 L302.7,472.7 L303.8,473.3 L306.6,472.2 L309.2,472.6 L310.2,471.0 L309.5,470.1 L311.0,469.0 L310.0,467.6 L311.9,463.8 L310.2,461.3 L307.7,461.9 L306.5,460.4 L299.6,461.0 L298.8,459.4 L297.7,459.6 L297.8,460.3 L293.5,459.3 L293.0,457.8 L291.9,457.4 L293.5,456.3 L291.8,455.8 L288.2,458.1 L285.5,458.0 L286.4,458.4 L282.4,459.8 L283.0,461.4 L280.2,462.1 L283.7,462.5 Z",
+  "reckange_sur_mess": "M168.7,506.4 L169.5,507.2 L171.2,507.0 L175.7,509.1 L176.5,508.8 L177.4,510.4 L179.7,511.5 L186.1,511.4 L189.6,508.6 L193.1,507.5 L194.3,506.2 L196.9,505.3 L196.6,504.7 L199.6,503.5 L200.2,502.0 L198.0,499.8 L197.2,496.9 L195.0,495.5 L196.2,494.2 L195.0,494.0 L194.5,492.3 L195.8,491.7 L199.9,492.1 L201.7,491.3 L200.4,489.3 L201.2,489.1 L200.6,488.7 L201.2,486.2 L198.8,486.3 L199.8,483.3 L196.0,483.7 L196.6,483.0 L195.9,482.3 L191.6,482.9 L192.4,484.7 L189.2,485.1 L188.4,483.4 L187.3,483.3 L185.9,484.3 L181.2,485.2 L175.0,488.4 L173.3,489.9 L173.3,490.8 L171.7,491.0 L172.6,491.8 L168.8,492.8 L169.5,492.7 L169.7,493.8 L168.6,494.9 L167.2,494.6 L163.1,496.0 L161.8,496.2 L160.5,494.2 L161.1,493.9 L159.9,493.2 L156.2,493.1 L156.2,491.7 L153.6,491.7 L150.4,493.0 L153.0,497.1 L150.4,501.2 L150.4,506.0 L155.3,504.9 L155.0,502.6 L159.4,502.1 L162.3,502.8 L165.7,505.7 L168.7,506.4 Z",
+  "lac_de_la_haute_sure": "M75.8,276.4 L77.7,274.1 L80.0,272.9 L79.5,271.3 L74.9,269.9 L67.0,271.8 L66.2,270.8 L64.7,271.2 L63.3,269.9 L64.7,269.4 L64.7,267.9 L63.5,267.0 L62.4,267.3 L61.3,266.1 L63.0,264.1 L61.0,265.0 L57.3,264.6 L54.7,263.0 L52.0,264.1 L52.1,265.3 L48.9,265.7 L46.0,264.7 L42.7,265.8 L44.0,267.6 L42.0,268.3 L42.8,270.3 L40.1,272.3 L40.6,274.3 L41.5,274.1 L41.7,275.1 L40.9,275.3 L42.8,279.2 L40.1,279.8 L39.7,281.9 L40.4,282.7 L36.3,282.8 L36.9,284.2 L36.0,285.2 L36.8,285.7 L36.1,286.8 L36.7,287.1 L35.0,287.6 L35.2,289.6 L34.3,291.0 L36.9,292.0 L41.9,289.8 L45.9,290.8 L52.8,290.6 L57.0,289.4 L57.1,290.0 L64.5,289.9 L65.3,291.0 L64.4,291.3 L64.8,292.2 L67.3,291.5 L66.5,292.7 L67.7,292.8 L68.2,291.7 L70.3,291.7 L71.3,291.9 L71.0,293.1 L71.7,294.0 L77.8,293.3 L77.3,294.6 L78.2,295.2 L80.8,295.8 L85.8,295.3 L90.0,296.8 L93.0,299.8 L93.1,300.6 L91.6,301.9 L93.1,302.5 L94.8,302.1 L95.5,299.9 L96.5,299.5 L102.9,299.6 L108.6,294.6 L111.9,294.4 L114.1,292.9 L115.5,293.6 L117.8,296.7 L120.8,294.5 L121.9,294.6 L121.9,295.9 L125.1,298.9 L126.0,298.8 L126.3,297.8 L125.4,294.6 L127.1,293.9 L128.9,294.9 L130.2,294.3 L129.0,293.0 L130.9,291.3 L131.6,293.6 L132.7,294.1 L133.6,294.0 L133.6,292.6 L134.5,291.8 L137.5,292.6 L138.1,295.5 L143.9,294.8 L142.4,290.8 L139.5,288.7 L139.5,286.3 L138.5,284.3 L133.0,284.6 L133.5,284.3 L132.9,283.6 L134.8,283.2 L134.6,282.7 L124.5,281.8 L124.6,281.0 L121.0,279.0 L119.0,276.3 L114.8,275.9 L111.9,274.2 L108.2,273.4 L103.9,274.9 L102.9,274.2 L102.5,272.2 L101.0,273.1 L97.8,272.1 L95.5,272.9 L96.0,273.8 L96.9,273.7 L95.7,274.5 L96.6,278.1 L83.2,280.3 L81.3,279.3 L80.7,278.1 L77.1,277.7 L75.8,276.4 Z",
+  "troisvierges": "M196.1,151.0 L192.3,149.3 L189.9,147.1 L189.7,143.2 L187.2,137.4 L174.6,141.2 L156.1,141.9 L154.6,143.2 L151.9,143.3 L152.2,147.8 L150.8,150.2 L151.6,150.1 L153.9,153.4 L148.7,155.6 L150.4,156.5 L149.8,157.8 L150.5,160.7 L148.9,162.8 L150.5,167.2 L146.1,167.6 L147.8,168.7 L145.7,169.8 L146.3,172.2 L147.9,173.7 L146.8,174.1 L151.7,180.9 L164.6,176.8 L165.7,178.1 L168.1,177.8 L168.6,178.4 L170.0,177.7 L172.6,180.0 L175.2,179.9 L178.6,181.5 L180.9,180.9 L180.2,179.1 L181.0,178.1 L180.7,176.0 L178.7,175.6 L181.5,174.3 L182.3,172.8 L186.4,172.1 L187.1,170.1 L189.0,168.3 L195.4,164.6 L201.1,159.9 L203.2,159.2 L203.0,157.9 L199.8,154.8 L199.3,151.9 L196.1,151.0 Z",
+  "remich": "M388.6,505.8 L391.7,503.6 L393.7,499.9 L393.2,498.7 L389.9,496.9 L383.9,498.3 L381.2,500.6 L380.5,499.9 L375.4,501.5 L374.9,500.9 L370.8,505.0 L371.5,507.8 L369.1,510.3 L373.0,512.6 L376.9,511.6 L378.5,509.9 L378.6,510.7 L381.4,511.2 L388.6,505.8 Z",
+  "ettelbruck": "M210.7,339.1 L209.8,340.3 L210.1,341.3 L222.2,342.4 L223.2,341.4 L226.8,341.9 L226.9,337.2 L230.6,337.5 L231.2,336.6 L235.9,337.5 L238.5,336.6 L239.3,337.0 L238.5,334.0 L240.2,333.8 L240.4,331.1 L237.6,330.9 L237.1,328.4 L231.7,323.9 L232.2,321.8 L229.7,320.7 L228.2,317.2 L226.8,317.7 L224.8,316.4 L223.8,316.7 L223.7,315.3 L219.4,315.8 L219.3,314.9 L217.3,314.2 L216.5,315.5 L218.8,317.5 L218.6,319.6 L209.3,320.9 L210.4,321.4 L210.8,322.9 L210.0,323.4 L210.0,324.8 L210.9,325.1 L210.2,326.0 L211.7,326.9 L212.8,329.0 L212.2,329.6 L210.0,329.4 L209.8,330.8 L206.0,333.0 L207.8,333.5 L205.1,335.3 L207.9,337.6 L205.1,339.0 L204.6,337.4 L202.8,336.8 L201.2,338.7 L194.9,340.0 L196.9,343.5 L198.9,343.4 L201.2,344.7 L202.7,344.2 L201.9,343.5 L208.7,341.2 L210.2,338.9 L210.7,339.1 Z",
+  "mertert": "M460.7,404.1 L459.1,402.6 L460.5,401.2 L465.1,401.6 L468.5,404.4 L470.5,404.2 L472.0,402.8 L465.4,399.8 L463.1,397.5 L458.9,397.2 L455.4,395.7 L451.9,395.8 L449.5,394.6 L448.0,392.1 L445.8,393.0 L445.1,392.0 L439.8,393.8 L439.6,397.0 L437.9,397.1 L437.1,398.0 L437.6,399.1 L435.5,400.0 L435.7,402.0 L434.8,403.4 L435.7,404.6 L437.5,404.2 L434.8,406.7 L435.7,407.0 L435.9,409.3 L437.9,409.7 L436.4,410.6 L435.1,409.3 L431.7,408.8 L430.5,408.9 L430.2,409.8 L435.3,412.4 L433.0,415.2 L437.1,420.3 L435.7,420.4 L437.3,421.1 L439.0,420.4 L439.6,421.1 L444.5,420.4 L450.4,418.3 L461.0,410.0 L465.7,408.9 L465.7,407.3 L460.7,404.1 Z",
+  "reisdorf": "M327.5,312.9 L324.2,312.0 L322.0,309.0 L317.7,306.6 L315.5,303.7 L311.8,303.2 L309.0,301.5 L307.3,302.4 L305.2,305.2 L307.6,305.7 L308.5,307.4 L317.4,310.6 L316.5,311.9 L318.3,314.0 L318.2,316.6 L314.9,319.3 L316.5,323.1 L318.7,323.4 L317.7,323.8 L317.7,324.7 L315.8,325.1 L316.4,325.6 L315.2,327.2 L313.5,326.9 L315.0,327.4 L314.4,327.8 L316.0,327.9 L317.3,325.9 L320.5,325.6 L324.5,327.9 L323.5,328.7 L324.2,329.9 L326.5,329.0 L328.3,330.8 L338.4,331.6 L345.4,330.8 L349.3,332.1 L352.4,331.2 L352.1,327.7 L350.7,325.7 L354.6,324.2 L354.7,321.3 L353.2,318.9 L350.7,318.6 L347.0,320.4 L344.8,320.6 L341.5,317.6 L341.5,315.8 L338.7,315.5 L336.4,313.4 L332.4,314.5 L327.5,312.9 Z",
+  "parc_hosingen": "M247.8,225.1 L250.6,219.9 L245.3,213.8 L243.1,212.7 L242.8,211.8 L244.7,208.8 L243.4,208.2 L242.7,208.4 L242.1,210.5 L237.0,211.3 L231.6,213.7 L231.5,215.4 L224.4,216.6 L221.5,216.3 L218.0,218.6 L217.1,217.2 L212.8,218.4 L211.9,218.9 L212.2,219.5 L213.1,219.3 L213.9,220.3 L211.6,221.0 L208.0,223.6 L207.7,224.3 L208.6,225.1 L205.1,227.6 L206.6,223.1 L208.9,221.2 L207.8,220.6 L205.7,223.4 L203.3,224.0 L203.7,226.1 L201.1,227.6 L200.7,230.5 L196.7,231.6 L196.7,233.4 L193.7,233.5 L194.8,235.9 L196.9,235.7 L197.5,236.5 L194.8,237.9 L193.6,237.5 L194.6,239.4 L197.8,240.9 L198.7,244.8 L207.4,241.0 L208.1,243.1 L206.7,244.6 L207.2,245.1 L202.7,247.5 L203.7,250.2 L199.8,250.8 L197.5,252.6 L196.2,251.8 L193.4,252.2 L193.8,253.7 L187.7,258.6 L189.9,260.0 L187.4,260.8 L186.5,262.2 L187.2,262.8 L188.8,261.8 L188.0,262.8 L189.3,264.0 L190.9,263.4 L197.2,264.3 L197.7,265.3 L194.1,267.4 L197.4,270.2 L195.4,271.6 L196.6,272.7 L196.3,273.7 L199.6,272.8 L202.0,273.2 L204.5,271.6 L202.2,270.7 L204.4,269.8 L208.2,269.1 L210.3,269.5 L209.2,270.5 L210.7,272.5 L209.1,273.6 L210.6,275.4 L209.5,277.0 L210.8,280.8 L213.7,281.3 L213.6,282.3 L214.0,281.0 L218.6,282.3 L221.3,281.4 L223.4,281.7 L223.8,279.0 L226.7,277.6 L224.9,275.5 L226.3,274.0 L225.8,272.8 L227.5,272.0 L226.4,269.6 L227.1,269.0 L226.9,267.9 L228.5,267.5 L231.5,263.4 L229.7,261.7 L232.5,255.8 L228.5,254.3 L229.8,252.2 L229.5,250.4 L230.7,251.5 L230.8,253.2 L232.2,253.0 L232.9,253.7 L235.6,252.9 L240.5,253.8 L242.1,256.5 L240.9,256.9 L243.9,259.6 L247.1,259.8 L251.5,258.1 L254.5,258.2 L262.9,255.1 L269.1,256.6 L270.7,252.5 L272.7,252.0 L263.7,250.6 L261.6,249.2 L260.1,246.6 L254.9,246.1 L252.5,244.0 L253.8,243.1 L256.7,244.2 L259.5,238.1 L258.6,237.2 L253.1,236.9 L247.8,232.6 L249.3,232.0 L252.3,234.0 L257.3,230.3 L248.7,226.5 L247.8,225.1 Z",
+  "lenningen": "M362.2,477.8 L373.0,477.7 L377.9,478.7 L381.4,477.2 L384.2,477.9 L383.8,479.0 L386.5,478.8 L387.0,480.7 L388.0,480.0 L388.1,478.8 L394.0,473.3 L393.8,472.1 L390.7,472.3 L391.1,470.7 L392.8,470.6 L392.2,470.0 L392.8,469.1 L383.8,465.4 L381.5,466.9 L381.6,466.1 L380.3,465.3 L378.3,465.9 L376.7,465.4 L374.3,467.8 L374.8,469.3 L372.6,470.3 L371.9,469.4 L373.0,468.6 L372.1,467.9 L372.8,466.5 L372.4,465.3 L369.8,465.5 L369.6,463.2 L368.7,463.1 L368.9,461.8 L365.6,461.6 L365.5,460.9 L363.0,460.4 L363.8,459.1 L352.0,458.1 L349.0,459.5 L334.8,470.2 L331.3,473.8 L332.2,474.2 L333.4,473.3 L337.7,473.0 L339.8,473.5 L340.9,475.0 L343.6,475.6 L346.2,478.5 L346.3,479.7 L347.5,480.1 L348.1,483.2 L346.9,484.6 L350.9,485.8 L355.5,484.5 L353.2,482.1 L354.8,480.9 L362.2,477.8 Z",
+  "mondercange": "M146.7,515.0 L149.4,514.8 L152.6,515.7 L156.8,514.9 L156.5,515.9 L158.8,516.5 L159.4,517.5 L158.1,518.0 L157.6,519.9 L159.1,522.5 L153.7,524.0 L156.5,525.0 L162.4,525.7 L164.1,524.2 L169.2,523.6 L174.8,520.1 L178.2,521.3 L181.0,521.2 L182.0,519.5 L184.0,518.7 L188.1,521.5 L187.4,521.9 L188.0,522.4 L195.0,523.8 L195.3,525.0 L196.7,525.4 L201.1,525.7 L200.4,525.0 L200.9,524.4 L203.9,522.7 L202.1,521.4 L202.9,520.6 L202.6,519.7 L205.1,519.8 L203.7,518.4 L208.8,515.7 L209.0,513.8 L206.8,509.3 L208.3,508.0 L207.3,506.9 L208.3,504.2 L207.9,502.5 L202.9,504.2 L200.5,501.8 L199.6,503.5 L196.6,504.7 L196.9,505.3 L194.3,506.2 L193.1,507.5 L189.6,508.6 L186.1,511.4 L180.5,511.7 L177.4,510.4 L176.5,508.8 L175.7,509.1 L173.9,507.9 L165.7,505.7 L162.3,502.8 L156.5,502.2 L154.8,503.1 L155.5,505.9 L153.6,506.0 L152.4,507.6 L148.4,509.4 L145.7,512.6 L146.7,515.0 Z",
+  "rumelange": "M183.5,550.2 L180.1,549.2 L178.9,547.4 L176.0,546.1 L173.3,547.8 L174.8,548.7 L171.0,551.4 L168.9,550.4 L167.0,551.5 L167.1,552.7 L165.6,554.0 L166.0,554.8 L164.6,558.0 L162.7,557.3 L160.9,558.3 L160.8,559.8 L162.5,560.7 L171.7,557.6 L173.6,557.6 L177.4,560.4 L179.5,559.3 L180.9,559.9 L181.9,559.0 L185.5,558.4 L188.3,558.9 L189.1,558.0 L189.8,558.4 L187.9,560.3 L188.7,562.3 L191.7,561.6 L191.6,560.8 L190.3,560.3 L190.8,559.7 L195.3,559.7 L196.0,559.1 L194.8,558.5 L195.0,557.7 L198.1,557.7 L194.7,556.2 L196.2,554.9 L194.1,553.4 L194.3,551.9 L188.4,550.8 L187.3,551.6 L186.8,550.5 L183.5,550.2 Z",
+  "helperknapp": "M198.5,379.7 L194.4,378.3 L196.0,374.1 L192.6,368.7 L192.0,369.6 L187.5,369.9 L180.8,366.4 L177.3,366.2 L173.7,367.0 L172.0,368.4 L171.6,369.3 L173.4,372.3 L172.2,373.3 L174.7,374.3 L170.6,376.0 L172.8,380.9 L170.3,381.7 L170.7,382.1 L168.8,383.8 L165.9,385.1 L166.9,385.5 L166.2,386.5 L166.8,387.6 L164.8,388.6 L167.7,390.8 L165.4,391.8 L166.5,392.9 L169.2,392.2 L170.1,393.0 L171.6,392.1 L174.0,394.8 L177.0,395.7 L173.5,397.0 L175.7,398.7 L175.1,400.5 L175.9,402.1 L174.0,402.8 L175.0,404.1 L172.6,404.6 L173.2,405.4 L171.5,406.0 L171.9,406.7 L171.0,407.0 L172.7,408.6 L171.2,409.8 L175.3,413.6 L174.3,414.1 L175.1,414.8 L173.8,414.7 L172.4,415.7 L172.9,416.4 L171.5,416.8 L171.1,418.1 L172.1,418.6 L176.4,417.9 L176.4,419.6 L179.3,420.0 L183.7,418.2 L185.9,419.1 L186.7,418.4 L190.0,419.2 L192.1,418.8 L192.1,419.7 L193.4,419.3 L194.8,420.6 L193.7,421.3 L194.3,421.7 L197.8,420.3 L201.4,420.2 L204.3,418.1 L205.2,418.7 L207.0,418.1 L206.3,416.1 L207.5,415.9 L206.8,415.0 L212.3,414.8 L214.5,417.4 L220.2,408.5 L221.4,408.0 L217.5,407.0 L213.3,407.5 L212.9,407.1 L213.6,406.6 L215.6,406.3 L211.5,402.2 L206.8,404.6 L205.8,401.8 L204.3,400.4 L200.6,399.4 L197.5,397.4 L194.5,391.6 L195.1,389.9 L197.2,389.4 L196.1,388.7 L198.6,386.5 L197.9,383.1 L196.3,382.1 L197.3,379.8 L198.1,380.5 L198.5,379.7 Z",
+  "mondorf_les_bains": "M312.1,523.8 L312.7,525.5 L314.7,525.7 L315.7,527.3 L321.1,526.6 L322.2,528.0 L324.9,528.7 L325.3,530.1 L330.2,529.7 L334.8,530.5 L334.8,531.6 L335.7,532.0 L334.2,534.5 L334.6,535.5 L337.2,536.5 L338.6,536.1 L338.1,535.4 L338.9,534.1 L346.9,534.8 L346.6,532.2 L344.4,530.1 L345.2,528.2 L351.9,523.0 L360.5,518.8 L359.2,517.6 L355.9,516.8 L356.2,516.3 L353.4,515.2 L352.8,514.1 L348.9,514.7 L347.2,513.5 L347.5,512.5 L343.7,512.9 L343.9,514.5 L341.8,514.5 L341.8,515.4 L337.7,518.5 L331.9,515.5 L329.7,516.3 L330.8,515.1 L328.2,512.9 L326.3,513.2 L326.1,515.3 L321.4,519.6 L320.1,520.1 L319.3,518.9 L315.7,518.5 L312.1,523.8 Z",
+  "redange_attert": "M112.8,390.2 L114.1,391.3 L116.0,391.1 L116.1,392.0 L122.0,391.9 L121.7,390.5 L127.5,389.3 L127.4,387.9 L130.3,386.9 L133.4,384.3 L132.1,383.3 L133.5,383.0 L132.9,382.5 L133.9,381.7 L131.6,380.8 L133.2,380.3 L131.7,377.8 L130.3,379.0 L126.9,378.8 L132.2,375.6 L134.6,372.6 L137.5,373.9 L133.1,371.3 L134.4,370.9 L132.9,370.1 L133.5,368.7 L130.5,368.5 L130.0,367.7 L123.2,365.5 L123.8,365.2 L121.7,364.0 L121.5,361.6 L120.4,360.7 L117.6,360.3 L116.2,357.9 L117.4,357.8 L117.4,356.6 L116.8,355.7 L115.8,356.0 L115.6,354.5 L113.2,355.4 L113.0,354.8 L111.8,357.4 L108.1,359.1 L107.7,360.3 L99.6,360.0 L98.4,362.1 L96.2,362.5 L92.5,359.7 L88.8,359.9 L86.7,358.9 L87.4,356.5 L82.1,352.9 L78.0,352.9 L77.7,351.0 L77.1,350.9 L76.0,352.8 L77.8,354.9 L76.6,355.1 L77.3,356.3 L75.7,356.6 L75.2,357.8 L72.9,359.3 L74.4,362.6 L75.5,363.1 L74.2,365.9 L75.0,367.3 L74.5,367.5 L78.2,367.8 L79.9,370.4 L81.8,369.9 L84.0,370.6 L91.5,373.7 L91.7,374.8 L94.2,375.0 L94.1,376.4 L95.3,376.1 L95.7,376.9 L93.8,377.6 L95.7,378.1 L95.9,378.9 L97.4,378.7 L97.9,379.8 L96.5,380.1 L97.6,380.7 L94.8,381.0 L93.5,382.3 L96.0,385.7 L96.6,385.4 L97.7,386.6 L97.3,387.6 L99.0,387.4 L100.4,389.2 L104.5,388.6 L108.4,391.5 L112.8,390.2 Z",
+  "bous_waldbredimus": "M329.1,499.8 L329.1,499.8 L329.3,499.6 L329.1,499.6 L329.1,499.7 L329.1,499.8 Z M319.8,492.7 L328.5,495.1 L328.4,496.4 L329.3,496.9 L328.6,498.7 L329.5,499.3 L328.2,500.4 L329.7,502.7 L327.7,505.9 L328.8,505.7 L330.9,507.3 L337.5,505.1 L339.5,505.2 L339.7,504.3 L341.7,504.5 L344.5,507.3 L345.4,509.6 L347.7,510.1 L351.0,508.7 L351.7,509.1 L350.9,509.6 L356.2,509.6 L357.3,510.3 L355.0,510.9 L355.7,511.7 L362.3,514.8 L363.7,513.3 L368.2,513.1 L369.7,509.2 L371.5,507.8 L370.8,505.0 L374.9,500.9 L375.4,501.5 L378.5,500.2 L375.6,498.2 L376.3,494.7 L373.5,492.5 L373.5,491.4 L371.8,490.5 L372.3,487.7 L371.6,484.8 L358.7,487.2 L355.3,485.8 L355.5,484.5 L350.9,485.8 L347.6,485.2 L344.8,483.2 L341.7,482.3 L337.5,482.3 L328.3,483.8 L327.6,486.1 L326.6,486.9 L326.4,486.2 L326.6,487.1 L323.0,486.8 L320.7,489.3 L320.7,490.7 L321.8,491.8 L319.8,492.7 Z",
+  "dippach": "M162.5,474.5 L161.5,473.8 L158.5,474.0 L157.3,474.8 L156.5,474.2 L151.7,476.5 L150.9,478.6 L147.7,479.6 L143.2,479.0 L137.8,476.5 L135.7,477.8 L134.3,479.6 L134.8,479.8 L132.4,482.1 L137.9,487.3 L138.0,489.4 L139.7,491.6 L140.1,495.0 L143.6,492.6 L145.5,493.6 L148.9,492.3 L150.7,492.5 L150.4,493.0 L155.3,491.6 L156.2,491.7 L155.8,492.8 L157.1,493.5 L158.6,492.9 L161.1,493.9 L160.5,494.2 L161.8,496.2 L167.2,494.6 L168.6,494.9 L169.7,493.8 L169.5,492.7 L168.8,492.8 L172.6,491.8 L171.7,491.0 L173.3,490.8 L173.3,489.9 L175.0,488.4 L181.3,485.3 L181.3,484.5 L177.7,484.6 L176.7,483.6 L178.1,482.4 L174.9,482.7 L175.1,482.0 L177.3,481.5 L177.4,480.5 L179.2,479.4 L178.9,478.8 L172.0,477.7 L172.7,475.3 L177.8,471.7 L175.8,471.0 L177.2,470.1 L176.3,468.8 L174.0,468.6 L171.9,470.5 L170.4,470.8 L170.6,471.3 L168.4,472.0 L166.5,474.0 L162.5,474.5 Z",
+  "heffingen": "M302.5,369.2 L300.4,372.5 L302.1,373.5 L301.8,375.4 L304.3,376.2 L305.7,378.1 L301.2,381.9 L304.2,382.6 L304.7,384.3 L302.3,384.4 L301.6,385.1 L304.9,386.2 L304.5,387.9 L306.3,389.2 L317.6,390.6 L324.2,390.4 L326.1,391.1 L326.8,388.9 L330.2,386.1 L330.5,383.4 L332.3,383.0 L334.2,380.8 L332.0,379.6 L334.6,378.0 L332.1,376.1 L325.1,377.0 L325.1,376.2 L326.0,375.9 L324.1,372.5 L325.4,372.2 L324.9,371.1 L321.4,372.1 L319.8,371.1 L318.2,372.3 L316.3,369.9 L314.0,370.4 L313.2,369.3 L310.2,369.8 L309.8,368.8 L316.7,367.3 L314.7,365.2 L312.9,366.8 L312.3,366.3 L310.4,366.9 L309.2,363.6 L302.6,366.8 L302.5,369.2 Z",
+  "echternach": "M421.8,352.9 L419.7,351.9 L418.9,349.6 L409.4,348.6 L405.0,347.3 L395.3,340.0 L393.0,341.3 L397.2,345.7 L398.1,351.3 L390.5,354.2 L387.1,357.5 L384.9,361.4 L390.6,360.2 L396.4,361.1 L395.1,363.9 L395.0,371.7 L398.5,371.7 L399.1,372.6 L394.7,373.3 L389.8,376.0 L391.8,377.0 L396.7,374.5 L405.1,373.8 L406.8,370.6 L408.6,369.9 L411.4,366.8 L414.5,367.7 L415.5,367.3 L422.2,364.2 L421.8,363.6 L424.2,361.2 L432.9,361.9 L438.0,363.8 L441.0,362.4 L442.9,362.4 L445.2,359.8 L445.1,357.8 L444.3,357.2 L435.3,355.1 L434.3,352.3 L429.4,352.3 L428.2,350.7 L421.8,352.9 Z",
+  "lintgen": "M240.8,400.4 L241.3,399.0 L239.3,396.2 L237.9,395.9 L238.1,394.6 L233.9,393.1 L232.1,394.8 L232.0,395.9 L234.5,398.5 L232.2,399.4 L231.3,403.6 L230.5,404.3 L233.9,406.5 L234.2,407.5 L233.2,409.6 L234.4,411.8 L233.6,413.5 L242.2,414.2 L250.2,410.3 L255.7,408.8 L257.2,409.8 L264.7,408.5 L267.5,407.5 L267.9,406.2 L269.5,405.7 L271.0,403.9 L271.8,404.4 L274.7,403.7 L276.0,402.0 L279.7,400.8 L279.8,399.5 L278.4,397.6 L273.0,394.2 L272.4,391.3 L265.9,391.7 L263.7,390.9 L260.2,393.9 L251.0,396.8 L248.3,400.0 L241.4,401.6 L240.8,400.4 Z",
+  "erpeldange_sur_sure": "M216.7,314.7 L217.3,314.2 L219.3,314.9 L219.4,315.8 L223.7,315.3 L223.8,316.7 L224.8,316.4 L226.8,317.7 L228.2,317.2 L229.7,320.7 L232.2,321.8 L231.7,323.9 L237.1,328.4 L237.6,330.9 L240.4,331.1 L240.2,333.8 L248.0,334.1 L251.5,335.5 L255.5,338.6 L256.3,335.9 L260.2,334.8 L261.4,333.5 L261.6,331.5 L257.6,328.5 L259.1,325.7 L258.5,326.1 L256.4,325.0 L253.5,322.2 L252.3,322.7 L250.7,321.9 L248.2,322.0 L249.5,318.3 L247.8,317.2 L249.0,315.1 L246.4,314.1 L241.6,314.8 L240.9,314.2 L243.1,307.3 L246.2,306.3 L246.6,305.4 L245.5,303.8 L242.2,304.4 L242.6,303.8 L240.3,303.6 L239.5,302.7 L235.1,302.7 L231.4,308.2 L228.5,308.4 L227.4,307.6 L229.0,307.0 L229.2,306.1 L224.2,303.1 L221.5,299.3 L218.7,299.2 L217.2,300.0 L216.1,302.0 L214.4,301.8 L219.1,307.1 L216.4,308.2 L216.6,309.4 L214.8,310.2 L217.0,311.4 L216.6,312.9 L217.8,313.3 L216.7,314.7 Z",
+  "frisange": "M312.1,523.8 L310.8,522.6 L308.6,522.3 L311.4,518.1 L309.0,516.2 L311.6,514.8 L309.8,513.2 L308.1,512.9 L306.4,510.6 L305.2,510.7 L304.9,510.0 L303.7,511.0 L300.9,511.1 L299.9,510.1 L300.9,509.2 L298.7,508.8 L297.7,510.1 L298.1,511.4 L297.4,513.2 L292.8,513.6 L289.2,516.3 L290.0,516.8 L281.1,517.6 L279.9,516.3 L272.5,519.3 L272.5,522.5 L266.9,522.4 L262.4,520.1 L261.4,520.9 L262.9,522.1 L260.6,522.8 L259.0,522.2 L256.7,523.0 L257.2,523.9 L254.6,524.6 L254.5,525.4 L250.7,525.6 L250.0,526.7 L248.1,527.1 L249.0,527.6 L249.3,529.1 L248.2,529.3 L248.9,531.5 L249.6,531.4 L251.9,534.1 L252.1,535.7 L254.0,535.2 L254.7,536.0 L254.3,540.1 L261.5,537.2 L261.3,536.6 L263.0,536.2 L263.9,537.3 L266.5,536.6 L266.8,536.0 L263.8,534.1 L261.9,531.5 L263.4,530.1 L267.5,529.8 L274.2,526.4 L275.2,526.6 L275.0,527.4 L276.0,528.4 L277.5,527.8 L285.8,528.7 L286.1,529.3 L290.0,528.3 L297.0,528.7 L298.6,528.4 L298.1,527.2 L299.1,526.6 L300.2,527.3 L304.5,526.4 L309.5,527.7 L312.1,523.8 Z",
+  "kayl": "M183.5,550.2 L186.8,550.5 L187.3,551.6 L188.4,550.8 L194.3,551.9 L194.1,553.4 L196.2,554.9 L194.7,556.2 L198.1,557.7 L195.0,557.7 L194.8,558.5 L196.0,559.1 L195.3,559.7 L191.4,559.5 L190.3,560.3 L191.6,560.8 L191.7,561.6 L197.1,562.6 L201.8,555.7 L200.4,554.6 L203.3,551.2 L203.1,550.0 L203.9,549.1 L203.2,548.4 L203.9,548.4 L204.4,546.3 L206.7,545.2 L202.5,543.3 L205.5,541.9 L205.4,540.8 L206.8,539.8 L208.3,539.7 L207.9,538.9 L205.7,538.3 L206.9,537.4 L205.0,536.2 L207.0,535.6 L204.3,534.0 L205.7,533.0 L208.6,532.7 L206.6,532.1 L206.9,531.3 L205.8,530.4 L206.6,529.4 L202.9,528.6 L201.9,529.8 L200.1,530.3 L195.9,529.9 L195.6,528.9 L194.1,528.8 L192.7,530.3 L193.1,530.8 L183.1,534.6 L177.1,538.6 L176.3,540.3 L175.1,539.8 L175.9,541.9 L173.5,544.4 L173.6,545.9 L170.5,547.3 L169.9,548.0 L171.3,549.1 L168.9,550.4 L171.0,551.4 L174.8,548.7 L173.3,547.8 L176.0,546.1 L178.9,547.4 L180.1,549.2 L183.5,550.2 Z",
+  "schengen": "M371.1,550.3 L373.8,552.1 L377.0,551.3 L383.7,555.8 L386.3,555.6 L385.6,550.1 L385.0,550.0 L386.2,539.0 L385.0,536.0 L385.4,530.2 L378.8,515.5 L379.0,513.9 L381.4,511.2 L378.6,510.7 L378.8,509.9 L376.9,511.6 L373.0,512.6 L369.1,510.3 L368.2,513.1 L363.7,513.3 L362.3,514.8 L358.0,514.8 L355.9,516.8 L359.2,517.6 L360.5,518.8 L351.9,523.0 L345.2,528.2 L344.4,530.1 L346.6,532.2 L346.9,534.8 L338.9,534.1 L338.1,535.7 L339.7,535.6 L340.5,536.4 L339.6,537.4 L337.4,537.3 L338.5,539.3 L340.3,539.9 L339.2,540.4 L340.0,541.2 L341.3,541.3 L342.0,539.6 L346.0,539.2 L343.7,542.8 L344.2,543.9 L345.8,543.8 L349.6,545.6 L353.9,543.7 L354.9,545.7 L358.4,545.5 L362.8,548.2 L363.7,549.7 L365.4,550.0 L366.1,551.5 L371.1,550.3 Z",
+  "hesperange": "M239.7,493.0 L241.0,494.8 L241.9,494.6 L239.8,497.1 L238.7,497.1 L240.4,497.9 L243.0,497.8 L246.8,498.9 L246.5,499.4 L262.2,501.7 L263.6,501.6 L264.8,500.1 L265.7,500.4 L265.0,501.4 L268.9,501.9 L268.1,502.8 L275.4,504.6 L278.0,504.1 L279.8,502.7 L277.2,498.3 L280.7,497.1 L285.0,498.4 L286.3,497.4 L285.8,495.6 L290.0,492.7 L289.2,489.2 L290.2,488.8 L289.9,487.7 L288.2,487.0 L289.3,485.9 L285.9,484.8 L289.9,483.5 L288.4,482.0 L288.5,481.0 L287.0,480.5 L289.3,479.6 L293.9,475.9 L294.3,474.8 L293.3,474.5 L293.8,472.5 L291.6,470.9 L287.4,472.2 L283.1,471.8 L279.7,469.8 L271.9,470.6 L265.9,473.7 L261.5,477.4 L261.7,478.3 L259.1,479.2 L259.9,479.8 L250.9,482.7 L251.5,483.9 L248.3,486.5 L246.5,484.9 L245.5,485.3 L242.2,489.5 L243.9,489.3 L245.6,491.5 L239.7,493.0 Z",
+  "contern": "M332.2,474.2 L331.3,473.8 L332.6,472.0 L327.9,472.9 L326.5,472.0 L320.1,471.8 L311.6,468.7 L309.5,470.1 L310.2,471.0 L309.2,472.6 L306.6,472.2 L303.8,473.3 L302.7,472.7 L302.2,473.4 L300.8,472.6 L297.0,473.0 L291.3,478.1 L287.0,480.5 L288.5,481.0 L288.4,482.0 L289.9,483.5 L285.9,484.8 L289.3,485.9 L288.2,487.0 L289.7,487.5 L290.2,488.8 L293.0,487.4 L295.3,490.6 L299.3,489.5 L300.6,490.1 L302.6,489.2 L302.4,490.3 L305.1,492.9 L306.3,491.9 L309.7,491.8 L312.7,493.3 L316.8,493.3 L321.8,491.8 L320.6,490.3 L321.5,488.2 L323.0,486.8 L326.6,487.1 L326.4,486.2 L326.6,486.9 L327.6,486.1 L328.3,483.8 L341.7,482.3 L346.9,484.6 L347.8,483.9 L347.5,480.1 L346.3,479.7 L346.2,478.5 L343.6,475.6 L340.9,475.0 L339.8,473.5 L337.7,473.0 L333.4,473.3 L332.2,474.2 Z",
+  "tandel": "M281.7,312.7 L284.5,308.5 L287.7,310.0 L290.0,307.8 L293.4,308.1 L298.6,305.0 L305.2,305.2 L307.3,302.4 L309.0,301.5 L307.9,300.8 L307.2,297.3 L304.2,294.9 L308.2,293.6 L306.5,289.9 L305.4,288.9 L298.8,287.8 L297.8,285.7 L293.2,287.8 L289.8,287.4 L292.8,286.9 L291.7,285.9 L286.8,287.0 L285.7,286.3 L287.0,285.1 L284.8,285.9 L284.7,286.9 L283.4,286.5 L274.6,279.9 L273.0,276.8 L273.5,275.3 L269.5,276.6 L268.3,277.3 L268.7,278.0 L266.2,276.3 L266.7,276.9 L261.3,277.8 L256.4,274.6 L254.0,276.1 L250.5,275.9 L248.3,278.8 L240.5,283.0 L240.5,286.0 L239.5,287.8 L241.6,290.8 L240.5,290.4 L238.7,291.1 L239.9,294.2 L238.6,294.1 L237.8,295.4 L235.7,295.0 L237.9,296.4 L241.4,295.8 L241.9,296.5 L240.5,297.7 L242.5,299.0 L248.9,299.5 L246.5,301.9 L245.5,303.8 L245.8,305.0 L248.6,304.4 L249.0,303.3 L251.3,301.8 L254.5,303.3 L256.5,303.2 L257.6,304.8 L252.6,306.0 L255.5,306.8 L257.8,306.2 L264.4,311.2 L268.4,311.3 L272.9,314.0 L275.0,314.4 L275.6,316.2 L277.0,316.1 L277.0,317.0 L279.8,316.6 L282.7,317.9 L281.9,317.1 L283.0,315.8 L281.7,312.7 Z",
+  "groussbus_wal": "M108.4,320.1 L103.9,321.9 L102.6,321.0 L102.3,318.5 L100.4,318.8 L100.6,320.1 L99.5,320.8 L100.8,322.0 L100.6,322.9 L99.9,322.8 L101.3,323.6 L98.8,324.7 L98.1,326.5 L99.8,326.6 L100.3,328.7 L96.4,329.9 L97.1,330.6 L100.4,330.2 L100.5,330.8 L104.8,330.5 L107.0,331.2 L102.6,333.3 L96.9,334.2 L98.3,335.2 L103.3,335.5 L104.6,336.5 L104.3,339.8 L105.4,341.2 L107.5,341.2 L111.5,343.0 L114.3,346.6 L119.7,347.7 L120.5,344.2 L126.4,344.3 L129.6,345.0 L132.3,347.6 L137.7,349.7 L142.1,349.9 L142.2,351.8 L144.0,351.2 L145.4,352.2 L152.1,353.3 L152.0,352.0 L155.0,352.0 L157.3,350.7 L163.8,351.5 L164.8,349.1 L162.8,349.0 L160.9,347.4 L164.0,345.0 L163.6,343.9 L162.8,344.1 L161.8,341.5 L159.6,340.5 L160.5,339.6 L159.6,339.2 L159.3,336.8 L155.6,333.9 L156.3,332.5 L157.6,332.6 L158.0,331.6 L163.3,332.5 L164.7,332.1 L164.9,332.7 L165.5,331.7 L162.9,328.2 L161.7,328.4 L159.7,327.0 L160.1,326.4 L158.5,323.6 L154.4,323.8 L152.2,320.3 L151.4,320.9 L148.5,320.5 L147.0,319.3 L142.4,318.1 L137.3,318.1 L133.5,320.0 L129.6,324.7 L126.3,323.0 L123.1,324.9 L120.9,323.7 L120.8,322.7 L123.4,321.2 L127.0,321.7 L127.1,320.6 L126.3,319.9 L124.5,320.1 L124.1,317.8 L124.9,317.8 L123.3,317.6 L122.6,316.4 L123.1,316.0 L120.6,314.3 L120.0,312.7 L118.9,312.9 L119.1,312.0 L114.8,307.7 L112.6,310.2 L111.7,310.2 L110.6,312.9 L112.4,313.6 L111.3,315.5 L112.9,315.4 L113.7,316.3 L110.7,318.4 L108.6,318.3 L108.0,319.1 L108.4,320.1 Z",
+  "wincrange": "M163.9,203.9 L165.5,204.5 L169.2,203.9 L171.1,202.3 L174.9,202.2 L177.2,201.1 L185.4,203.7 L185.0,200.7 L186.4,200.7 L187.7,197.1 L190.3,196.5 L191.3,195.5 L190.3,193.4 L188.7,193.0 L187.8,191.7 L189.8,190.4 L190.1,189.3 L186.4,188.5 L186.1,187.2 L184.7,186.7 L182.6,188.0 L176.9,186.4 L177.3,185.9 L176.1,184.3 L176.5,183.3 L179.5,183.0 L179.6,182.4 L177.1,180.5 L172.6,180.0 L170.0,177.7 L168.6,178.4 L168.1,177.8 L165.7,178.1 L164.6,176.8 L151.7,180.9 L146.8,174.1 L147.9,173.7 L146.3,172.2 L145.7,169.8 L147.8,168.7 L146.5,167.6 L132.2,170.2 L125.1,172.9 L123.2,172.6 L121.5,173.3 L112.3,178.3 L111.9,184.7 L110.4,185.7 L107.2,190.9 L107.4,197.7 L104.8,199.2 L102.8,199.0 L96.4,200.7 L96.5,201.5 L92.3,203.1 L90.4,205.5 L90.0,207.5 L88.5,209.1 L89.9,209.8 L90.5,211.3 L92.6,211.3 L96.1,214.1 L97.6,216.6 L96.2,216.9 L96.7,217.8 L93.2,219.4 L94.0,220.4 L89.6,222.2 L90.8,223.1 L90.5,223.9 L91.8,226.5 L88.0,227.2 L88.3,227.8 L87.0,228.1 L87.5,229.9 L81.0,232.6 L80.4,231.9 L76.7,232.5 L74.1,234.0 L74.6,234.6 L71.2,234.5 L68.7,235.4 L68.4,236.7 L70.1,239.8 L69.0,240.2 L69.7,241.5 L69.3,243.1 L70.8,244.9 L74.3,246.6 L75.9,248.7 L78.4,248.3 L80.4,249.3 L86.9,248.9 L86.9,249.9 L90.8,248.5 L91.9,249.4 L91.1,250.4 L92.3,250.1 L91.5,250.7 L95.9,248.6 L97.0,249.4 L98.6,248.2 L98.6,246.2 L97.2,244.3 L98.2,243.0 L109.6,248.1 L109.9,247.0 L112.2,247.6 L114.4,246.9 L113.0,244.6 L113.7,244.4 L114.8,247.0 L117.3,246.5 L118.6,247.2 L118.9,246.0 L121.3,244.6 L120.9,243.0 L126.6,240.8 L127.2,238.0 L131.1,238.2 L131.7,236.9 L129.8,236.4 L128.8,233.9 L130.6,233.5 L130.6,232.7 L131.8,232.3 L131.3,231.7 L132.7,231.7 L130.7,230.8 L131.4,228.7 L132.5,228.4 L133.5,229.4 L133.3,231.4 L136.1,232.0 L140.1,228.5 L148.0,226.5 L146.6,227.4 L147.1,228.0 L153.3,224.7 L150.1,223.6 L151.0,222.6 L150.8,221.5 L148.0,219.3 L155.3,218.4 L156.1,216.5 L154.5,216.6 L157.1,215.5 L159.7,210.8 L162.5,212.2 L162.8,209.5 L165.0,208.1 L164.0,206.5 L164.6,204.9 L163.9,203.9 Z",
+  "sanem": "M122.7,505.7 L118.2,507.5 L118.9,508.3 L121.2,508.3 L120.8,508.9 L123.4,510.6 L122.8,511.9 L123.8,512.9 L119.5,514.8 L118.7,517.0 L119.8,519.1 L123.6,519.0 L124.0,520.1 L123.3,521.3 L124.5,522.8 L124.3,524.5 L122.9,527.7 L117.9,528.7 L120.6,529.5 L117.3,530.4 L116.4,531.4 L119.2,532.4 L119.5,531.2 L126.6,532.3 L127.0,531.8 L131.0,533.3 L132.7,532.0 L133.8,532.6 L138.2,531.8 L140.0,532.3 L139.3,533.6 L140.4,535.2 L140.2,533.9 L141.8,533.8 L141.2,532.1 L140.0,531.4 L141.2,529.3 L142.7,529.5 L144.1,527.5 L142.0,527.4 L142.1,526.6 L143.7,525.7 L147.0,526.3 L148.3,525.4 L153.6,525.0 L153.2,524.5 L153.9,523.7 L159.1,522.5 L157.6,519.0 L159.4,517.5 L158.8,516.5 L156.5,515.9 L156.8,514.9 L152.6,515.7 L146.2,514.7 L145.7,512.6 L148.4,509.4 L152.4,507.6 L153.6,506.0 L155.5,505.9 L155.3,504.9 L154.1,504.9 L150.4,506.0 L150.4,501.2 L153.0,497.3 L150.7,492.5 L148.9,492.3 L147.0,494.0 L146.6,495.5 L143.6,497.8 L139.9,496.4 L136.9,496.6 L136.9,498.0 L133.4,499.4 L117.1,502.4 L117.5,502.7 L114.2,505.2 L119.1,504.9 L122.7,505.7 Z",
+  "weiler_la_tour": "M290.2,488.8 L289.2,489.2 L290.0,492.7 L285.8,495.6 L286.3,497.4 L284.5,498.6 L280.7,497.1 L277.2,498.3 L279.8,502.7 L278.0,504.1 L275.4,504.6 L273.0,503.6 L273.6,505.3 L272.1,506.0 L273.5,509.2 L273.1,510.2 L275.0,511.6 L271.7,512.1 L271.7,512.9 L269.0,513.4 L267.0,514.2 L267.0,515.0 L262.8,516.4 L263.9,517.2 L265.6,516.7 L265.9,515.7 L266.3,516.5 L268.7,517.2 L268.6,519.0 L264.8,518.7 L262.8,520.2 L266.9,522.4 L272.5,522.5 L272.2,519.8 L273.7,518.4 L277.2,517.8 L276.9,517.3 L279.9,516.3 L281.1,517.6 L288.9,517.1 L290.0,516.8 L289.2,516.3 L290.7,514.7 L291.6,514.8 L292.8,513.6 L297.4,513.2 L298.1,511.4 L297.7,510.1 L298.7,508.8 L300.9,509.2 L299.9,510.1 L300.9,511.1 L303.7,511.0 L305.2,510.1 L306.0,509.1 L305.0,508.7 L305.6,507.9 L304.9,507.4 L306.1,506.6 L304.5,506.6 L303.2,505.2 L303.9,505.0 L300.5,502.3 L299.7,500.6 L303.9,499.5 L306.1,501.7 L308.8,501.6 L309.1,501.1 L306.5,498.8 L307.7,497.4 L306.9,496.2 L308.2,494.8 L306.4,492.5 L306.7,491.9 L305.1,492.9 L302.4,490.3 L302.6,489.2 L300.6,490.1 L299.3,489.5 L295.3,490.6 L293.0,487.4 L290.2,488.8 Z",
+  "beaufort": "M352.4,331.2 L349.3,332.1 L345.4,330.8 L338.4,331.6 L328.8,330.4 L324.9,332.8 L326.9,334.7 L329.9,335.1 L320.2,341.4 L320.8,345.3 L328.9,346.7 L331.7,345.5 L339.0,344.6 L343.8,344.8 L344.6,346.1 L351.2,345.0 L357.2,347.0 L360.7,346.3 L363.9,342.7 L363.7,338.0 L361.5,337.9 L358.0,335.8 L357.7,333.9 L359.5,329.1 L354.6,324.2 L350.7,325.7 L352.1,327.7 L352.4,331.2 Z",
+  "colmar_berg": "M215.0,344.1 L216.3,341.8 L210.1,341.3 L209.8,340.3 L210.7,339.1 L210.2,338.9 L208.7,341.2 L201.9,343.5 L202.7,344.2 L201.2,344.7 L198.9,343.4 L196.2,343.8 L196.5,345.7 L197.8,345.5 L198.5,347.8 L199.9,349.1 L205.9,350.7 L211.2,353.7 L208.5,355.1 L209.0,358.2 L213.9,358.6 L216.6,360.3 L221.9,360.2 L224.5,362.3 L227.7,362.9 L231.7,365.2 L235.1,363.9 L233.4,363.3 L236.9,361.5 L238.1,359.5 L241.2,357.8 L237.9,356.3 L237.0,353.4 L235.4,351.4 L233.7,350.4 L229.2,350.3 L227.6,349.4 L228.7,348.4 L227.4,346.4 L215.0,344.1 Z",
+  "koerich": "M168.4,434.9 L165.9,431.9 L168.2,430.5 L168.4,429.0 L170.1,428.8 L169.6,427.4 L166.0,428.0 L165.0,425.9 L166.8,425.1 L162.6,423.8 L158.8,420.9 L153.0,421.7 L150.5,421.2 L150.0,422.6 L147.7,423.9 L143.6,422.9 L138.8,425.8 L140.9,428.8 L140.1,429.6 L137.1,428.0 L133.3,428.7 L130.9,427.6 L125.2,432.6 L127.5,433.4 L131.5,439.4 L131.3,440.3 L135.8,441.4 L142.4,446.5 L146.3,447.7 L149.1,449.8 L152.0,449.2 L151.7,448.1 L153.8,447.0 L158.4,446.8 L165.2,443.9 L165.9,443.1 L165.0,441.3 L167.3,439.0 L166.9,438.1 L168.5,437.8 L168.0,436.9 L169.8,435.9 L168.4,434.9 Z",
+  "vichten": "M190.2,354.1 L190.6,353.7 L189.0,352.9 L191.5,347.4 L196.5,345.7 L196.7,344.9 L196.2,343.8 L194.4,344.7 L192.1,343.8 L192.8,340.6 L188.4,341.4 L190.2,344.2 L183.6,343.2 L179.1,345.5 L176.3,345.6 L173.3,348.0 L165.3,348.7 L163.9,350.0 L163.8,351.5 L157.3,350.7 L154.9,351.5 L155.0,353.1 L153.3,353.3 L159.5,353.8 L157.6,357.0 L160.5,358.3 L161.2,357.9 L162.2,359.6 L164.3,360.5 L165.8,360.0 L171.0,363.5 L173.3,366.1 L175.0,365.3 L176.0,366.3 L178.6,366.5 L180.8,366.4 L180.2,364.5 L181.3,364.1 L181.7,361.5 L184.9,360.7 L184.2,359.7 L195.2,356.7 L190.2,354.1 Z",
+  "preizerdaul": "M142.1,368.4 L143.9,367.5 L147.5,367.5 L147.2,366.4 L151.2,365.9 L150.4,364.5 L151.1,364.4 L150.9,362.2 L153.4,358.6 L152.9,356.4 L154.4,356.2 L152.2,354.1 L155.0,353.1 L155.0,352.0 L152.0,352.0 L152.1,353.3 L145.4,352.2 L144.0,351.2 L142.2,351.8 L142.1,349.9 L137.7,349.7 L132.3,347.6 L129.6,345.0 L120.5,344.2 L119.9,347.5 L116.7,350.0 L117.2,350.7 L116.3,351.6 L117.6,352.1 L116.0,352.6 L118.5,353.6 L115.6,354.5 L115.8,356.0 L116.8,355.7 L117.4,356.6 L117.4,357.8 L116.2,357.9 L117.6,360.3 L120.4,360.7 L121.5,361.6 L121.7,364.0 L124.3,366.1 L130.0,367.7 L130.5,368.5 L133.5,368.7 L132.9,370.1 L134.1,370.3 L134.0,371.2 L138.2,370.8 L141.4,369.5 L140.5,369.0 L142.1,368.4 Z",
+  "kaerjeng": "M125.2,474.0 L119.6,469.9 L118.4,465.2 L115.7,464.5 L117.8,463.8 L115.0,461.9 L115.5,460.0 L109.9,457.7 L103.5,460.7 L101.2,463.0 L100.8,466.1 L101.8,467.1 L101.0,468.0 L101.5,469.6 L95.3,471.6 L85.6,475.9 L84.8,476.9 L86.2,482.1 L91.4,482.7 L94.4,482.4 L96.4,480.5 L98.3,481.3 L99.6,484.0 L95.4,485.8 L98.8,486.4 L97.5,488.0 L99.3,489.4 L96.6,489.8 L95.0,490.9 L100.1,495.6 L100.7,497.8 L106.8,496.5 L106.6,498.1 L107.8,499.5 L106.4,503.4 L106.5,505.3 L109.3,505.7 L114.2,505.2 L117.8,502.2 L133.4,499.4 L136.9,498.0 L136.9,496.6 L139.9,496.4 L143.6,497.8 L146.6,495.5 L148.5,492.6 L145.5,493.6 L143.6,492.6 L140.1,495.0 L139.7,491.6 L138.0,489.4 L137.9,487.3 L132.4,482.1 L134.8,479.8 L130.7,479.2 L131.6,478.0 L127.2,476.4 L125.2,474.0 Z",
+  "boulaide": "M44.7,310.6 L45.0,311.9 L47.6,313.3 L47.1,315.1 L49.8,316.3 L52.8,315.1 L52.5,313.0 L53.6,312.2 L54.8,312.5 L55.6,314.1 L54.7,317.2 L57.2,317.6 L57.5,318.6 L59.0,317.9 L60.9,318.4 L58.9,320.5 L58.6,322.0 L60.0,322.1 L61.7,319.5 L63.5,319.2 L71.2,320.5 L78.5,318.1 L80.3,315.8 L82.7,316.4 L83.9,315.7 L82.2,313.3 L80.6,313.1 L80.9,312.2 L79.7,310.7 L81.2,309.8 L85.5,311.3 L88.7,310.5 L88.2,310.0 L89.0,309.8 L88.8,308.1 L90.0,307.6 L87.0,305.6 L84.4,305.3 L86.6,303.6 L83.4,301.0 L85.9,300.1 L88.7,301.3 L89.5,299.4 L87.3,297.7 L88.2,296.6 L85.8,295.3 L78.6,295.3 L77.3,294.6 L77.8,293.3 L71.7,294.0 L71.0,293.1 L71.3,291.9 L70.3,291.7 L68.2,291.7 L67.7,292.8 L66.5,292.7 L67.3,291.5 L64.8,292.2 L64.4,291.3 L65.3,291.0 L64.5,289.9 L57.1,290.0 L57.0,289.4 L52.8,290.6 L45.9,290.8 L41.9,289.8 L27.2,295.6 L26.0,296.5 L26.3,297.4 L22.4,298.6 L22.7,299.8 L20.3,301.6 L20.0,302.8 L22.3,303.9 L26.2,304.4 L27.0,305.4 L30.7,306.0 L32.5,307.1 L40.2,308.3 L40.8,309.6 L44.7,310.6 Z",
+  "vianden": "M302.4,285.0 L303.7,284.1 L302.5,282.5 L303.2,281.7 L302.2,281.2 L304.4,279.8 L300.2,275.9 L298.2,275.3 L302.4,272.0 L295.4,272.0 L293.5,269.4 L290.5,269.5 L287.2,273.1 L280.7,272.8 L276.2,273.9 L271.7,273.0 L269.8,274.4 L265.7,273.5 L259.1,274.0 L265.8,275.9 L266.3,277.0 L266.1,276.3 L268.7,278.0 L268.3,277.3 L269.5,276.6 L273.5,275.3 L273.1,277.1 L276.5,281.9 L278.7,282.6 L282.8,286.2 L284.7,286.9 L284.8,285.9 L287.0,285.1 L285.7,286.3 L286.8,287.0 L291.7,285.9 L292.8,286.9 L289.8,287.4 L293.2,287.8 L297.8,285.7 L298.8,287.8 L299.3,286.4 L302.4,285.0 Z",
+  "lorentzweiler": "M267.5,407.5 L257.2,409.8 L255.7,408.8 L250.2,410.3 L242.2,414.2 L233.6,413.5 L227.0,416.8 L226.4,420.7 L225.4,420.7 L226.3,422.7 L225.0,425.2 L226.9,425.5 L238.7,421.7 L241.7,421.3 L242.8,422.5 L245.7,421.2 L246.6,422.0 L251.4,422.8 L249.6,424.3 L251.3,425.2 L250.5,426.6 L255.4,426.5 L258.5,427.5 L265.7,427.0 L267.7,425.5 L270.7,424.8 L269.5,424.3 L270.1,423.9 L276.9,422.5 L278.7,420.7 L276.5,418.9 L279.9,417.4 L279.2,415.8 L281.2,413.1 L280.4,412.1 L280.8,408.9 L279.5,407.3 L278.1,407.7 L275.5,406.3 L276.4,406.0 L274.4,403.4 L270.3,404.3 L269.5,405.7 L267.9,406.2 L267.5,407.5 Z",
+  "ell": "M78.2,367.8 L74.5,367.5 L75.0,367.3 L74.2,365.9 L75.5,363.1 L74.4,362.6 L72.9,359.5 L75.7,356.6 L77.3,356.3 L76.6,355.1 L77.8,354.9 L76.0,352.8 L77.1,350.9 L76.2,350.7 L76.3,349.8 L72.6,350.5 L73.6,350.1 L71.9,348.6 L68.6,349.3 L70.0,348.0 L68.5,347.6 L64.8,349.9 L62.7,349.9 L62.6,350.6 L64.2,351.8 L62.1,353.6 L62.4,355.5 L60.3,356.5 L61.9,357.1 L60.0,357.9 L60.8,359.4 L59.3,361.5 L59.7,363.1 L56.6,363.9 L54.9,363.2 L52.3,365.9 L56.3,369.3 L56.9,371.6 L59.5,372.6 L61.4,374.8 L62.7,378.9 L66.4,380.7 L67.5,385.5 L69.3,385.9 L69.0,387.1 L70.5,388.1 L74.8,388.0 L75.9,389.6 L75.4,390.6 L78.6,389.9 L78.9,391.2 L81.0,391.0 L81.3,389.8 L85.8,390.0 L86.4,388.9 L93.0,386.9 L93.9,388.2 L97.8,386.9 L93.5,382.3 L94.8,381.0 L97.6,380.7 L96.5,380.1 L97.9,379.8 L97.4,378.7 L95.9,378.9 L95.7,378.1 L93.8,377.6 L95.7,376.9 L95.3,376.1 L94.1,376.4 L94.2,375.0 L91.7,374.8 L91.5,373.7 L84.0,370.6 L81.8,369.9 L79.9,370.4 L78.2,367.8 Z",
+  "dudelange": "M246.8,536.6 L247.0,535.9 L240.1,532.6 L239.2,531.4 L237.0,531.6 L234.8,528.3 L230.4,528.9 L226.7,532.6 L223.2,530.4 L215.1,529.1 L214.9,531.8 L213.9,533.4 L212.1,532.3 L208.5,532.3 L208.2,533.2 L205.7,533.0 L204.3,534.0 L207.0,535.6 L205.0,536.2 L206.9,537.4 L205.7,538.3 L207.9,538.9 L208.3,539.7 L206.8,539.8 L205.4,540.8 L205.5,541.9 L202.5,543.3 L206.7,545.2 L204.4,546.3 L203.9,548.4 L203.2,548.4 L203.9,549.1 L203.1,550.0 L203.3,551.2 L200.4,554.6 L201.8,555.7 L203.6,553.3 L206.5,551.8 L211.2,552.8 L214.7,552.3 L215.5,553.4 L218.7,553.3 L219.6,556.4 L222.8,558.2 L226.2,558.8 L226.3,559.5 L231.2,559.7 L231.3,556.8 L229.6,553.5 L230.6,551.2 L232.2,550.1 L231.9,549.5 L236.2,548.3 L238.9,549.5 L244.3,547.8 L244.0,546.0 L246.6,542.6 L246.2,538.2 L246.8,536.6 Z",
+  "nommern": "M266.1,369.8 L267.9,369.2 L268.7,369.9 L270.1,368.5 L271.2,368.5 L271.9,369.6 L272.5,367.9 L276.6,366.3 L279.3,367.5 L280.1,366.3 L278.8,365.6 L278.9,364.7 L280.7,362.6 L282.0,359.1 L284.1,358.5 L287.0,359.0 L286.7,357.8 L284.8,356.9 L283.5,357.3 L284.0,356.2 L283.0,356.4 L282.0,355.2 L283.4,353.7 L283.7,351.9 L281.5,348.4 L282.3,346.0 L280.2,345.5 L274.1,346.8 L267.0,345.7 L260.6,348.2 L259.9,347.7 L260.1,345.6 L259.2,344.0 L257.2,343.4 L244.6,349.7 L236.1,352.9 L237.0,353.4 L238.6,357.0 L241.2,357.8 L238.1,359.5 L236.9,361.5 L233.4,363.3 L235.1,363.9 L235.3,365.1 L242.4,363.9 L242.5,365.6 L244.6,365.9 L250.1,364.3 L252.6,367.4 L254.1,367.3 L254.2,370.2 L256.3,369.6 L259.1,372.7 L259.3,375.1 L260.4,374.8 L261.0,375.6 L265.4,374.0 L264.3,373.2 L266.1,369.8 Z",
+  "stadtbredimus": "M372.0,489.3 L372.0,490.8 L373.5,491.4 L373.5,492.5 L376.3,494.7 L375.6,498.2 L378.5,500.2 L381.2,499.9 L381.2,500.6 L383.9,498.3 L389.9,496.9 L380.3,492.1 L379.3,490.9 L379.6,489.7 L381.0,488.4 L385.8,486.6 L392.5,488.0 L393.6,487.6 L394.0,486.3 L389.7,482.5 L389.2,480.3 L387.8,480.0 L387.0,480.7 L386.5,478.8 L383.8,479.0 L384.2,477.9 L381.4,477.2 L377.9,478.7 L373.0,477.7 L362.2,477.8 L353.2,482.1 L355.4,484.1 L355.3,485.8 L358.7,487.2 L371.6,484.8 L372.0,489.3 Z",
+  "schuttrange": "M335.4,449.1 L330.1,448.7 L319.7,452.2 L317.2,454.1 L315.8,454.2 L315.3,456.2 L312.9,456.7 L313.1,458.5 L307.3,459.9 L306.5,460.9 L307.5,461.8 L310.2,461.3 L311.9,463.8 L310.0,467.6 L311.0,469.0 L320.1,471.8 L326.5,472.0 L327.9,472.9 L332.6,472.0 L349.0,459.5 L352.0,458.1 L350.8,455.5 L348.7,454.5 L348.0,453.0 L343.9,453.5 L343.8,452.4 L342.2,452.3 L340.8,451.1 L340.1,447.7 L340.7,447.2 L335.4,449.1 Z",
+  "schifflange": "M196.7,525.4 L195.3,525.0 L195.0,523.8 L188.0,522.4 L187.4,521.9 L188.1,521.5 L184.0,518.7 L182.0,519.5 L181.0,521.2 L178.2,521.3 L174.8,520.1 L172.7,521.6 L173.9,523.1 L171.6,523.8 L173.6,526.8 L171.9,529.5 L170.7,529.6 L172.1,532.1 L169.0,534.3 L172.2,535.4 L170.8,536.2 L174.7,536.6 L174.7,537.4 L171.7,538.4 L174.7,539.5 L173.3,540.1 L171.4,539.6 L171.0,541.1 L172.8,542.1 L173.5,540.8 L175.1,540.4 L175.1,539.8 L176.3,540.3 L177.1,538.6 L183.1,534.6 L193.1,530.8 L192.7,530.3 L194.1,528.8 L195.6,528.9 L195.7,529.7 L196.7,525.4 Z",
+  "bech": "M355.7,380.6 L354.4,381.2 L356.0,382.4 L347.0,383.6 L339.9,386.5 L339.4,387.7 L337.8,388.1 L335.3,385.9 L326.6,390.3 L326.3,389.8 L326.1,391.1 L331.9,391.1 L338.0,393.1 L345.5,394.3 L346.4,395.7 L348.8,394.8 L348.4,396.0 L350.6,396.0 L352.0,397.0 L355.9,396.2 L363.0,396.5 L363.1,397.5 L370.8,398.7 L370.3,398.4 L371.9,398.2 L372.3,399.1 L374.3,398.2 L372.4,396.2 L376.1,394.6 L379.5,396.6 L386.2,396.9 L392.4,396.2 L393.5,395.5 L392.5,395.3 L392.3,393.2 L390.7,392.8 L391.5,391.3 L390.0,390.5 L391.2,387.5 L394.6,386.6 L396.5,384.5 L399.3,385.1 L400.7,384.4 L402.9,382.8 L404.7,379.9 L404.8,378.1 L402.6,374.0 L401.0,373.8 L395.4,374.9 L391.8,377.0 L389.3,376.3 L389.1,377.8 L391.8,377.0 L393.8,380.5 L392.4,381.0 L391.3,379.5 L390.1,380.0 L388.2,377.1 L387.2,377.5 L384.2,376.0 L384.4,379.1 L374.1,381.9 L368.5,379.5 L363.9,379.1 L363.8,378.2 L359.7,380.0 L360.0,378.3 L358.8,378.5 L355.7,380.6 Z",
+  "wormeldange": "M416.6,452.4 L412.9,455.1 L413.1,456.0 L407.2,457.6 L406.0,461.1 L403.0,459.6 L403.4,459.1 L401.5,458.7 L402.8,456.6 L399.0,456.4 L399.1,455.0 L396.6,452.4 L393.1,453.3 L392.5,452.2 L396.5,450.5 L395.8,449.9 L391.8,450.1 L389.1,447.1 L384.5,445.7 L376.9,447.1 L377.2,454.0 L378.2,455.6 L381.0,454.3 L382.2,455.8 L381.3,456.6 L382.9,458.0 L384.3,458.4 L385.9,457.7 L389.3,460.2 L396.7,463.1 L393.3,464.2 L390.9,463.1 L387.9,463.4 L384.7,464.5 L384.3,465.5 L386.7,467.0 L392.8,469.1 L392.2,470.0 L392.8,470.6 L391.1,470.7 L391.0,472.6 L393.8,472.1 L394.0,473.3 L393.0,474.5 L388.1,478.8 L388.3,480.2 L389.2,480.3 L390.8,478.0 L395.2,474.7 L402.7,473.6 L409.6,467.1 L415.3,464.1 L420.3,453.8 L426.8,444.1 L427.4,441.5 L426.8,440.6 L423.9,439.7 L420.4,439.9 L418.9,438.9 L418.9,437.6 L416.6,437.5 L416.1,440.3 L416.9,443.5 L413.7,446.4 L411.7,445.7 L412.0,446.8 L414.3,447.0 L417.9,449.9 L416.6,452.4 Z",
+  "rosport_mompach": "M470.0,375.3 L467.8,374.2 L467.8,373.2 L471.9,368.9 L466.4,366.4 L465.5,364.5 L466.4,363.5 L474.5,360.4 L479.9,355.9 L479.1,353.5 L473.8,351.4 L471.8,355.8 L468.6,358.1 L465.3,353.6 L459.6,351.8 L458.4,352.4 L455.6,352.1 L452.8,350.8 L450.5,348.0 L445.3,345.9 L441.3,347.7 L437.1,351.4 L434.3,352.3 L434.2,353.0 L435.3,355.1 L440.9,356.0 L445.1,357.8 L445.2,359.8 L444.3,361.4 L438.0,363.8 L432.9,361.9 L424.2,361.2 L421.8,363.6 L422.2,364.2 L415.5,367.3 L414.5,367.7 L411.4,366.8 L408.6,369.9 L406.8,370.6 L405.5,373.6 L402.6,374.0 L404.8,378.1 L404.7,379.9 L402.9,382.8 L399.2,385.4 L402.0,386.0 L400.9,387.5 L402.6,388.7 L409.8,391.0 L407.0,392.2 L409.0,393.1 L409.4,394.4 L411.8,394.0 L413.0,395.2 L415.5,395.5 L415.8,397.3 L418.0,397.4 L420.4,398.6 L422.8,397.1 L424.8,398.0 L429.3,395.1 L430.5,392.7 L431.6,392.1 L438.7,392.9 L439.2,393.8 L445.1,392.0 L445.8,393.0 L448.0,392.1 L449.5,394.6 L451.9,395.8 L455.4,395.7 L458.9,397.2 L462.7,397.6 L463.5,390.2 L462.2,388.4 L462.2,386.6 L464.4,384.7 L469.5,383.3 L472.4,381.3 L472.5,377.7 L470.0,375.3 Z",
+  "vallee_de_lernz": "M305.0,361.4 L307.4,361.1 L310.4,366.9 L312.3,366.3 L312.9,366.8 L314.7,365.2 L316.7,367.3 L318.7,367.1 L318.2,365.6 L314.2,362.9 L314.6,360.9 L320.0,358.9 L322.4,357.2 L319.1,352.9 L325.4,352.3 L324.7,351.7 L325.9,351.1 L325.4,350.1 L328.5,349.2 L329.2,346.5 L320.8,345.3 L320.2,341.4 L329.9,335.1 L326.9,334.7 L324.9,332.8 L328.3,330.8 L326.5,329.0 L324.2,329.9 L323.5,328.7 L324.5,327.9 L322.0,326.1 L317.9,325.7 L316.0,327.9 L313.8,327.3 L310.0,330.3 L308.4,330.4 L299.7,330.4 L294.8,328.0 L289.8,327.3 L281.2,332.2 L277.6,332.0 L271.8,334.2 L266.5,334.5 L261.0,336.7 L261.2,338.6 L255.5,338.2 L258.0,340.5 L257.2,343.4 L259.4,344.3 L260.1,348.0 L262.8,347.7 L267.0,345.7 L274.1,346.8 L280.2,345.5 L282.3,346.0 L281.5,348.4 L283.7,351.9 L283.4,353.7 L282.0,355.2 L283.0,356.4 L284.0,356.2 L283.5,357.3 L284.8,356.9 L287.4,357.9 L287.4,359.0 L291.7,360.0 L293.3,361.1 L293.3,362.3 L299.0,365.0 L299.7,363.8 L300.9,363.9 L301.5,362.4 L305.0,361.4 Z",
+  "bissen": "M192.6,368.7 L196.0,374.1 L194.4,378.3 L198.5,379.7 L203.2,376.9 L208.4,375.5 L218.4,377.4 L218.5,374.9 L219.4,374.1 L228.7,371.3 L230.4,370.0 L229.1,369.9 L228.5,367.9 L231.7,365.2 L227.7,362.9 L224.5,362.3 L221.9,360.2 L216.6,360.3 L213.9,358.6 L209.0,358.2 L208.5,355.1 L211.2,353.7 L205.9,350.7 L199.9,349.1 L198.5,347.8 L197.8,345.5 L194.0,346.1 L191.5,347.4 L189.0,352.9 L195.2,356.7 L184.2,359.7 L184.9,360.7 L181.7,361.5 L181.8,363.1 L180.2,364.5 L181.0,366.7 L186.7,369.7 L192.0,369.6 L192.6,368.7 Z",
+  "leudelange": "M229.0,490.4 L227.3,488.7 L227.0,487.0 L222.0,488.3 L218.8,487.6 L218.1,485.4 L219.0,483.6 L217.0,481.9 L217.0,480.7 L215.1,480.7 L213.9,481.7 L213.0,480.4 L199.8,483.3 L198.8,486.3 L201.2,486.2 L200.6,488.7 L201.2,489.1 L200.4,489.3 L201.7,491.3 L199.9,492.1 L195.8,491.7 L194.5,492.3 L195.0,494.0 L196.2,494.2 L195.0,495.5 L197.2,496.9 L198.9,501.1 L201.4,502.3 L202.9,504.2 L207.9,502.5 L208.3,504.8 L214.0,503.1 L219.7,503.2 L223.7,501.7 L223.1,500.9 L225.0,498.0 L226.0,497.9 L227.2,495.9 L231.7,495.0 L230.5,494.0 L233.2,492.0 L229.0,490.4 Z",
+  "clervaux": "M237.9,208.2 L238.6,205.2 L242.6,205.7 L243.1,203.2 L247.6,200.7 L245.2,198.6 L242.7,201.3 L239.9,200.0 L243.4,196.1 L243.5,194.9 L242.0,193.5 L242.3,189.9 L243.8,188.9 L247.7,189.7 L249.9,189.0 L246.5,187.3 L245.5,184.5 L251.3,183.2 L248.7,181.6 L248.5,180.5 L250.9,177.6 L248.0,177.2 L246.8,175.9 L247.6,173.0 L251.8,171.3 L252.5,168.0 L248.6,168.1 L246.1,165.7 L242.7,164.3 L236.7,164.5 L234.6,165.5 L232.8,168.1 L228.1,169.5 L226.8,171.2 L221.5,174.7 L219.9,174.6 L216.6,179.5 L211.3,182.0 L210.3,183.3 L206.7,183.5 L207.1,184.3 L205.1,185.9 L194.2,187.8 L188.8,187.1 L188.4,188.5 L190.1,189.5 L187.8,191.7 L188.7,193.0 L190.3,193.4 L191.3,195.5 L190.3,196.5 L187.7,197.1 L186.4,200.7 L185.0,200.7 L185.4,203.7 L177.2,201.1 L174.9,202.2 L171.1,202.3 L169.2,203.9 L165.5,204.5 L163.9,203.9 L164.6,204.9 L164.0,206.5 L165.0,208.1 L162.8,209.5 L162.5,212.2 L159.7,210.8 L157.1,215.5 L154.5,216.6 L156.1,216.5 L155.3,218.4 L148.0,219.4 L150.8,221.5 L151.0,222.6 L150.1,223.6 L153.3,224.7 L157.0,224.5 L156.6,226.4 L155.5,226.9 L156.1,227.4 L154.9,227.8 L156.6,229.2 L159.1,229.2 L160.3,231.1 L159.3,232.8 L163.8,231.6 L164.2,233.2 L166.2,234.4 L164.3,235.0 L164.2,236.0 L166.8,234.6 L172.4,236.5 L175.7,236.2 L176.6,236.5 L176.2,237.0 L177.1,238.2 L180.1,239.7 L177.7,240.8 L178.5,241.6 L182.3,241.2 L183.0,242.6 L183.8,242.1 L185.6,243.8 L188.1,242.9 L188.3,243.6 L190.8,243.5 L195.9,240.6 L196.1,240.0 L194.6,239.4 L193.6,237.5 L194.8,237.9 L197.5,236.5 L196.9,235.7 L194.8,235.9 L193.7,233.5 L196.7,233.4 L196.7,231.6 L200.7,230.5 L201.1,227.6 L203.7,226.1 L203.1,224.4 L203.8,223.4 L205.7,223.4 L207.8,220.6 L208.9,221.2 L206.6,223.1 L205.1,227.6 L208.6,225.1 L207.7,224.3 L208.0,223.6 L211.6,221.0 L213.9,220.3 L211.9,218.9 L217.1,217.2 L218.0,218.6 L221.5,216.3 L224.4,216.6 L231.5,215.4 L231.6,213.7 L240.4,210.4 L238.4,209.5 L237.9,208.2 Z",
+  "grevenmacher": "M429.3,430.6 L434.5,426.1 L437.5,422.2 L439.6,421.1 L439.0,420.4 L437.3,421.1 L433.7,420.1 L430.2,420.5 L423.2,416.8 L419.3,419.9 L411.5,423.7 L407.7,422.0 L402.4,427.2 L391.3,430.1 L389.2,432.7 L388.9,433.4 L390.0,433.8 L388.9,434.9 L381.2,437.1 L389.2,435.8 L395.7,441.9 L404.4,443.1 L408.7,441.2 L410.5,442.8 L415.5,443.3 L416.9,443.1 L416.1,440.3 L416.6,437.5 L418.9,437.6 L422.5,433.8 L429.3,430.6 Z",
+  "habscht": "M164.6,421.7 L168.8,420.4 L169.6,421.4 L168.6,422.7 L170.2,425.0 L171.3,423.3 L175.2,422.3 L178.4,421.9 L178.3,423.3 L183.8,422.7 L185.9,421.1 L186.1,419.8 L183.8,418.2 L179.3,420.0 L176.4,419.6 L176.4,417.9 L172.1,418.6 L171.1,418.1 L171.5,416.8 L172.9,416.4 L172.4,415.7 L173.8,414.7 L175.1,414.8 L174.3,414.1 L175.3,413.6 L171.2,409.8 L172.7,408.6 L171.0,407.0 L171.9,406.7 L171.5,406.0 L173.2,405.4 L172.6,404.6 L167.3,405.7 L167.1,403.4 L165.8,403.0 L160.4,404.7 L155.6,404.5 L146.4,409.5 L144.0,411.7 L141.8,411.7 L136.5,414.5 L132.0,415.6 L131.1,414.6 L128.2,414.7 L128.1,413.6 L123.0,414.8 L120.7,412.7 L121.1,410.7 L119.9,409.8 L115.0,410.4 L114.3,409.3 L108.4,410.8 L102.3,416.0 L98.7,417.6 L97.0,419.8 L95.8,420.0 L95.2,420.8 L95.9,421.5 L93.9,423.4 L94.4,424.5 L93.0,427.7 L95.0,430.5 L104.7,433.0 L104.8,433.9 L106.4,433.8 L106.2,434.6 L107.2,435.3 L109.1,433.8 L110.6,434.7 L113.0,433.9 L113.2,430.8 L113.8,430.6 L119.8,430.7 L125.2,432.6 L130.9,427.6 L133.3,428.7 L137.1,428.0 L140.1,429.6 L140.9,428.8 L138.8,425.9 L139.5,425.0 L144.1,422.8 L147.7,423.9 L150.0,422.6 L150.5,421.2 L153.0,421.7 L158.8,420.9 L161.8,423.3 L164.6,421.7 Z",
+  "steinfort": "M107.4,458.7 L109.0,457.8 L112.2,457.8 L115.7,456.2 L119.9,456.0 L117.5,456.0 L116.9,453.6 L114.4,454.7 L113.7,453.8 L110.6,453.6 L105.7,455.5 L105.0,456.7 L107.4,458.7 Z M116.7,444.9 L116.3,448.0 L117.4,448.2 L117.4,450.3 L119.5,452.0 L119.0,452.2 L124.0,452.3 L125.7,453.4 L127.0,453.2 L127.6,454.1 L133.3,452.2 L135.3,454.2 L136.2,457.0 L137.9,458.1 L141.2,454.3 L144.6,453.2 L146.9,451.0 L149.7,450.5 L146.3,447.7 L142.4,446.5 L135.8,441.4 L131.3,440.3 L131.5,439.4 L127.5,433.4 L119.8,430.7 L113.8,430.6 L113.2,430.8 L113.0,433.9 L110.6,434.7 L109.3,433.9 L110.4,435.9 L111.5,436.2 L112.6,434.8 L114.6,436.4 L116.3,435.1 L116.8,435.7 L115.8,436.3 L116.1,437.4 L119.9,436.6 L121.2,438.4 L117.9,439.2 L116.8,441.2 L118.2,442.9 L116.8,443.4 L116.0,444.8 L116.7,444.9 Z",
+  "bertrange": "M216.1,473.9 L218.3,473.6 L218.2,472.7 L219.7,472.7 L220.5,471.4 L218.0,470.0 L219.3,469.3 L218.1,468.0 L208.6,466.9 L209.4,463.8 L204.3,464.3 L204.4,463.0 L203.4,463.0 L203.1,461.8 L202.5,461.9 L203.0,460.6 L201.8,460.2 L202.2,459.6 L199.2,458.0 L197.5,458.8 L196.6,460.3 L193.8,461.5 L192.5,465.0 L192.9,466.0 L192.2,466.0 L192.3,467.3 L191.0,468.6 L183.0,468.9 L180.6,468.0 L180.2,469.3 L178.4,470.4 L177.9,472.1 L172.7,475.3 L172.0,477.7 L178.9,478.8 L179.2,479.4 L177.4,480.5 L177.3,481.5 L175.1,482.0 L174.9,482.7 L178.1,482.4 L176.7,483.6 L177.7,484.6 L181.3,484.5 L181.2,485.2 L185.9,484.3 L187.3,483.3 L188.4,483.4 L189.2,485.1 L192.4,484.7 L191.6,482.9 L195.9,482.3 L196.6,483.0 L196.0,483.7 L197.1,483.7 L213.5,480.3 L217.9,477.2 L216.6,476.3 L216.1,473.9 Z",
+  "consdorf": "M384.2,376.0 L387.2,377.5 L388.2,377.1 L390.1,380.0 L391.3,379.5 L392.4,381.0 L393.8,380.5 L391.8,377.0 L389.1,377.8 L389.3,376.3 L394.7,373.3 L399.1,372.6 L398.5,371.7 L395.0,371.7 L395.1,363.9 L396.4,361.1 L388.7,360.3 L383.6,361.8 L381.4,359.9 L377.2,359.0 L374.2,358.9 L374.1,359.5 L373.0,358.8 L368.3,360.3 L362.0,360.4 L353.6,363.9 L354.6,364.7 L352.0,364.7 L346.8,366.4 L344.6,370.5 L341.9,371.6 L341.4,373.3 L337.6,374.2 L337.2,378.0 L332.3,383.0 L330.5,383.4 L330.2,386.1 L326.8,388.9 L326.5,390.3 L335.3,385.9 L337.8,388.1 L339.4,387.7 L339.9,386.5 L347.0,383.6 L356.0,382.4 L354.4,381.2 L358.8,378.5 L360.0,378.3 L359.7,380.0 L363.8,378.2 L363.9,379.1 L368.5,379.5 L374.1,381.9 L384.4,379.1 L384.2,376.0 Z",
+  "manternach": "M430.2,409.8 L430.5,408.9 L431.7,408.8 L435.1,409.3 L436.4,410.6 L437.9,409.7 L435.9,409.3 L435.7,407.0 L434.8,406.7 L437.5,404.2 L435.7,404.6 L434.8,403.4 L435.7,402.0 L435.5,400.0 L437.6,399.1 L437.1,398.0 L437.9,397.1 L439.8,396.6 L439.3,395.9 L440.0,394.3 L438.7,392.9 L431.6,392.1 L430.5,392.7 L429.3,395.1 L424.8,398.0 L422.8,397.1 L420.4,398.6 L418.0,397.4 L415.8,397.3 L415.5,395.5 L413.0,395.2 L411.8,394.0 L409.4,394.4 L409.0,393.1 L407.0,392.2 L409.8,391.0 L402.6,388.7 L400.9,387.5 L402.0,386.0 L396.5,384.5 L394.6,386.6 L391.6,387.0 L390.0,390.5 L391.5,391.3 L390.7,392.8 L392.3,393.2 L392.5,395.3 L393.5,395.5 L393.1,396.0 L385.6,396.9 L386.4,398.9 L384.2,399.4 L382.8,400.9 L384.5,402.7 L382.5,405.7 L385.6,405.0 L386.6,407.7 L390.7,406.8 L393.9,407.4 L394.7,405.7 L395.7,405.8 L396.4,408.0 L397.9,407.8 L397.3,411.2 L400.6,412.9 L403.0,412.0 L402.5,414.6 L405.6,414.9 L407.5,413.2 L406.2,414.9 L404.8,415.3 L408.9,417.4 L409.6,418.8 L406.6,421.6 L411.3,423.1 L411.2,423.7 L416.2,421.7 L423.2,416.8 L430.2,420.5 L437.1,420.3 L433.0,415.2 L435.3,412.4 L430.2,409.8 Z",
+  "beckerich": "M116.3,392.0 L116.0,391.1 L114.1,391.3 L113.9,390.6 L112.0,390.1 L108.4,391.5 L104.5,388.6 L100.4,389.2 L99.0,387.4 L95.4,387.2 L93.9,388.2 L93.0,386.9 L86.4,388.9 L85.8,390.0 L81.3,389.8 L81.0,391.0 L78.9,391.2 L78.6,389.9 L77.6,390.0 L75.4,390.6 L74.8,391.6 L76.1,392.7 L73.1,394.1 L73.5,397.4 L71.9,398.2 L72.8,401.1 L71.3,401.6 L72.4,403.1 L77.6,402.5 L80.8,404.3 L83.0,404.4 L91.9,401.0 L94.9,401.2 L98.0,403.2 L98.1,404.2 L100.7,404.1 L101.5,406.2 L100.1,406.6 L100.5,407.6 L107.5,411.3 L114.3,409.3 L115.0,410.4 L119.9,409.8 L121.1,410.7 L120.7,412.7 L123.4,414.9 L128.1,413.6 L129.0,415.1 L131.1,414.6 L131.4,412.3 L130.8,411.5 L127.9,411.1 L127.3,410.3 L134.4,407.6 L133.7,406.7 L139.0,405.8 L140.3,404.9 L139.8,404.4 L140.8,403.6 L140.1,403.0 L141.1,402.9 L140.9,401.6 L141.5,401.5 L140.7,400.5 L142.3,399.8 L140.3,399.8 L139.3,398.5 L137.7,398.9 L136.6,397.8 L138.0,397.3 L137.3,396.0 L141.6,394.4 L139.7,392.2 L141.5,391.5 L140.3,390.1 L139.6,390.4 L138.9,388.6 L136.0,389.1 L134.6,386.9 L134.8,385.0 L133.4,384.3 L130.3,386.9 L127.4,387.9 L127.5,389.3 L121.7,390.5 L122.0,391.9 L116.3,392.0 Z",
+  "strassen": "M208.0,443.8 L206.9,444.5 L206.3,446.4 L204.3,447.2 L204.6,448.3 L199.8,450.9 L201.3,452.5 L199.6,454.3 L200.6,457.1 L199.4,458.3 L202.2,459.6 L201.8,460.2 L203.0,460.6 L202.5,461.9 L203.1,461.8 L203.4,463.0 L204.4,463.0 L204.3,464.3 L209.4,463.8 L208.6,466.9 L218.1,468.0 L219.3,469.3 L218.0,470.0 L220.5,471.3 L222.2,470.5 L225.4,466.8 L226.9,465.6 L227.9,465.8 L229.4,463.1 L232.9,460.1 L226.7,460.2 L224.4,461.1 L225.5,459.9 L223.1,458.2 L215.0,458.7 L212.9,456.0 L217.4,450.5 L218.6,445.2 L216.5,442.3 L213.0,440.8 L211.0,443.0 L208.0,443.8 Z",
+  "biwer": "M377.3,394.9 L376.5,395.3 L376.1,394.6 L372.4,396.2 L374.3,398.2 L372.3,399.1 L371.9,398.2 L370.3,398.4 L370.8,398.7 L365.4,397.9 L358.5,398.7 L359.0,400.7 L356.9,402.5 L357.2,403.0 L354.8,403.5 L358.0,406.0 L359.9,408.8 L358.3,409.7 L360.6,411.9 L355.4,414.4 L350.8,414.9 L353.4,420.0 L358.0,420.2 L357.5,417.8 L363.3,417.4 L363.5,415.9 L364.9,414.9 L373.9,414.3 L376.6,416.2 L377.4,420.7 L378.9,422.1 L377.6,422.7 L378.6,423.5 L380.1,423.0 L382.6,425.3 L389.1,422.4 L390.9,423.7 L389.0,428.3 L391.3,430.1 L402.4,427.2 L403.9,426.2 L407.7,422.0 L406.6,421.6 L409.6,418.8 L408.9,417.4 L404.8,415.3 L406.2,414.9 L407.5,413.2 L405.6,414.9 L402.5,414.6 L403.0,412.0 L400.6,412.9 L397.3,411.2 L397.9,407.8 L396.4,408.0 L395.7,405.8 L394.7,405.7 L393.9,407.4 L390.7,406.8 L386.6,407.7 L385.6,405.0 L382.5,405.7 L384.5,402.7 L382.8,400.9 L384.2,399.4 L386.4,398.9 L385.8,396.9 L378.3,396.4 L377.3,394.9 Z",
+  "walferdange": "M265.2,439.6 L264.7,434.4 L256.3,435.8 L256.2,436.6 L253.7,435.8 L253.8,435.2 L248.4,434.4 L245.5,435.8 L245.7,437.8 L243.6,438.5 L244.3,439.2 L241.8,438.8 L242.1,439.6 L239.4,440.1 L239.4,440.7 L238.3,440.9 L238.4,440.2 L235.0,441.0 L232.4,442.3 L229.7,445.2 L231.4,447.8 L238.4,445.4 L240.5,445.5 L242.5,446.7 L253.8,445.1 L255.8,446.1 L262.3,445.2 L264.3,444.3 L263.9,443.4 L265.5,442.8 L268.3,438.8 L265.2,439.6 Z",
+  "luxembourg": "M269.9,471.4 L274.3,470.1 L277.7,470.5 L279.7,469.8 L283.8,471.7 L288.8,469.0 L290.7,467.0 L287.3,464.8 L282.7,463.6 L282.5,462.8 L283.7,462.5 L280.2,462.2 L283.0,461.4 L282.4,459.8 L277.3,461.1 L276.0,460.5 L278.0,458.6 L278.3,457.1 L280.5,455.8 L278.2,454.3 L278.5,453.4 L264.9,452.3 L255.5,455.4 L258.9,452.9 L267.9,451.0 L267.3,450.4 L268.4,448.5 L266.9,450.1 L258.9,450.4 L264.8,447.1 L266.1,443.9 L265.3,442.8 L263.9,443.4 L264.3,444.3 L262.3,445.2 L255.8,446.1 L253.8,445.1 L241.8,446.7 L240.5,445.5 L238.4,445.4 L231.4,447.8 L218.2,447.5 L217.4,450.5 L212.9,456.0 L215.0,458.7 L220.8,457.9 L224.2,458.5 L223.7,458.9 L225.5,459.9 L224.4,461.1 L226.7,460.2 L232.9,460.1 L229.4,463.1 L227.9,465.8 L226.9,465.6 L225.4,466.8 L223.7,469.4 L219.9,471.7 L219.7,472.7 L216.1,473.9 L216.6,476.3 L217.9,477.2 L213.0,480.4 L213.9,481.7 L215.1,480.7 L217.0,480.7 L217.0,481.9 L219.0,483.6 L218.1,485.4 L218.8,487.6 L222.0,488.3 L227.0,487.0 L227.3,488.7 L229.7,491.1 L233.2,491.8 L230.5,494.0 L231.7,495.0 L234.3,493.8 L236.0,493.9 L235.5,496.5 L239.8,497.1 L241.9,494.6 L241.0,494.8 L239.7,493.0 L245.6,491.5 L243.9,489.3 L242.2,489.5 L244.8,485.8 L246.5,484.9 L248.3,486.5 L251.5,483.9 L250.9,482.7 L259.9,479.8 L259.1,479.2 L261.7,478.3 L261.5,477.4 L269.9,471.4 Z",
+  "differdange": "M106.0,533.1 L108.9,534.3 L117.0,533.5 L119.2,532.4 L116.2,531.1 L120.6,529.5 L117.9,528.7 L122.5,527.9 L123.6,526.8 L124.5,522.8 L123.3,521.3 L124.0,520.1 L123.6,519.0 L119.8,519.1 L118.7,517.0 L119.5,514.8 L123.8,512.9 L122.8,511.9 L123.4,510.6 L120.8,508.9 L121.2,508.3 L118.9,508.3 L118.2,507.5 L120.1,506.3 L122.7,506.0 L122.4,505.5 L119.1,504.9 L109.3,505.7 L105.3,505.0 L100.5,506.8 L101.3,508.1 L97.6,508.3 L98.3,509.6 L99.5,510.0 L98.5,510.5 L96.4,509.5 L94.0,511.8 L94.8,512.8 L89.8,512.0 L86.5,515.1 L82.1,515.3 L76.9,517.1 L78.2,521.0 L85.2,524.0 L86.4,527.6 L91.3,529.0 L91.7,530.0 L95.5,532.5 L98.8,532.2 L99.4,533.2 L100.9,533.4 L106.0,533.1 Z",
+  "bettembourg": "M216.0,529.1 L223.2,530.4 L226.7,532.6 L230.4,528.9 L234.8,528.3 L237.0,531.6 L239.2,531.4 L240.1,532.6 L247.0,535.9 L245.5,528.8 L247.0,527.1 L245.6,524.3 L243.5,522.1 L240.6,520.6 L238.5,516.3 L234.1,517.1 L232.6,514.0 L231.9,514.2 L229.0,510.1 L229.7,509.2 L229.1,508.5 L230.2,508.3 L225.2,505.2 L224.1,505.4 L223.2,502.9 L221.8,502.3 L218.9,503.3 L214.0,503.1 L208.3,504.8 L207.3,506.9 L208.3,508.0 L206.8,509.3 L209.0,513.8 L208.8,515.7 L203.7,518.4 L205.1,519.8 L202.6,519.7 L202.9,520.6 L202.1,521.4 L203.9,522.7 L200.9,524.4 L200.4,525.0 L201.1,525.7 L196.7,525.4 L195.7,529.7 L200.1,530.3 L201.9,529.8 L202.9,528.6 L205.7,529.0 L206.6,529.4 L205.8,530.4 L206.9,531.3 L206.6,532.1 L212.1,532.3 L213.9,533.4 L214.9,531.8 L215.1,529.1 L216.0,529.1 Z",
+  "flaxweiler": "M416.6,452.4 L417.9,449.9 L414.3,447.0 L412.0,446.8 L411.7,445.7 L413.7,446.4 L416.9,443.1 L411.6,443.1 L408.7,441.2 L404.4,443.1 L395.7,441.9 L389.2,435.8 L381.2,437.1 L383.9,436.0 L379.6,435.8 L378.5,434.7 L378.1,432.9 L380.3,429.2 L370.0,431.8 L369.4,431.0 L360.0,433.7 L354.4,437.0 L360.3,440.4 L360.4,446.5 L358.9,446.5 L357.2,448.2 L351.3,450.8 L348.3,453.4 L348.7,454.5 L350.8,455.5 L352.0,458.1 L363.8,459.1 L363.0,460.4 L365.5,460.9 L365.6,461.6 L368.9,461.8 L368.7,463.1 L369.6,463.2 L369.8,465.5 L372.4,465.3 L372.8,466.5 L372.1,467.9 L373.0,468.6 L371.9,469.4 L373.0,470.4 L374.8,469.3 L374.3,467.8 L376.7,465.4 L378.3,465.9 L380.3,465.3 L381.6,466.1 L381.5,466.9 L386.6,463.6 L390.9,463.1 L393.3,464.2 L396.7,463.1 L390.1,460.6 L385.9,457.7 L384.3,458.4 L382.9,458.0 L381.3,456.6 L382.2,455.8 L381.0,454.3 L378.2,455.6 L377.2,454.0 L376.9,447.1 L384.5,445.7 L389.1,447.1 L391.8,450.1 L395.8,449.9 L396.5,450.5 L392.5,452.2 L393.1,453.3 L396.6,452.4 L399.1,455.0 L399.0,456.4 L402.8,456.6 L401.5,458.7 L403.4,459.1 L403.0,459.6 L406.0,461.1 L407.2,457.6 L413.1,456.0 L412.9,455.1 L416.6,452.4 Z",
+  "berdorf": "M393.0,341.3 L395.3,340.0 L394.0,338.3 L388.4,334.4 L383.4,329.5 L375.3,329.7 L370.2,330.8 L367.9,336.2 L363.7,338.0 L363.9,342.7 L360.4,346.8 L360.9,348.3 L360.0,352.5 L355.7,356.2 L355.3,358.1 L353.1,360.9 L353.2,362.5 L354.5,363.8 L362.0,360.4 L368.3,360.3 L373.0,358.8 L374.1,359.5 L374.2,358.9 L379.9,359.5 L382.1,360.4 L382.8,361.7 L384.4,361.7 L387.1,357.5 L390.5,354.2 L398.1,351.3 L397.2,345.7 L393.0,341.3 Z",
+  "weiswampach": "M232.2,144.5 L226.4,145.2 L222.1,143.7 L218.7,144.4 L219.5,149.1 L218.5,152.6 L214.5,152.1 L209.6,154.5 L199.3,151.9 L199.8,154.8 L203.0,157.9 L203.2,159.2 L201.1,159.9 L195.4,164.6 L189.0,168.3 L187.1,170.1 L186.4,172.1 L182.3,172.8 L181.5,174.3 L178.7,175.6 L180.7,176.0 L181.0,178.1 L180.2,179.1 L181.0,180.7 L178.6,181.5 L179.5,183.0 L176.5,183.3 L176.1,184.3 L177.3,185.9 L176.9,186.4 L182.6,188.0 L184.7,186.7 L186.1,187.2 L186.4,188.5 L188.3,188.6 L188.8,187.1 L194.2,187.8 L205.1,185.9 L207.1,184.3 L206.7,183.5 L210.3,183.3 L211.3,182.0 L216.6,179.5 L219.9,174.6 L221.5,174.7 L226.8,171.2 L228.1,169.5 L231.1,169.0 L232.8,168.1 L234.6,165.5 L237.8,164.5 L237.8,163.3 L239.5,159.8 L240.6,159.6 L240.8,158.1 L245.6,156.3 L239.5,153.5 L242.5,149.5 L242.2,148.7 L232.2,144.5 Z",
+  "mamer": "M194.5,461.0 L196.6,460.3 L197.5,458.8 L200.6,457.1 L199.4,455.2 L201.3,452.5 L199.8,450.9 L204.6,448.3 L204.3,447.2 L206.3,446.4 L206.9,444.5 L208.0,443.8 L201.4,444.1 L198.7,443.1 L192.5,442.8 L190.8,443.3 L188.7,445.4 L186.7,442.3 L185.5,442.4 L179.6,444.3 L176.6,444.1 L172.7,445.1 L171.4,449.1 L167.3,448.2 L167.3,447.3 L165.4,446.4 L161.9,447.5 L159.8,446.4 L153.8,447.0 L151.7,448.1 L152.0,449.2 L149.1,449.8 L151.5,452.3 L153.6,456.7 L152.8,457.0 L152.6,458.9 L153.2,461.3 L155.8,461.4 L156.5,462.7 L156.8,465.5 L156.2,466.8 L156.8,468.7 L152.3,470.7 L152.9,472.9 L154.8,475.2 L156.5,474.2 L157.3,474.8 L158.5,474.0 L166.5,474.0 L168.4,472.0 L170.6,471.3 L170.4,470.8 L171.9,470.5 L174.0,468.6 L176.3,468.8 L177.2,470.1 L175.8,471.0 L177.8,471.3 L177.5,472.1 L180.6,468.0 L183.0,468.9 L191.0,468.6 L192.3,467.3 L192.2,466.0 L192.9,466.0 L192.8,463.7 L194.5,461.0 Z",
+  "putscheid": "M269.1,256.6 L262.9,255.1 L254.5,258.2 L251.5,258.1 L247.1,259.8 L243.9,259.6 L240.9,256.9 L242.1,256.5 L240.5,253.8 L235.6,252.9 L232.9,253.7 L232.2,253.0 L230.8,253.2 L230.7,251.5 L229.5,250.4 L229.8,252.2 L228.5,254.3 L232.5,255.5 L229.7,261.7 L231.5,263.4 L228.5,267.5 L226.9,267.9 L226.3,270.4 L227.5,272.0 L225.8,272.8 L226.3,274.0 L224.9,275.5 L226.7,277.6 L223.8,279.0 L223.5,281.2 L225.0,282.4 L227.8,282.4 L227.3,283.1 L228.5,285.2 L228.4,286.9 L235.4,288.8 L237.2,290.1 L240.3,290.1 L239.5,287.8 L240.5,286.0 L240.5,283.0 L248.3,278.8 L250.5,275.9 L254.0,276.1 L256.4,274.6 L261.3,277.8 L266.4,276.9 L265.8,275.9 L259.2,273.9 L265.7,273.5 L269.8,274.4 L271.7,273.0 L276.2,273.9 L280.7,272.8 L287.2,273.1 L287.3,271.7 L284.5,268.7 L285.2,266.7 L284.0,261.8 L282.5,261.2 L278.3,262.9 L277.6,263.8 L279.1,265.6 L278.8,267.1 L282.1,268.1 L280.0,269.9 L276.8,270.8 L275.6,270.1 L274.5,265.4 L271.5,264.8 L268.3,260.6 L268.2,258.3 L269.1,256.6 Z",
+  "garnich": "M119.0,452.2 L116.9,453.6 L117.5,456.0 L119.9,456.0 L115.7,456.2 L110.9,458.1 L115.5,460.0 L115.0,461.9 L117.8,463.8 L115.7,464.5 L118.4,465.2 L119.6,469.9 L125.0,473.4 L127.2,476.4 L131.6,478.0 L130.7,479.2 L134.3,479.6 L137.8,476.5 L143.2,479.0 L147.7,479.6 L150.9,478.6 L151.7,476.5 L154.8,475.2 L152.9,472.9 L152.3,470.7 L156.8,468.7 L156.2,466.8 L156.7,463.6 L155.8,461.4 L153.2,461.3 L152.6,460.2 L153.2,460.0 L152.8,457.0 L153.6,456.7 L150.5,451.0 L146.9,451.0 L144.6,453.2 L141.2,454.3 L137.9,458.1 L136.2,457.0 L135.3,454.2 L133.3,452.2 L127.6,454.1 L127.0,453.2 L125.7,453.4 L124.0,452.3 L119.0,452.2 Z",
+  "wiltz": "M126.6,240.8 L120.9,243.0 L121.3,244.6 L119.8,245.7 L121.7,247.9 L124.6,247.5 L125.1,248.9 L122.9,248.9 L122.1,250.2 L124.0,251.7 L125.9,251.8 L126.8,253.4 L126.4,255.4 L128.2,256.2 L125.7,256.3 L125.5,257.5 L122.3,258.2 L124.0,259.3 L119.0,260.0 L115.3,261.7 L115.6,263.0 L113.6,263.7 L114.1,265.0 L112.2,266.3 L111.4,265.8 L107.9,267.2 L106.4,269.1 L102.3,271.3 L102.9,274.2 L103.9,274.9 L108.2,273.4 L111.9,274.2 L114.8,275.9 L119.0,276.3 L121.0,279.0 L124.6,281.0 L126.7,280.2 L126.1,278.3 L129.2,278.0 L129.2,277.1 L131.4,277.4 L132.2,276.8 L133.7,278.3 L134.6,278.1 L133.9,277.4 L134.8,276.9 L141.2,278.5 L146.2,277.6 L147.5,276.5 L146.0,275.2 L147.0,273.1 L144.1,269.5 L146.0,267.8 L145.8,264.8 L146.8,264.0 L148.4,264.2 L148.8,265.8 L151.1,266.2 L155.0,264.7 L153.6,263.5 L156.3,261.8 L152.9,261.7 L152.0,260.6 L155.0,257.9 L155.5,252.8 L157.3,251.9 L156.8,250.8 L154.3,251.4 L152.6,249.7 L154.4,246.8 L156.1,245.9 L154.4,245.3 L153.3,243.7 L161.4,237.7 L160.6,234.4 L159.3,233.3 L160.3,231.4 L159.8,230.2 L159.1,229.2 L156.6,229.2 L154.9,227.8 L156.1,227.4 L155.5,226.9 L157.3,224.9 L153.3,224.7 L147.1,228.0 L146.6,227.4 L148.0,226.5 L146.6,227.3 L144.4,227.0 L139.7,228.7 L136.1,232.0 L133.3,231.4 L133.5,229.4 L131.9,228.4 L130.7,229.5 L130.7,230.8 L132.7,231.7 L131.3,231.7 L131.8,232.3 L130.6,232.7 L130.6,233.5 L128.8,233.9 L129.8,236.4 L131.7,236.9 L130.6,238.5 L127.2,238.0 L126.6,240.8 Z",
+  "petange": "M86.8,496.1 L82.0,497.2 L84.0,499.0 L83.9,499.9 L81.5,500.9 L81.5,501.7 L73.4,503.5 L72.3,502.2 L68.9,504.0 L67.6,505.9 L61.9,507.8 L62.1,508.7 L64.9,508.4 L67.1,511.0 L78.6,507.7 L79.8,510.8 L84.0,515.5 L86.5,515.1 L89.8,512.0 L94.8,512.8 L94.0,511.8 L96.4,509.5 L98.5,510.5 L99.5,510.0 L98.3,509.6 L97.6,508.3 L101.3,508.1 L100.5,506.8 L102.3,505.8 L106.5,505.2 L107.8,499.5 L106.6,498.1 L106.8,496.5 L100.7,497.8 L100.1,495.6 L95.0,490.9 L92.2,491.8 L92.5,493.6 L87.3,494.6 L86.8,496.1 Z"
+};
+
+window.COMMUNE_LABELS = {
+  "mertzig": { x: 174.1, y: 337.9, name: "Mertzig" },
+  "waldbillig": { x: 339.0, y: 360.9, name: "Waldbillig" },
+  "larochette": { x: 288.4, y: 371.7, name: "Larochette" },
+  "kopstal": { x: 216.3, y: 436.3, name: "Kopstal" },
+  "bourscheid": { x: 211.8, y: 295.9, name: "Bourscheid" },
+  "mersch": { x: 226.3, y: 390.8, name: "Mersch" },
+  "goesdorf": { x: 160.4, y: 280.1, name: "Goesdorf" },
+  "esch_sur_sure": { x: 137.3, y: 307.0, name: "Esch-sur-Sûre" },
+  "feulen": { x: 190.4, y: 323.6, name: "Feulen" },
+  "useldange": { x: 150.6, y: 379.8, name: "Useldange" },
+  "diekirch": { x: 259.1, y: 318.0, name: "Diekirch" },
+  "kehlen": { x: 194.5, y: 430.9, name: "Kehlen" },
+  "saeul": { x: 153.5, y: 398.4, name: "Saeul" },
+  "esch_sur_alzette": { x: 161.9, y: 536.9, name: "Esch-sur-Alzette" },
+  "betzdorf": { x: 361.9, y: 430.3, name: "Betzdorf" },
+  "steinsel": { x: 257.0, y: 432.6, name: "Steinsel" },
+  "junglinster": { x: 321.0, y: 412.5, name: "Junglinster" },
+  "roeser": { x: 249.1, y: 513.8, name: "Roeser" },
+  "bettendorf": { x: 291.2, y: 322.0, name: "Bettendorf" },
+  "fischbach": { x: 278.2, y: 387.7, name: "Fischbach" },
+  "rambrouch": { x: 70.7, y: 336.2, name: "Rambrouch" },
+  "schieren": { x: 235.1, y: 342.9, name: "Schieren" },
+  "niederanven": { x: 300.4, y: 446.1, name: "Niederanven" },
+  "kiischpelt": { x: 177.7, y: 255.1, name: "Kiischpelt" },
+  "winseler": { x: 96.2, y: 260.9, name: "Winseler" },
+  "dalheim": { x: 329.1, y: 509.3, name: "Dalheim" },
+  "sandweiler": { x: 297.4, y: 465.3, name: "Sandweiler" },
+  "reckange_sur_mess": { x: 178.1, y: 496.6, name: "Reckange-sur-Mess" },
+  "lac_de_la_haute_sure": { x: 88.7, y: 284.1, name: "Lac de la Haute-Sûre" },
+  "troisvierges": { x: 176.3, y: 163.6, name: "Troisvierges" },
+  "remich": { x: 379.8, y: 504.9, name: "Remich" },
+  "ettelbruck": { x: 217.1, y: 330.3, name: "Ettelbruck" },
+  "mertert": { x: 445.8, y: 405.4, name: "Mertert" },
+  "reisdorf": { x: 327.4, y: 319.8, name: "Reisdorf" },
+  "parc_hosingen": { x: 222.7, y: 249.3, name: "Parc Hosingen" },
+  "lenningen": { x: 370.2, y: 472.1, name: "Lenningen" },
+  "mondercange": { x: 178.5, y: 514.8, name: "Mondercange" },
+  "rumelange": { x: 183.2, y: 554.5, name: "Rumelange" },
+  "helperknapp": { x: 188.4, y: 394.6, name: "Helperknapp" },
+  "mondorf_les_bains": { x: 335.2, y: 522.9, name: "Mondorf-les-Bains" },
+  "redange_attert": { x: 105.2, y: 371.3, name: "Redange/Attert" },
+  "bous_waldbredimus": { x: 347.8, y: 499.1, name: "Bous-Waldbredimus" },
+  "dippach": { x: 160.2, y: 484.1, name: "Dippach" },
+  "heffingen": { x: 315.9, y: 377.7, name: "Heffingen" },
+  "echternach": { x: 409.8, y: 358.2, name: "Echternach" },
+  "lintgen": { x: 249.7, y: 401.8, name: "Lintgen" },
+  "erpeldange_sur_sure": { x: 236.2, y: 316.2, name: "Erpeldange-sur-Sûre" },
+  "frisange": { x: 279.3, y: 523.9, name: "Frisange" },
+  "kayl": { x: 191.9, y: 545.0, name: "Kayl" },
+  "schengen": { x: 358.3, y: 532.8, name: "Schengen" },
+  "hesperange": { x: 268.8, y: 488.3, name: "Hesperange" },
+  "contern": { x: 312.4, y: 481.5, name: "Contern" },
+  "tandel": { x: 269.0, y: 295.5, name: "Tandel" },
+  "groussbus_wal": { x: 130.0, y: 330.1, name: "Groussbus-Wal" },
+  "wincrange": { x: 134.9, y: 213.0, name: "Wincrange" },
+  "sanem": { x: 137.1, y: 514.7, name: "Sanem" },
+  "weiler_la_tour": { x: 287.9, y: 505.6, name: "Weiler-la-Tour" },
+  "beaufort": { x: 348.2, y: 340.1, name: "Beaufort" },
+  "colmar_berg": { x: 219.6, y: 351.7, name: "Colmar-Berg" },
+  "koerich": { x: 149.7, y: 432.1, name: "Koerich" },
+  "vichten": { x: 177.6, y: 353.4, name: "Vichten" },
+  "preizerdaul": { x: 134.3, y: 357.9, name: "Préizerdaul" },
+  "kaerjeng": { x: 113.9, y: 482.1, name: "Käerjeng" },
+  "boulaide": { x: 60.1, y: 304.3, name: "Boulaide" },
+  "vianden": { x: 285.9, y: 279.5, name: "Vianden" },
+  "lorentzweiler": { x: 254.4, y: 417.3, name: "Lorentzweiler" },
+  "ell": { x: 76.3, y: 370.1, name: "Ell" },
+  "dudelange": { x: 220.8, y: 543.7, name: "Dudelange" },
+  "nommern": { x: 259.3, y: 360.0, name: "Nommern" },
+  "stadtbredimus": { x: 377.8, y: 486.8, name: "Stadtbredimus" },
+  "schuttrange": { x: 327.1, y: 457.4, name: "Schuttrange" },
+  "schifflange": { x: 179.6, y: 529.6, name: "Schifflange" },
+  "bech": { x: 369.1, y: 388.2, name: "Bech" },
+  "wormeldange": { x: 399.4, y: 458.1, name: "Wormeldange" },
+  "rosport_mompach": { x: 441.0, y: 375.3, name: "Rosport-Mompach" },
+  "vallee_de_lernz": { x: 298.3, y: 344.0, name: "Vallée de l'Ernz" },
+  "bissen": { x: 202.7, y: 366.1, name: "Bissen" },
+  "leudelange": { x: 212.1, y: 493.4, name: "Leudelange" },
+  "clervaux": { x: 203.8, y: 205.8, name: "Clervaux" },
+  "grevenmacher": { x: 412.2, y: 430.5, name: "Grevenmacher" },
+  "habscht": { x: 141.5, y: 420.5, name: "Habscht" },
+  "steinfort": { x: 121.6, y: 445.8, name: "Steinfort" },
+  "bertrange": { x: 196.2, y: 472.8, name: "Bertrange" },
+  "consdorf": { x: 361.8, y: 372.9, name: "Consdorf" },
+  "manternach": { x: 413.7, y: 404.6, name: "Manternach" },
+  "beckerich": { x: 110.3, y: 398.3, name: "Beckerich" },
+  "strassen": { x: 212.7, y: 455.8, name: "Strassen" },
+  "biwer": { x: 381.7, y: 412.2, name: "Biwer" },
+  "walferdange": { x: 249.9, y: 441.2, name: "Walferdange" },
+  "luxembourg": { x: 249.6, y: 466.9, name: "Luxembourg" },
+  "differdange": { x: 102.9, y: 520.0, name: "Differdange" },
+  "bettembourg": { x: 220.9, y: 520.9, name: "Bettembourg" },
+  "flaxweiler": { x: 386.3, y: 451.7, name: "Flaxweiler" },
+  "berdorf": { x: 371.9, y: 350.2, name: "Berdorf" },
+  "weiswampach": { x: 206.4, y: 168.5, name: "Weiswampach" },
+  "mamer": { x: 180.0, y: 455.7, name: "Mamer" },
+  "putscheid": { x: 247.4, y: 269.9, name: "Putscheid" },
+  "garnich": { x: 134.2, y: 464.3, name: "Garnich" },
+  "wiltz": { x: 136.9, y: 253.8, name: "Wiltz" },
+  "petange": { x: 88.3, y: 503.0, name: "Pétange" }
+};
+
+
+// Dimension definitions
+window.DIMENSIONS = {"price_m2": {"label": "Price/m² (Existing)", "format": "currency"}, "price_m2_new": {"label": "Price/m² (New Build)", "format": "currency"}, "population": {"label": "Population", "format": "number"}, "area_km2": {"label": "Area (km²)", "format": "decimal"}, "density": {"label": "Density (pop/km²)", "format": "decimal"}, "foreign_pct": {"label": "Foreign Population %", "format": "percent"}};
+//]]>
+</script>
+
+<b:skin><![CDATA[
+:root {
+  --primary: #1e40af;
+  --primary-dark: #1e3a8a;
+  --white: #ffffff;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --radius: 8px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--gray-800);
+  background: var(--gray-50);
+}
+
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.header {
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  padding: 1rem 1.5rem;
+}
+
+.header-inner { max-width: 1200px; margin: 0 auto; }
+
+.logo { font-size: 1.5rem; font-weight: 700; color: var(--gray-900); }
+.logo span { color: var(--primary); }
+.tagline { font-size: 0.85rem; color: var(--gray-500); }
+
+.main-container { max-width: 1200px; margin: 0 auto; padding: 1.5rem; }
+
+.controls-panel {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.controls-row { display: flex; gap: 2rem; flex-wrap: wrap; }
+
+.control-group { flex: 1; min-width: 200px; }
+
+.control-group label {
+  display: block;
+  font-weight: 600;
+  color: var(--gray-700);
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.control-group select {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+.viz-container {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 900px) { .viz-container { grid-template-columns: 1fr; } }
+
+.map-container {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.map-header {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--gray-200);
+  background: var(--gray-50);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--gray-700);
+}
+
+.map-svg-container {
+  padding: 1rem;
+  background: #f5f5f0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Tooltip for commune names */
+.map-tooltip {
+  position: absolute;
+  background: rgba(30,30,30,0.9);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  pointer-events: none;
+  z-index: 100;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.15s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.map-tooltip.visible { opacity: 1; }
+
+#lux-map { max-width: 100%; height: auto; }
+
+.commune-path {
+  stroke: #fff;
+  stroke-width: 1.5;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.commune-path:hover {
+  stroke-width: 2;
+  filter: brightness(0.92);
+}
+
+.commune-path.highlighted {
+  stroke: var(--primary-dark);
+  stroke-width: 3;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.commune-path.dimmed { opacity: 0.25; }
+
+/* Label styling - positioned below shape, always readable */
+.commune-label-bg {
+  fill: rgba(255,255,255,0.9);
+  rx: 3;
+}
+
+.commune-label-name {
+  font-size: 10px;
+  font-weight: 600;
+  fill: var(--gray-800);
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+.commune-label-value {
+  font-size: 9px;
+  font-weight: 700;
+  fill: var(--primary);
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+.map-legend {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--gray-200);
+  background: var(--gray-50);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.75rem;
+}
+
+.legend-label { color: var(--gray-600); font-weight: 500; }
+
+.legend-scale {
+  display: flex;
+  height: 10px;
+  flex: 1;
+  max-width: 200px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.legend-scale span { flex: 1; }
+
+.legend-values {
+  display: flex;
+  gap: 0.5rem;
+  color: var(--gray-500);
+}
+
+.chart-container {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.chart-header {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--gray-200);
+  background: var(--gray-50);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--gray-700);
+}
+
+.chart-body { padding: 1rem; }
+
+.bar-chart { display: flex; flex-direction: column; gap: 0.6rem; }
+
+.bar-item {
+  cursor: pointer;
+  padding: 0.5rem 0.6rem;
+  border-radius: 6px;
+  transition: all 0.15s;
+  border: 2px solid transparent;
+}
+
+.bar-item:hover { background: var(--gray-50); }
+.bar-item.highlighted { background: #eff6ff; border-color: var(--primary); }
+
+.bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.bar-name { font-weight: 600; color: var(--gray-800); }
+.bar-value { font-weight: 700; color: var(--primary); }
+
+.bar-track {
+  height: 18px;
+  background: var(--gray-100);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+
+.detail-panel {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.detail-header {
+  background: var(--primary);
+  color: white;
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-header h2 { font-size: 1.3rem; margin: 0; }
+.detail-region { opacity: 0.85; font-size: 0.8rem; }
+
+.detail-close {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.detail-close:hover { background: rgba(255,255,255,0.3); }
+
+.detail-body { padding: 1.25rem; }
+
+.detail-placeholder {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--gray-500);
+  font-size: 0.9rem;
+}
+
+.detail-placeholder svg {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 0.5rem;
+  fill: var(--gray-300);
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.6rem;
+}
+
+.fact-card {
+  background: var(--gray-50);
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+
+.fact-label {
+  font-size: 0.65rem;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.fact-value {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+.fact-source {
+  font-size: 0.6rem;
+  color: var(--gray-400);
+  margin-top: 0.3rem;
+}
+
+.fact-source a { color: var(--gray-400); }
+
+.data-table-container {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.table-header {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--gray-200);
+  background: var(--gray-50);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--gray-700);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-input {
+  padding: 0.4rem 1.8rem 0.4rem 0.6rem;
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  width: 160px;
+}
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(30,64,175,0.1);
+}
+.search-clear {
+  position: absolute;
+  right: 4px;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: var(--gray-400);
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+  display: none;
+}
+.search-clear:hover { color: var(--gray-600); }
+.search-wrapper.has-value .search-clear { display: block;
+}
+
+.data-table { width: 100%; border-collapse: collapse; }
+
+.data-table th, .data-table td {
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.data-table th {
+  background: var(--gray-50);
+  font-weight: 600;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: var(--gray-600);
+}
+
+.data-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+.data-table th.sortable:hover { background: var(--gray-100); }
+.sort-icon { opacity: 0.5; margin-left: 4px; font-size: 0.6rem; }
+
+.data-table tr:last-child td { border-bottom: none; }
+.data-table tbody tr { cursor: pointer; }
+.data-table tbody tr:hover td { background: var(--gray-50); }
+.data-table tbody tr.highlighted td { background: #eff6ff; }
+.data-table tbody tr.no-data td { color: var(--gray-400); }
+.no-data-text { font-style: italic; font-weight: normal; color: var(--gray-400); }
+
+.data-value { font-weight: 600; }
+.data-source { font-size: 0.6rem; color: var(--gray-400); }
+
+.color-indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.footer {
+  background: var(--gray-900);
+  color: var(--gray-400);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.footer a { color: var(--gray-300); }
+
+/* Zoom controls */
+.map-zoom-controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 10;
+}
+
+.zoom-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--gray-300);
+  background: var(--white);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--gray-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zoom-btn:hover { background: var(--gray-100); }
+
+.map-svg-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+#lux-map {
+  cursor: grab;
+  user-select: none;
+}
+
+#lux-map.dragging { cursor: grabbing; }
+
+/* Major commune labels only */
+.commune-label-group { pointer-events: none; }
+
+@media (max-width: 768px) {
+  .controls-row { flex-direction: column; gap: 1rem; }
+  .facts-grid { grid-template-columns: 1fr 1fr; }
+}
+]]></b:skin>
+
+</head>
+<body>
+
+<header class='header'>
+  <div class='header-inner'>
+    <a class='logo' href='/'>Luxembourg<span>Hoods</span></a>
+    <div class='tagline'>Commune data with sources</div>
+  </div>
+</header>
+
+<main class='main-container'>
+  <b:section class='main-section' id='main' showaddelement='yes'>
+    <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='2' visible='true'>
+      <b:includable id='main'>
+
+        <b:if cond='data:blog.pageType == "index"'>
+
+          <div class='controls-panel'>
+            <div class='controls-row'>
+              <div class='control-group'>
+                <label>Data Layer</label>
+                <select id='dimension-select'></select>
+              </div>
+              <div class='control-group'>
+                <label>Show on Map</label>
+                <select id='commune-filter'>
+                  <option value='all'>All Communes</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class='viz-container'>
+            <div class='map-container'>
+              <div class='map-header' id='map-title'>Price per m² by Commune</div>
+              <div class='map-svg-container map-svg-wrapper'>
+                <div class='map-zoom-controls'>
+                  <button class='zoom-btn' id='zoom-in' title='Zoom in'>+</button>
+                  <button class='zoom-btn' id='zoom-out' title='Zoom out'>−</button>
+                  <button class='zoom-btn' id='zoom-reset' title='Reset' style='font-size:12px'>⟲</button>
+                </div>
+                <svg id='lux-map' viewBox='0 0 500 720' preserveAspectRatio='xMidYMid meet' width='480' height='690'>
+                  <!-- Background rect for click-outside-to-reset -->
+                  <rect id='map-bg' x='0' y='0' width='500' height='720' fill='transparent'/>
+                  <!-- All commune paths (100 communes form complete map) -->
+                  <g id='commune-paths'></g>
+                  <!-- Labels for major communes only -->
+                  <g id='commune-labels'></g>
+                </svg>
+                <div class='map-tooltip' id='map-tooltip'></div>
+              </div>
+              <div class='map-legend'>
+                <span class='legend-label' id='legend-title'>Price/m²</span>
+                <div class='legend-scale'>
+                  <span style='background:#dbeafe'></span>
+                  <span style='background:#93c5fd'></span>
+                  <span style='background:#3b82f6'></span>
+                  <span style='background:#1d4ed8'></span>
+                  <span style='background:#1e3a8a'></span>
+                </div>
+                <div class='legend-values'>
+                  <span id='legend-min'>-</span>
+                  <span>to</span>
+                  <span id='legend-max'>-</span>
+                </div>
+              </div>
+            </div>
+
+            <div class='chart-container'>
+              <div class='chart-header' id='chart-title'>Comparison</div>
+              <div class='chart-body'>
+                <div class='bar-chart' id='bar-chart'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='detail-panel' id='detail-panel'>
+            <div class='detail-placeholder' id='detail-placeholder'>
+              <svg viewBox='0 0 24 24'><path d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z'/></svg>
+              <p>Click a commune to see all details</p>
+            </div>
+            <div id='detail-content' style='display:none'>
+              <div class='detail-header'>
+                <div>
+                  <h2 id='detail-name'>Commune</h2>
+                  <div class='detail-region' id='detail-region'>Region</div>
+                </div>
+                <button class='detail-close' id='detail-close'>×</button>
+              </div>
+              <div class='detail-body'>
+                <div class='facts-grid' id='facts-grid'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='data-table-container'>
+            <div class='table-header'>
+              <span id='table-title'>All Data</span>
+              <div class='search-wrapper'>
+                <input type='text' id='commune-search' placeholder='Search commune...' class='search-input'/>
+                <button type='button' id='search-clear' class='search-clear' title='Clear search'>&#215;</button>
+              </div>
+            </div>
+            <table class='data-table'>
+              <thead>
+                <tr>
+                  <th class='sortable' data-sort='name'>Commune<span class='sort-icon'></span></th>
+                  <th class='sortable' data-sort='region'>Region<span class='sort-icon'></span></th>
+                  <th class='sortable' data-sort='value' id='data-col-header'>Price/m²<span class='sort-icon'></span></th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody id='data-table-body'></tbody>
+            </table>
+          </div>
+
+        </b:if>
+
+        <b:if cond='data:blog.pageType == "item"'>
+          <b:loop values='data:posts' var='post'>
+            <article class='detail-panel'>
+              <div class='detail-header'><h2><data:post.title/></h2></div>
+              <div class='detail-body'><data:post.body/></div>
+            </article>
+          </b:loop>
+        </b:if>
+
+      </b:includable>
+    </b:widget>
+  </b:section>
+</main>
+
+<footer class='footer'>
+  <p>LuxembourgHoods — Data from <a href='https://statistiques.public.lu/'>STATEC</a> &amp; <a href='https://www.immotop.lu/'>Immotop</a></p>
+  <p>Map boundaries from <a href='https://data.public.lu/'>data.public.lu</a> (CC0)</p>
+</footer>
+
+<script>
+//<![CDATA[
+(function() {
+  if (!document.getElementById('lux-map')) return;
+
+  const DATA = window.COMMUNE_DATA;
+  const PATHS = window.COMMUNE_PATHS;
+  const LABELS = window.COMMUNE_LABELS;
+  const DIMS = window.DIMENSIONS;
+
+  const COLORS = ['#dbeafe', '#93c5fd', '#3b82f6', '#1d4ed8', '#1e3a8a'];
+
+  let selectedDimension = 'price_m2';
+  let filterCommune = 'all';
+  let highlightedCommune = null;
+  let tableSortKey = 'value';  // 'name', 'region', 'value'
+  let tableSortDir = 'desc';   // 'asc' or 'desc'
+  let searchTerm = '';         // commune name search
+
+  // Tooltip functions
+  const tooltip = document.getElementById('map-tooltip');
+  function showTooltip(e, communeId) {
+    const commune = DATA[communeId];
+    const name = commune ? commune.name : communeId.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    tooltip.textContent = name;
+    tooltip.classList.add('visible');
+    moveTooltip(e);
+  }
+  function moveTooltip(e) {
+    const container = document.querySelector('.map-svg-wrapper');
+    const rect = container.getBoundingClientRect();
+    tooltip.style.left = (e.clientX - rect.left + 12) + 'px';
+    tooltip.style.top = (e.clientY - rect.top - 10) + 'px';
+  }
+  function hideTooltip() {
+    tooltip.classList.remove('visible');
+  }
+
+  function getColor(value, min, max) {
+    if (value == null) return '#e5e7eb';
+    if (max === min) return COLORS[2];
+    const ratio = Math.max(0, Math.min(1, (value - min) / (max - min)));
+    return COLORS[Math.min(Math.floor(ratio * COLORS.length), COLORS.length - 1)];
+  }
+
+  function getVisible() {
+    return filterCommune === 'all' ? Object.keys(DATA) : [filterCommune];
+  }
+
+  function getMinMax() {
+    const vals = getVisible().map(id => DATA[id]?.data[selectedDimension]?.value).filter(v => v != null);
+    return vals.length ? { min: Math.min(...vals), max: Math.max(...vals) } : { min: 0, max: 100 };
+  }
+
+  function fmt(v, dim) {
+    if (v == null) return '—';
+    const d = DIMS[dim];
+    if (d.format === 'currency') return '€' + v.toLocaleString();
+    if (d.format === 'percent') return v.toFixed(1) + '%';
+    if (d.format === 'decimal') return v.toLocaleString(undefined, {maximumFractionDigits: 1});
+    if (d.format === 'number') return v.toLocaleString();
+    return v.toLocaleString() + (d.unit || '');
+  }
+
+  function fmtShort(v, dim) {
+    if (v == null) return '—';
+    const d = DIMS[dim];
+    if (d.format === 'currency') return '€' + (v >= 1000 ? Math.round(v/1000) + 'k' : v);
+    if (d.format === 'percent') return v.toFixed(0) + '%';
+    if (d.format === 'decimal') return v >= 1000 ? (v/1000).toFixed(1) + 'k' : v.toFixed(1);
+    if (d.format === 'number') return v >= 1000 ? Math.round(v/1000) + 'k' : v;
+    return v >= 1000 ? Math.round(v/1000) + 'k' : v;
+  }
+
+  function buildDropdown() {
+    // Commune filter dropdown
+    const sel = document.getElementById('commune-filter');
+    Object.entries(DATA).forEach(([id, c]) => {
+      const opt = document.createElement('option');
+      opt.value = id;
+      opt.textContent = c.name;
+      sel.appendChild(opt);
+    });
+    sel.onchange = function() {
+      filterCommune = this.value;
+      updateAll();
+    };
+
+    // Dimension dropdown - dynamically from DIMS
+    const dimSel = document.getElementById('dimension-select');
+    Object.entries(DIMS).forEach(([key, dim]) => {
+      const opt = document.createElement('option');
+      opt.value = key;
+      opt.textContent = dim.label;
+      dimSel.appendChild(opt);
+    });
+  }
+
+  // Major communes to show labels for orientation
+  const MAJOR_COMMUNES = ['luxembourg', 'esch_sur_alzette', 'differdange', 'dudelange', 'ettelbruck', 'diekirch', 'wiltz', 'echternach', 'clervaux'];
+
+  function drawMap() {
+    const pathsG = document.getElementById('commune-paths');
+    const labelsG = document.getElementById('commune-labels');
+    const { min, max } = getMinMax();
+
+    pathsG.innerHTML = '';
+    labelsG.innerHTML = '';
+
+    // Draw ALL commune paths
+    Object.entries(PATHS).forEach(([id, pathD]) => {
+      if (!pathD || pathD.length < 10) return;
+
+      const commune = DATA[id];
+      const value = commune?.data[selectedDimension]?.value;
+      const hasData = value != null;
+      const isFiltered = filterCommune !== 'all' && filterCommune !== id;
+      const color = hasData ? getColor(value, min, max) : '#e5e7eb';
+
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.setAttribute('d', pathD);
+      path.setAttribute('fill', color);
+      path.setAttribute('data-id', id);
+      path.setAttribute('class', 'commune-path' +
+        (highlightedCommune === id ? ' highlighted' : '') +
+        (isFiltered ? ' dimmed' : ''));
+
+      // Click any commune to select/highlight
+      path.onclick = () => {
+        highlightedCommune = id;
+        updateHighlight();
+      };
+
+      // Hover to show tooltip with commune name
+      path.onmouseenter = (e) => showTooltip(e, id);
+      path.onmousemove = (e) => moveTooltip(e);
+      path.onmouseleave = () => hideTooltip();
+
+      pathsG.appendChild(path);
+    });
+
+    // Only show labels for major communes
+    MAJOR_COMMUNES.forEach(id => {
+      const lbl = LABELS[id];
+      if (!lbl) return;
+
+      const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+      g.setAttribute('class', 'commune-label-group');
+
+      const bg = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+      bg.setAttribute('x', lbl.x - 32);
+      bg.setAttribute('y', lbl.y - 6);
+      bg.setAttribute('width', 64);
+      bg.setAttribute('height', 14);
+      bg.setAttribute('class', 'commune-label-bg');
+      bg.setAttribute('rx', 3);
+      g.appendChild(bg);
+
+      const nameEl = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      nameEl.setAttribute('x', lbl.x);
+      nameEl.setAttribute('y', lbl.y + 4);
+      nameEl.setAttribute('class', 'commune-label-name');
+      nameEl.textContent = lbl.name.length > 12 ? lbl.name.slice(0,11) + '…' : lbl.name;
+      g.appendChild(nameEl);
+
+      labelsG.appendChild(g);
+    });
+
+    document.getElementById('map-title').textContent = DIMS[selectedDimension].label + ' by Commune';
+  }
+
+  function updateLegend() {
+    const { min, max } = getMinMax();
+    document.getElementById('map-title').textContent = DIMS[selectedDimension].label + ' by Commune';
+    document.getElementById('legend-title').textContent = DIMS[selectedDimension].label;
+    document.getElementById('legend-min').textContent = fmtShort(min, selectedDimension);
+    document.getElementById('legend-max').textContent = fmtShort(max, selectedDimension);
+  }
+
+  function updateChart() {
+    const container = document.getElementById('bar-chart');
+    const { min, max } = getMinMax();
+    const visible = getVisible();
+
+    // Filter to only communes WITH data for this dimension, then sort
+    const withData = visible
+      .map(id => ({ id, ...DATA[id] }))
+      .filter(c => c.data[selectedDimension]?.value != null);
+
+    const sorted = withData.sort((a, b) =>
+      (b.data[selectedDimension]?.value || 0) - (a.data[selectedDimension]?.value || 0));
+
+    // Show only top 10 communes with data
+    const top10 = sorted.slice(0, 10);
+
+    const totalWithData = withData.length;
+    document.getElementById('chart-title').textContent = DIMS[selectedDimension].label + ` (Top 10 of ${totalWithData})`;
+    container.innerHTML = '';
+
+    top10.forEach(c => {
+      const value = c.data[selectedDimension]?.value;
+      const color = getColor(value, min, max);
+      const pct = (value != null && max > min) ? ((value - min) / (max - min)) * 100 : 0;
+
+      const item = document.createElement('div');
+      item.className = 'bar-item' + (highlightedCommune === c.id ? ' highlighted' : '');
+      item.innerHTML = `
+        <div class="bar-label">
+          <span class="bar-name">${c.name}</span>
+          <span class="bar-value">${fmt(value, selectedDimension)}</span>
+        </div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:${Math.max(8, pct)}%;background:${color}"></div>
+        </div>`;
+      item.onclick = () => {
+        highlightedCommune = c.id;
+        updateHighlight();
+      };
+      container.appendChild(item);
+    });
+  }
+
+  function updateTable() {
+    const tbody = document.getElementById('data-table-body');
+    const { min, max } = getMinMax();
+    const visible = getVisible();
+
+    const colHeader = document.getElementById('data-col-header');
+    colHeader.firstChild.textContent = DIMS[selectedDimension].label;
+    tbody.innerHTML = '';
+
+    // Filter by search term and sort data
+    let dataList = visible.map(id => ({ id, ...DATA[id] }));
+    if (searchTerm) {
+      const term = searchTerm.toLowerCase();
+      dataList = dataList.filter(c => c.name.toLowerCase().includes(term));
+    }
+
+    // Count communes with data
+    const withDataCount = dataList.filter(c => c.data[selectedDimension]?.value != null).length;
+    document.getElementById('table-title').textContent =
+      `All Data: ${withDataCount} of ${dataList.length} communes`;
+    dataList.sort((a, b) => {
+      let valA, valB;
+      if (tableSortKey === 'name') {
+        valA = a.name.toLowerCase();
+        valB = b.name.toLowerCase();
+      } else if (tableSortKey === 'region') {
+        valA = a.region.toLowerCase();
+        valB = b.region.toLowerCase();
+      } else {
+        // For value sort, put "no data" items at the bottom
+        valA = a.data[selectedDimension]?.value;
+        valB = b.data[selectedDimension]?.value;
+        if (valA == null && valB == null) return 0;
+        if (valA == null) return 1;  // a goes to bottom
+        if (valB == null) return -1; // b goes to bottom
+      }
+      if (valA < valB) return tableSortDir === 'asc' ? -1 : 1;
+      if (valA > valB) return tableSortDir === 'asc' ? 1 : -1;
+      return 0;
+    });
+
+    // Update sort icons
+    document.querySelectorAll('.data-table th.sortable').forEach(th => {
+      const icon = th.querySelector('.sort-icon');
+      if (th.dataset.sort === tableSortKey) {
+        icon.textContent = tableSortDir === 'asc' ? ' \u25B2' : ' \u25BC';
+        icon.style.opacity = '1';
+      } else {
+        icon.textContent = ' \u25B2\u25BC';
+        icon.style.opacity = '0.4';
+      }
+    });
+
+    dataList.forEach(c => {
+      const dp = c.data[selectedDimension];
+      const hasData = dp?.value != null;
+      const color = hasData ? getColor(dp.value, min, max) : '#e5e7eb';
+
+      const row = document.createElement('tr');
+      row.className = (highlightedCommune === c.id ? 'highlighted' : '') + (hasData ? '' : ' no-data');
+      row.innerHTML = `
+        <td>
+          <span class="color-indicator" style="background:${color}"></span>
+          <strong>${c.name}</strong>
+          ${c.includes ? '<br><small style="margin-left:20px;color:#6b7280">incl. ' + c.includes.join(', ') + '</small>' : ''}
+        </td>
+        <td>${c.region}</td>
+        <td class="data-value">${hasData ? fmt(dp.value, selectedDimension) : '<span class="no-data-text">No data</span>'}</td>
+        <td class="data-source">
+          ${dp?.source ? '<a href="' + (dp.source_url || '#') + '" target="_blank">' + dp.source + '</a>' : '—'}
+          ${dp?.year ? ' (' + dp.year + ')' : ''}
+        </td>`;
+      row.onclick = () => {
+        highlightedCommune = c.id;
+        updateHighlight();
+      };
+      tbody.appendChild(row);
+    });
+  }
+
+  function updateDetail() {
+    const placeholder = document.getElementById('detail-placeholder');
+    const content = document.getElementById('detail-content');
+
+    if (!highlightedCommune) {
+      placeholder.style.display = 'block';
+      content.style.display = 'none';
+      return;
+    }
+
+    placeholder.style.display = 'none';
+    content.style.display = 'block';
+
+    const c = DATA[highlightedCommune];
+    const lbl = LABELS[highlightedCommune];
+    const communeName = c?.name || lbl?.name || highlightedCommune;
+
+    document.getElementById('detail-name').textContent = communeName +
+      (c?.includes ? ' (incl. ' + c.includes.join(', ') + ')' : '');
+    document.getElementById('detail-region').textContent = c?.region ? c.region + ' Region' : 'Luxembourg';
+
+    const grid = document.getElementById('facts-grid');
+    grid.innerHTML = '';
+
+    if (!c) {
+      // No data for this commune
+      const card = document.createElement('div');
+      card.className = 'fact-card';
+      card.style.gridColumn = '1 / -1';
+      card.innerHTML = '<div class="fact-label">Data</div><div class="fact-value" style="color:#6b7280">Coming soon</div><div class="fact-source">No data available yet for this commune</div>';
+      grid.appendChild(card);
+      return;
+    }
+
+    Object.entries(DIMS).forEach(([key, dim]) => {
+      const dp = c.data[key];
+      const card = document.createElement('div');
+      card.className = 'fact-card';
+      card.innerHTML = `
+        <div class="fact-label">${dim.label}</div>
+        <div class="fact-value">${fmt(dp?.value, key)}</div>
+        <div class="fact-source">
+          ${dp?.source ? '<a href="' + (dp.source_url || '#') + '" target="_blank">' + dp.source + '</a>' : ''}
+          ${dp?.year ? ' (' + dp.year + ')' : ''}
+        </div>`;
+      grid.appendChild(card);
+    });
+
+    // Scroll to detail
+    document.getElementById('detail-panel').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function updateHighlight() {
+    document.querySelectorAll('.commune-path').forEach(p => {
+      p.classList.toggle('highlighted', p.getAttribute('data-id') === highlightedCommune);
+    });
+
+    const visible = getVisible();
+    const sorted = visible.map(id => ({ id, ...DATA[id] }))
+      .sort((a, b) => (b.data[selectedDimension]?.value || 0) - (a.data[selectedDimension]?.value || 0));
+
+    document.querySelectorAll('.bar-item').forEach((item, i) => {
+      item.classList.toggle('highlighted', sorted[i]?.id === highlightedCommune);
+    });
+
+    document.querySelectorAll('#data-table-body tr').forEach((row, i) => {
+      row.classList.toggle('highlighted', visible[i] === highlightedCommune);
+    });
+
+    updateDetail();
+  }
+
+  function updateAll() {
+    drawMap();
+    updateLegend();
+    updateChart();
+    updateTable();
+    updateDetail();
+  }
+
+  document.getElementById('dimension-select').onchange = function() {
+    selectedDimension = this.value;
+    updateAll();
+  };
+
+  document.getElementById('detail-close').onclick = function() {
+    highlightedCommune = null;
+    updateHighlight();
+  };
+
+  // Zoom and pan functionality
+  let zoomLevel = 1;
+  let panX = 0, panY = 0;
+  let isDragging = false;
+  let dragStartX = 0, dragStartY = 0;
+  let panStartX = 0, panStartY = 0;
+
+  const map = document.getElementById('lux-map');
+  const mapContainer = document.querySelector('.map-svg-wrapper');
+
+  function applyTransform() {
+    map.style.transform = `translate(${panX}px, ${panY}px) scale(${zoomLevel})`;
+    map.style.transformOrigin = 'center center';
+  }
+
+  document.getElementById('zoom-in').onclick = () => {
+    zoomLevel = Math.min(3, zoomLevel + 0.25);
+    applyTransform();
+  };
+
+  document.getElementById('zoom-out').onclick = () => {
+    zoomLevel = Math.max(0.5, zoomLevel - 0.25);
+    applyTransform();
+  };
+
+  document.getElementById('zoom-reset').onclick = () => {
+    zoomLevel = 1;
+    panX = 0;
+    panY = 0;
+    applyTransform();
+  };
+
+  // Click outside communes (on background) to reset selection
+  document.getElementById('map-bg').onclick = () => {
+    highlightedCommune = null;
+    filterCommune = 'all';
+    document.getElementById('filter-dropdown').value = 'all';
+    updateAll();
+  };
+
+  // Drag to pan
+  mapContainer.onmousedown = (e) => {
+    isDragging = true;
+    dragStartX = e.clientX;
+    dragStartY = e.clientY;
+    panStartX = panX;
+    panStartY = panY;
+    map.classList.add('dragging');
+    e.preventDefault();
+  };
+
+  document.onmousemove = (e) => {
+    if (isDragging) {
+      panX = panStartX + (e.clientX - dragStartX);
+      panY = panStartY + (e.clientY - dragStartY);
+      applyTransform();
+    }
+  };
+
+  document.onmouseup = () => {
+    if (isDragging) {
+      isDragging = false;
+      map.classList.remove('dragging');
+    }
+  };
+
+  // Table sorting click handlers
+  document.querySelectorAll('.data-table th.sortable').forEach(th => {
+    th.onclick = () => {
+      const key = th.dataset.sort;
+      if (tableSortKey === key) {
+        tableSortDir = tableSortDir === 'asc' ? 'desc' : 'asc';
+      } else {
+        tableSortKey = key;
+        tableSortDir = key === 'value' ? 'desc' : 'asc';
+      }
+      updateTable();
+    };
+  });
+
+  // Search input handler
+  const searchInput = document.getElementById('commune-search');
+  const searchWrapper = searchInput.parentElement;
+
+  searchInput.oninput = function() {
+    searchTerm = this.value;
+    searchWrapper.classList.toggle('has-value', searchTerm.length > 0);
+    updateTable();
+  };
+
+  // Clear search button
+  document.getElementById('search-clear').onclick = function() {
+    searchInput.value = '';
+    searchTerm = '';
+    searchWrapper.classList.remove('has-value');
+    updateTable();
+  };
+
+  buildDropdown();
+  updateAll();
+})();
+//]]>
+</script>
+
+</body>
+</html>
