@@ -260,7 +260,7 @@ a:hover { text-decoration: underline; }
   overflow: hidden;
 }
 
-.chart-header {
+.chart-header { display: flex; align-items: center;
   padding: 0.75rem 1rem;
   border-bottom: 1px solid var(--gray-200);
   background: var(--gray-50);
@@ -616,7 +616,7 @@ a:hover { text-decoration: underline; }
             </div>
 
             <div class='chart-container'>
-              <div class='chart-header' id='chart-title'>Comparison</div>
+              <div class='chart-header'><span id='chart-title'>Comparison</span><button id='chart-toggle' style='margin-left:auto;font-size:11px;padding:2px 8px;cursor:pointer'>Hide</button></div>
               <div class='chart-body'>
                 <div class='bar-chart' id='bar-chart'></div>
               </div>
@@ -1095,6 +1095,13 @@ async function initApp() {
     map.style.transformOrigin = 'center center';
   }
 
+  // Chart toggle
+  document.getElementById('chart-toggle').onclick = function() {
+    const body = document.querySelector('.chart-body');
+    const hidden = body.style.display === 'none';
+    body.style.display = hidden ? '' : 'none';
+    this.textContent = hidden ? 'Hide' : 'Show';
+  };
   document.getElementById('zoom-in').onclick = () => {
     zoomLevel = Math.min(3, zoomLevel + 0.25);
     applyTransform();
