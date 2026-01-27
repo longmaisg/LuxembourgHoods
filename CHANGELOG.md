@@ -9,3 +9,4 @@ Git log with anchors for tracking changes.
 - [d9d489e] 2026-01-27 19:44 Fix async data loading - wait for GitHub fetch before init
 - [5966f22] 2026-01-27 19:53 Fix labels.json format + slim CLAUDE.md (73 words)
 - [b453f3c] 2026-01-27 19:57 Show name + value in map tooltip on hover
+- [3fafe41] 2026-01-27 20:13 Add screenshot button to save map as PNG

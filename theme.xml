@@ -1123,7 +1123,7 @@ async function initApp() {
       ctx.fillRect(0, 0, 480, 690);
       ctx.drawImage(img, 0, 0);
       const a = document.createElement("a");
-      a.download = "luxembourg-map.png";
+      a.download = "luxembourg-" + selectedDimension + "-" + new Date().toISOString().slice(0,10) + ".png";
       a.href = canvas.toDataURL("image/png");
       a.click();
     };
