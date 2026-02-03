@@ -18,3 +18,4 @@ Git log with anchors for tracking changes.
 - [f29bede] 2026-01-27 20:41 Hide zoom buttons in screenshot
 - [ceaf079] 2026-01-27 20:43 Add Show/Hide toggle for Top 10 chart
 - [64ef3dc] 2026-01-27 20:56 Add disclaimer: not affiliated with government
+- [b9903ce] 2026-01-27 21:13 Improve map: blue gradient background + better viewBox fit

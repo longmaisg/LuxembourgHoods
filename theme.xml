@@ -7,6 +7,12 @@
 <title><data:blog.pageTitle/></title>
 <meta content='Luxembourg commune data visualization - population, housing prices, demographics with full source citations.' name='description'/>
 
+<!-- iOS Web App -->
+<link rel='apple-touch-icon' href='https://raw.githubusercontent.com/longmaisg/LuxembourgHoods/master/icon-180.png'/>
+<meta name='apple-mobile-web-app-capable' content='yes'/>
+<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'/>
+<meta name='apple-mobile-web-app-title' content='LuxHoods'/>
+
 <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap' rel='stylesheet'/>
 <script src='https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js'></script>
 
@@ -682,7 +688,7 @@ a:hover { text-decoration: underline; }
 <footer class='footer'>
   <p><strong>LuxembourgHoods</strong> — Data from <a href='https://statistiques.public.lu/'>STATEC</a> &amp; <a href='https://www.immotop.lu/'>Immotop</a></p>
   <p>Map boundaries from <a href='https://data.public.lu/'>data.public.lu</a> (CC0)</p>
-  <p style='font-size:11px;margin-top:0.5rem'>Not affiliated with any government agency. For informational purposes only.</p>
+  <p style='font-size:11px;margin-top:0.5rem'>Not affiliated with any government agency or any company. For informational purposes only.</p>
 </footer>
 
 <script>
