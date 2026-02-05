@@ -607,7 +607,7 @@ a:hover { text-decoration: underline; }
     <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='2' visible='true'>
       <b:includable id='main'>
 
-        <b:if cond='data:blog.pageType == "index"'>
+        <b:if cond='data:blog.pageType == "index" and not data:blog.url contains "/search"'>
 
           <div class='controls-panel'>
             <div class='controls-row'>
@@ -744,7 +744,7 @@ a:hover { text-decoration: underline; }
           </b:loop>
         </b:if>
 
-        <b:if cond='data:blog.pageType in ["archive", "search"]'>
+        <b:if cond='data:blog.pageType in ["archive", "search"] or data:blog.url contains "/search"'>
           <div class='posts-list'>
             <a class='post-back' expr:href='data:blog.homepageUrl'>Back to map</a>
             <h1 class='posts-list-title'>
