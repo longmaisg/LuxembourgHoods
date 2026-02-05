@@ -349,6 +349,26 @@ a:hover { text-decoration: underline; }
 
 .detail-body { padding: 1.25rem; }
 
+/* Blog post content styling */
+.post-article { max-width: 720px; margin: 0 auto; }
+.post-article .detail-body { padding: 1.5rem 2rem; }
+.post-meta { font-size: 0.85rem; color: var(--gray-500); margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--gray-200); }
+.post-meta time { font-weight: 500; }
+.post-body { line-height: 1.8; }
+.post-body p { margin-bottom: 1rem; }
+.post-body h3 { margin: 1.5rem 0 0.75rem; font-size: 1.2rem; }
+.post-body h4 { margin: 1.25rem 0 0.5rem; font-size: 1.05rem; }
+.post-body ul, .post-body ol { margin-bottom: 1rem; padding-left: 1.5rem; }
+.post-body li { margin-bottom: 0.4rem; }
+.post-body img { max-width: 100%; height: auto; border-radius: var(--radius); margin: 1rem 0; }
+.post-body blockquote { border-left: 3px solid var(--primary); padding-left: 1rem; margin: 1rem 0; color: var(--gray-600); font-style: italic; }
+.post-body code { background: var(--gray-100); padding: 0.15rem 0.4rem; border-radius: 3px; font-size: 0.9em; }
+.post-body pre { background: var(--gray-800); color: var(--gray-100); padding: 1rem; border-radius: var(--radius); overflow-x: auto; margin: 1rem 0; }
+.post-body pre code { background: none; padding: 0; }
+.post-back { display: inline-block; margin-bottom: 1rem; font-size: 0.9rem; }
+.post-back:hover { text-decoration: none; }
+.post-back::before { content: '← '; }
+
 .detail-placeholder {
   text-align: center;
   padding: 1.5rem;
@@ -673,9 +693,33 @@ a:hover { text-decoration: underline; }
 
         <b:if cond='data:blog.pageType == "item"'>
           <b:loop values='data:posts' var='post'>
-            <article class='detail-panel'>
+            <article class='detail-panel post-article'>
               <div class='detail-header'><h2><data:post.title/></h2></div>
-              <div class='detail-body'><data:post.body/></div>
+              <div class='detail-body'>
+                <a class='post-back' expr:href='data:blog.homepageUrl'>Back to map</a>
+                <div class='post-meta'>
+                  <time expr:datetime='data:post.date.iso8601'><data:post.date/></time>
+                  <b:if cond='data:post.labels'>
+                    <span> · </span>
+                    <b:loop values='data:post.labels' var='label'>
+                      <a expr:href='data:label.url'><data:label.name/></a><b:if cond='not data:label.isLast'>, </b:if>
+                    </b:loop>
+                  </b:if>
+                </div>
+                <div class='post-body'><data:post.body/></div>
+              </div>
+            </article>
+          </b:loop>
+        </b:if>
+
+        <b:if cond='data:blog.pageType == "static_page"'>
+          <b:loop values='data:posts' var='post'>
+            <article class='detail-panel post-article'>
+              <div class='detail-header'><h2><data:post.title/></h2></div>
+              <div class='detail-body'>
+                <a class='post-back' expr:href='data:blog.homepageUrl'>Back to map</a>
+                <div class='post-body'><data:post.body/></div>
+              </div>
             </article>
           </b:loop>
         </b:if>
