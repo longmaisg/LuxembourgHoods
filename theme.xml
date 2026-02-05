@@ -597,7 +597,7 @@ a:hover { text-decoration: underline; }
       <div class='tagline'>Commune data with sources</div>
     </div>
     <nav class='header-nav'>
-      <a href='/search'>Blog</a>
+      <a href='/p/blog.html'>Blog</a>
     </nav>
   </div>
 </header>
@@ -607,7 +607,7 @@ a:hover { text-decoration: underline; }
     <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='2' visible='true'>
       <b:includable id='main'>
 
-        <b:if cond='data:blog.pageType == "index" and not data:blog.url contains "/search"'>
+        <b:if cond='data:blog.pageType == "index"'>
 
           <div class='controls-panel'>
             <div class='controls-row'>
@@ -734,13 +734,23 @@ a:hover { text-decoration: underline; }
 
         <b:if cond='data:blog.pageType == "static_page"'>
           <b:loop values='data:posts' var='post'>
-            <article class='detail-panel post-article'>
-              <div class='detail-header'><h2><data:post.title/></h2></div>
-              <div class='detail-body'>
+            <b:if cond='data:post.title == "Blog"'>
+              <!-- Blog listing page -->
+              <div class='posts-list'>
                 <a class='post-back' expr:href='data:blog.homepageUrl'>Back to map</a>
-                <div class='post-body'><data:post.body/></div>
+                <h1 class='posts-list-title'>Blog</h1>
+                <div id='blog-posts-container'><p class='posts-empty'>Loading posts...</p></div>
               </div>
-            </article>
+            <b:else/>
+              <!-- Regular static page -->
+              <article class='detail-panel post-article'>
+                <div class='detail-header'><h2><data:post.title/></h2></div>
+                <div class='detail-body'>
+                  <a class='post-back' expr:href='data:blog.homepageUrl'>Back to map</a>
+                  <div class='post-body'><data:post.body/></div>
+                </div>
+              </article>
+            </b:if>
           </b:loop>
         </b:if>
 
@@ -782,6 +792,33 @@ a:hover { text-decoration: underline; }
 
 <script>
 //<![CDATA[
+// Load blog posts for the blog page
+async function loadBlogPosts() {
+  const container = document.getElementById('blog-posts-container');
+  if (!container) return;
+
+  try {
+    const res = await fetch('/feeds/posts/default?alt=json&max-results=50');
+    const data = await res.json();
+    const posts = data.feed.entry || [];
+
+    if (posts.length === 0) {
+      container.innerHTML = '<p class="posts-empty">No posts yet.</p>';
+      return;
+    }
+
+    container.innerHTML = posts.map(post => {
+      const title = post.title.$t;
+      const url = post.link.find(l => l.rel === 'alternate')?.href || '#';
+      const date = new Date(post.published.$t).toLocaleDateString('en-US', {year:'numeric',month:'long',day:'numeric'});
+      const snippet = post.summary?.$t || post.content?.$t?.replace(/<[^>]+>/g,'').slice(0,200) + '...' || '';
+      return '<article class="post-card"><a href="'+url+'"><h2>'+title+'</h2><div class="post-card-meta">'+date+'</div><p class="post-card-snippet">'+snippet+'</p></a></article>';
+    }).join('');
+  } catch(e) {
+    container.innerHTML = '<p class="posts-empty">Could not load posts.</p>';
+  }
+}
+
 async function initApp() {
   // Wait for data to load from GitHub
   await loadData();
@@ -1302,9 +1339,9 @@ async function initApp() {
 
 // Start app when DOM is ready
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initApp);
+  document.addEventListener('DOMContentLoaded', () => { initApp(); loadBlogPosts(); });
 } else {
-  initApp();
+  initApp(); loadBlogPosts();
 }
 //]]>
 </script>

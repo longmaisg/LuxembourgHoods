@@ -23,3 +23,4 @@ Git log with anchors for tracking changes.
 - [b826284] 2026-02-05 21:58 Add blog post styling and template improvements
 - [7460c05] 2026-02-05 22:02 Add blog navigation and posts list page
 - [2a59a63] 2026-02-05 22:05 Fix blog link to /search and improve posts list template
+- [e6681a5] 2026-02-05 22:07 Fix blog page detection using URL path check
