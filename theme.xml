@@ -371,7 +371,7 @@ a:hover { text-decoration: underline; }
 .post-body pre code { background: none; padding: 0; }
 .post-back { display: inline-block; margin-bottom: 1rem; font-size: 0.9rem; }
 .post-back:hover { text-decoration: none; }
-.post-back::before { content: '← '; }
+.post-back::before { content: '\2190 '; }
 
 /* Posts list page */
 .posts-list { max-width: 720px; margin: 0 auto; }
@@ -793,16 +793,10 @@ a:hover { text-decoration: underline; }
 <script>
 //<![CDATA[
 // Load blog posts for the blog page
-function stripHtml(html) {
+function htmlToText(html) {
   const tmp = document.createElement('div');
-  tmp.innerHTML = html || '';
-  return tmp.textContent || tmp.innerText || '';
-}
-
-function escapeHtml(text) {
-  const div = document.createElement('div');
-  div.textContent = text;
-  return div.innerHTML;
+  tmp.innerHTML = (html || '').replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '').replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
+  return (tmp.textContent || tmp.innerText || '').replace(/\s+/g, ' ').trim();
 }
 
 async function loadBlogPosts() {
@@ -819,14 +813,35 @@ async function loadBlogPosts() {
       return;
     }
 
-    container.innerHTML = posts.map(post => {
-      const title = escapeHtml(post.title.$t || 'Untitled');
+    const html = posts.map(post => {
+      const title = htmlToText(post.title.$t || 'Untitled');
       const url = post.link.find(l => l.rel === 'alternate')?.href || '#';
       const date = new Date(post.published.$t).toLocaleDateString('en-US', {year:'numeric',month:'long',day:'numeric'});
       const rawContent = post.summary?.$t || post.content?.$t || '';
-      const snippet = escapeHtml(stripHtml(rawContent).slice(0,200).trim()) + (rawContent.length > 200 ? '...' : '');
-      return '<article class="post-card"><a href="'+url+'"><h2>'+title+'</h2><div class="post-card-meta">'+date+'</div><p class="post-card-snippet">'+snippet+'</p></a></article>';
-    }).join('');
+      const text = htmlToText(rawContent);
+      const snippet = text.length > 200 ? text.slice(0,200) + '...' : text;
+
+      const card = document.createElement('article');
+      card.className = 'post-card';
+      const link = document.createElement('a');
+      link.href = url;
+      const h2 = document.createElement('h2');
+      h2.textContent = title;
+      const meta = document.createElement('div');
+      meta.className = 'post-card-meta';
+      meta.textContent = date;
+      const p = document.createElement('p');
+      p.className = 'post-card-snippet';
+      p.textContent = snippet;
+      link.appendChild(h2);
+      link.appendChild(meta);
+      link.appendChild(p);
+      card.appendChild(link);
+      return card;
+    });
+
+    container.innerHTML = '';
+    html.forEach(card => container.appendChild(card));
   } catch(e) {
     container.innerHTML = '<p class="posts-empty">Could not load posts.</p>';
   }
