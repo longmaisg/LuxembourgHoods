@@ -93,11 +93,15 @@ a:hover { text-decoration: underline; }
   padding: 1rem 1.5rem;
 }
 
-.header-inner { max-width: 1200px; margin: 0 auto; }
+.header-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
 
 .logo { font-size: 1.5rem; font-weight: 700; color: var(--gray-900); }
 .logo span { color: var(--primary); }
 .tagline { font-size: 0.85rem; color: var(--gray-500); }
+
+.header-nav { display: flex; gap: 1.5rem; }
+.header-nav a { color: var(--gray-600); font-weight: 500; font-size: 0.9rem; }
+.header-nav a:hover { color: var(--primary); text-decoration: none; }
 
 .main-container { max-width: 1200px; margin: 0 auto; padding: 1.5rem; }
 
@@ -369,6 +373,16 @@ a:hover { text-decoration: underline; }
 .post-back:hover { text-decoration: none; }
 .post-back::before { content: '← '; }
 
+/* Posts list page */
+.posts-list { max-width: 720px; margin: 0 auto; }
+.posts-list-title { font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--gray-800); }
+.post-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 1.25rem; margin-bottom: 1rem; box-shadow: var(--shadow); transition: border-color 0.15s; }
+.post-card:hover { border-color: var(--primary); }
+.post-card a { text-decoration: none; display: block; }
+.post-card h2 { font-size: 1.1rem; color: var(--gray-800); margin-bottom: 0.25rem; }
+.post-card-meta { font-size: 0.8rem; color: var(--gray-500); margin-bottom: 0.5rem; }
+.post-card-snippet { font-size: 0.9rem; color: var(--gray-600); line-height: 1.5; margin: 0; }
+
 .detail-placeholder {
   text-align: center;
   padding: 1.5rem;
@@ -577,8 +591,13 @@ a:hover { text-decoration: underline; }
 
 <header class='header'>
   <div class='header-inner'>
-    <a class='logo' href='/'>Luxembourg<span>Hoods</span></a>
-    <div class='tagline'>Commune data with sources</div>
+    <div>
+      <a class='logo' href='/'>Luxembourg<span>Hoods</span></a>
+      <div class='tagline'>Commune data with sources</div>
+    </div>
+    <nav class='header-nav'>
+      <a href='/search/label/blog'>Blog</a>
+    </nav>
   </div>
 </header>
 
@@ -722,6 +741,38 @@ a:hover { text-decoration: underline; }
               </div>
             </article>
           </b:loop>
+        </b:if>
+
+        <b:if cond='data:blog.pageType == "archive"'>
+          <div class='posts-list'>
+            <a class='post-back' expr:href='data:blog.homepageUrl'>Back to map</a>
+            <h1 class='posts-list-title'>Blog Posts</h1>
+            <b:loop values='data:posts' var='post'>
+              <article class='post-card'>
+                <a expr:href='data:post.url'>
+                  <h2><data:post.title/></h2>
+                  <div class='post-card-meta'><data:post.date/></div>
+                  <p class='post-card-snippet'><data:post.snippet/></p>
+                </a>
+              </article>
+            </b:loop>
+          </div>
+        </b:if>
+
+        <b:if cond='data:blog.searchLabel'>
+          <div class='posts-list'>
+            <a class='post-back' expr:href='data:blog.homepageUrl'>Back to map</a>
+            <h1 class='posts-list-title'>Posts: <data:blog.searchLabel/></h1>
+            <b:loop values='data:posts' var='post'>
+              <article class='post-card'>
+                <a expr:href='data:post.url'>
+                  <h2><data:post.title/></h2>
+                  <div class='post-card-meta'><data:post.date/></div>
+                  <p class='post-card-snippet'><data:post.snippet/></p>
+                </a>
+              </article>
+            </b:loop>
+          </div>
         </b:if>
 
       </b:includable>
