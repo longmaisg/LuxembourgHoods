@@ -382,6 +382,7 @@ a:hover { text-decoration: underline; }
 .post-card h2 { font-size: 1.1rem; color: var(--gray-800); margin-bottom: 0.25rem; }
 .post-card-meta { font-size: 0.8rem; color: var(--gray-500); margin-bottom: 0.5rem; }
 .post-card-snippet { font-size: 0.9rem; color: var(--gray-600); line-height: 1.5; margin: 0; }
+.posts-empty { color: var(--gray-500); font-style: italic; }
 
 .detail-placeholder {
   text-align: center;
@@ -596,7 +597,7 @@ a:hover { text-decoration: underline; }
       <div class='tagline'>Commune data with sources</div>
     </div>
     <nav class='header-nav'>
-      <a href='/search/label/blog'>Blog</a>
+      <a href='/search'>Blog</a>
     </nav>
   </div>
 </header>
@@ -743,35 +744,28 @@ a:hover { text-decoration: underline; }
           </b:loop>
         </b:if>
 
-        <b:if cond='data:blog.pageType == "archive"'>
+        <b:if cond='data:blog.pageType in ["archive", "search"]'>
           <div class='posts-list'>
             <a class='post-back' expr:href='data:blog.homepageUrl'>Back to map</a>
-            <h1 class='posts-list-title'>Blog Posts</h1>
-            <b:loop values='data:posts' var='post'>
-              <article class='post-card'>
-                <a expr:href='data:post.url'>
-                  <h2><data:post.title/></h2>
-                  <div class='post-card-meta'><data:post.date/></div>
-                  <p class='post-card-snippet'><data:post.snippet/></p>
-                </a>
-              </article>
-            </b:loop>
-          </div>
-        </b:if>
-
-        <b:if cond='data:blog.searchLabel'>
-          <div class='posts-list'>
-            <a class='post-back' expr:href='data:blog.homepageUrl'>Back to map</a>
-            <h1 class='posts-list-title'>Posts: <data:blog.searchLabel/></h1>
-            <b:loop values='data:posts' var='post'>
-              <article class='post-card'>
-                <a expr:href='data:post.url'>
-                  <h2><data:post.title/></h2>
-                  <div class='post-card-meta'><data:post.date/></div>
-                  <p class='post-card-snippet'><data:post.snippet/></p>
-                </a>
-              </article>
-            </b:loop>
+            <h1 class='posts-list-title'>
+              <b:if cond='data:blog.searchLabel'>Posts: <data:blog.searchLabel/>
+              <b:elseif cond='data:blog.searchQuery'/>Search: <data:blog.searchQuery/>
+              <b:else/>Blog
+              </b:if>
+            </h1>
+            <b:if cond='data:posts.empty'>
+              <p class='posts-empty'>No posts yet.</p>
+            <b:else/>
+              <b:loop values='data:posts' var='post'>
+                <article class='post-card'>
+                  <a expr:href='data:post.url'>
+                    <h2><data:post.title/></h2>
+                    <div class='post-card-meta'><data:post.date/></div>
+                    <p class='post-card-snippet'><data:post.snippet/></p>
+                  </a>
+                </article>
+              </b:loop>
+            </b:if>
           </div>
         </b:if>
 

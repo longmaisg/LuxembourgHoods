@@ -21,3 +21,4 @@ Git log with anchors for tracking changes.
 - [b9903ce] 2026-01-27 21:13 Improve map: blue gradient background + better viewBox fit
 - [a8699d4] 2026-02-03 09:52 Add iOS homescreen web app icon and meta tags
 - [b826284] 2026-02-05 21:58 Add blog post styling and template improvements
+- [7460c05] 2026-02-05 22:02 Add blog navigation and posts list page
